@@ -10811,5 +10811,6 @@
             ]
         }
     ],
-    "updated": 1755036131
+    "updated": 1768610303,
+    "epg_url": "https:\/\/raw.githubusercontent.com\/teleonline\/lista\/main\/epg.json"
 }
