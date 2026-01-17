@@ -2,17 +2,13 @@
 
 Repositorio con actualización automatica de canales de television (IPTV) y Guia Electronica de Programacion (EPG).
 
-Este proyecto genera listas de reproduccion limpias, optimizadas y actualizadas diariamente para asegurar la maxima compatibilidad con reproductores como TiviMate, IPTV Smarters, VLC y OTT Navigator.
+Este proyecto genera listas de reproduccion limpias, optimizadas y actualizadas diariamente para asegurar la maxima compatibilidad con reproductores como TiviMate, IPTV Smarters, VLC y OTT Navigator. Utilice las siguientes direcciones URL para configurar su reproductor:
 
-## Enlaces de Acceso Directo (RAW)
-
-Utilice las siguientes direcciones URL para configurar su reproductor. Estos enlaces apuntan directamente a los archivos en crudo para evitar problemas de cache.
-
-### Lista de Canales (Formato M3U8 - Recomendado)
-https://raw.githubusercontent.com/Teleonline/lista/main/tv.m3u8
+### Lista de Canales (Formato M3U8)
+https://teleonline.github.io/lista/tv.m3u8
 
 ### Guia de Programacion (EPG XML)
-https://raw.githubusercontent.com/Teleonline/lista/main/epg.xml
+https://teleonline.github.io/lista/epg.xml
 
 ---
 
