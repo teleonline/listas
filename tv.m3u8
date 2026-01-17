@@ -1,5 +1,5 @@
 ﻿#EXTM3U
-#EXTM3U url-tvg="https://raw.githubusercontent.com/Teleonline/lista/main/epg.xml?v=202601171306"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/Teleonline/lista/main/epg.xml?v=202601171309"
 #EXTINF:-1 tvg-id="La1.TV" tvg-logo="https://pbs.twimg.com/profile_images/2008842210414915584/zIp_go25_200x200.jpg" group-title="España" tvg-name="La 1",La 1
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 #EXTINF:-1 tvg-id="La1.TV" tvg-logo="https://pbs.twimg.com/profile_images/2008842210414915584/zIp_go25_200x200.jpg" group-title="España" tvg-name="La 1",La 1
