@@ -7870,12 +7870,12 @@
                             "logo": "https://teleonline.org/wp-content/uploads/2025/12/bendicion-channel-tv-scaled.png",
                             "options": [
                                 {
-                                    "id": "manual_1",
                                     "format": "m3u8",
                                     "url": "https://live20.bozztv.com/akamaissh101/ssh101/bendiciontv7/playlist.m3u8"
                                 }
                             ],
-                            "extra_info": []
+                            "extra_info": [],
+                            "epg_id": ""
                         }
                     ]
                 },
@@ -10811,6 +10811,6 @@
             ]
         }
     ],
-    "updated": 1768614215,
+    "updated": 1768614291,
     "epg_url": "https://raw.githubusercontent.com/teleonline/lista/main/epg.json"
 }
