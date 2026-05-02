@@ -1,1 +1,1 @@
-Repositorio de canales de television (IPTV) y Guia Electronica de Programacion (EPG) con actualización automatica.
+Canales de televisión en abierto, gratuitos y de acceso público procedentes de fuentes autorizadas.
