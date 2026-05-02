@@ -142,4 +142,4 @@ Estas listas se proporcionan únicamente para uso informativo y legal. Al usar e
 
 **Última Actualización:** 2026-05-02
 
-Para cuestiones o preguntas regarding cumplimiento legal, contáctanos en: info@teleonline.org.
+Para cuestiones, reclamaciones o preguntas sobre cumplimiento legal, contáctanos en: info@teleonline.org.
