@@ -1,6 +1,21 @@
+[Leer en Español](README.es.md)
+
 # Teleonline - Curated TV Lists
 
 Teleonline maintains curated lists of publicly available television channels from around the world. These lists aggregate free-to-air (FTA) channels that are legally available to the general public.
+
+## Table of Contents
+
+- [Contents](#contents)
+- [Data Structure](#data-structure)
+- [Field Definitions](#field-definitions)
+- [M3U8 Playlist](#m3u8-playlist)
+- [How to Use](#how-to-use)
+- [Legal Compliance](#legal-compliance)
+- [Updates & Maintenance](#updates--maintenance)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+- [License](#license)
 
 ## Contents
 
@@ -74,6 +89,50 @@ Compatible with:
 - IPTV Player apps
 - Other IPTV-compatible clients
 
+## How to Use
+
+### Direct Access
+
+Access the raw files directly for integration:
+
+**TV JSON:**
+```
+https://raw.githubusercontent.com/teleonline/listas/main/tv.json
+```
+
+**TV M3U8:**
+```
+https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8
+```
+
+### Use Cases
+
+#### 1. Media Players
+Add the M3U8 URL to your media player:
+- **VLC:** Media → Open Network Stream → Paste M3U8 URL
+- **Kodi:** Add-ons → Install from Repository → Enter M3U8 URL
+- **OBS:** Scene → Add Source → Media Source → Enter M3U8 URL
+
+#### 2. Custom Applications
+Use `tv.json` to build custom apps:
+- Create IPTV applications
+- Build channel recommendation systems
+- Develop EPG integrations
+- Create smart TV apps
+
+#### 3. Playlist Management
+Import M3U8 into playlist managers:
+- IPTV Smarters
+- Perfect Player
+- GSE Smart IPTV
+- Televizo
+
+#### 4. Web Integration
+Embed streams in web applications using JSON data with HLS.js or similar libraries
+
+#### 5. Backup & Archive
+Keep local copies of channels and metadata for offline access
+
 ## Legal Compliance
 
 ### What We Include
@@ -139,4 +198,4 @@ These lists are provided solely for legal informational purposes. By using these
 
 ---
 
-**Last Updated:** Automatically maintained via WordPress admin panel
+**Last Updated:** Automatically maintained
