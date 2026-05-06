@@ -1,6 +1,21 @@
+[Read in English](README.md)
+
 # Teleonline - Listas Curadas de TV
 
 Teleonline mantiene listas curadas de canales de televisión públicamente disponibles de todo el mundo. Estas listas reúnen canales de televisión digital terrestre (TDT) que están legalmente disponibles para el público general.
+
+## Índice de Contenidos
+
+- [Contenido](#contenido)
+- [Estructura de Datos](#estructura-de-datos)
+- [Definición de Campos](#definición-de-campos)
+- [Lista M3U8](#lista-m3u8)
+- [Cómo Usar](#cómo-usar)
+- [Cumplimiento Legal](#cumplimiento-legal)
+- [Actualizaciones y Mantenimiento](#actualizaciones-y-mantenimiento)
+- [Contribuir](#contribuir)
+- [Aviso Legal](#aviso-legal)
+- [Licencia](#licencia)
 
 ## Contenido
 
@@ -73,6 +88,50 @@ Compatible con:
 - OBS Studio
 - Aplicaciones IPTV
 - Otros reproductores compatibles con IPTV
+
+## Cómo Usar
+
+### Acceso Directo
+
+Accede a los archivos en bruto directamente para integración:
+
+**TV JSON:**
+```
+https://raw.githubusercontent.com/teleonline/listas/main/tv.json
+```
+
+**TV M3U8:**
+```
+https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8
+```
+
+### Casos de Uso
+
+#### 1. Reproductores Multimedia
+Añade la URL M3U8 a tu reproductor:
+- **VLC:** Multimedia → Abrir ubicación de red → Pega URL M3U8
+- **Kodi:** Add-ons → Instalar desde repositorio → Ingresa URL M3U8
+- **OBS:** Escena → Añadir fuente → Fuente multimedia → Ingresa URL M3U8
+
+#### 2. Aplicaciones Personalizadas
+Usa `tv.json` para construir apps personalizadas:
+- Crear aplicaciones IPTV
+- Desarrollar sistemas de recomendación de canales
+- Integración con guías electrónicas de programación
+- Crear apps para Smart TV
+
+#### 3. Gestión de Listas de Reproducción
+Importa M3U8 en gestores de listas:
+- IPTV Smarters
+- Perfect Player
+- GSE Smart IPTV
+- Televizo
+
+#### 4. Integración Web
+Integra transmisiones en aplicaciones web usando datos JSON con librerías como HLS.js
+
+#### 5. Respaldo y Archivo
+Mantén copias locales de canales y metadatos para acceso sin conexión
 
 ## Cumplimiento Legal
 
