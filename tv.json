@@ -424,7 +424,7 @@
                         },
                         {
                             "name": "Star TVE Europa",
-                            "web": "",
+                            "web": "https://www.rtve.es",
                             "logo": "https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg",
                             "options": [
                                 {
@@ -437,7 +437,7 @@
                         },
                         {
                             "name": "Star TVE",
-                            "web": "",
+                            "web": "https://www.rtve.es",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Star%20TVE.png",
                             "options": [
                                 {
