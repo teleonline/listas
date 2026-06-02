@@ -3,7 +3,7 @@
 #EXTINF:-1 tvg-id="La 1.TV" tvg-name="La 1" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201.png" group-title="🇪🇸 España",La 1
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 #EXTINF:-1 tvg-id="La 2.TV" tvg-name="La 2" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202.png" group-title="🇪🇸 España",La 2
-https://ztnr.rtve.es/ztnr/1688885.m3u8
+https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 #EXTINF:-1 tvg-id="DMax.TV" tvg-name="DMAX" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DMAX.png" group-title="🇪🇸 España",DMAX
 https://www.youtube.com/channel/UC9eCLBSj2fCYUsnMuelRloQ/live
 #EXTINF:-1 tvg-id="TRECE.TV" tvg-name="TRECE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png" group-title="🇪🇸 España",TRECE
