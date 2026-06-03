@@ -1493,7 +1493,9 @@
                             "name": "Infinity Top Series",
                             "web": "https://www.mediasetinfinity.es/directo/mitele-top-series/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r=",
-                            "epg_id": "Infinity Top Series.TV"
+                            "epg_id": "Infinity Top Series.TV",
+                            "options": [],
+                            "extra_info": []
                           },
                         {
                             "name": "Mitele Comedia",
