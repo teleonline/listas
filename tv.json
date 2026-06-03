@@ -100,7 +100,6 @@
                             "web": "https://www.mitele.es/directo/telecinco",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telecinco.png",
                             "epg_id": "Telecinco.TV",
-                            "options": [],
                             "catchup": {
                                 "provider": "mediaset",
                                 "channelId": "telecinco",
