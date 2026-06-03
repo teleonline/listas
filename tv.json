@@ -1489,20 +1489,12 @@
                             ],
                             "extra_info": []
                         },
-                            {
-                                "id": "Infinity Top Series",
-                                "name": "Infinity Top Series",
-                                "epgid": "Infinity Top Series.TV",
-                                "group": "Temáticos Infinity",
-                                "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r=",
-                        		"logocolor" : "https://graph.facebook.com/MediasetInfinityES/picture?width=200&height=200",
-                                "starover": "",
-                                "referer": "",
-                        		"headers": { "Origin" : "https://www.mediasetinfinity.es" ,"Referer" : "https://www.mediasetinfinity.es/" },
-                        		"streamtype": "stream10",
-                        		"internacional": "false",
-                                "url": "https://www.mediasetinfinity.es/directo/mitele-top-series/"
-                            },
+                        {
+                            "name": "Infinity Top Series",
+                            "web": "https://www.mediasetinfinity.es/directo/mitele-top-series/",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r=",
+                            "epg_id": "Infinity Top Series.TV"
+                          },
                         {
                             "name": "Mitele Comedia",
                             "web": "https://www.mitele.es/directo/mitele-comedia/",
