@@ -270,17 +270,7 @@
                             "web": "https://dmax.marca.com/en-directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DMAX.png",
                             "epg_id": "DMax.TV",
-                            "options": [
-                                {
-                                    "format": "youtube",
-                                    "url": "https://www.youtube.com/channel/UC9eCLBSj2fCYUsnMuelRloQ/live"
-                                }
-                            ],
-                            "extra_info": [
-                                "W3U",
-                                "EMB",
-                                "EXTA"
-                            ]
+                            "options": [ { "format": "dmax", "url": "1" } ]
                         },
                         {
                             "name": "TRECE",
