@@ -92,7 +92,8 @@
                                 "provider": "mediaset",
                                 "channelId": "telecinco",
                                 "days": 7
-                            }
+                            },
+                            "options": []
                         },
                         {
                             "name": "La Sexta",
