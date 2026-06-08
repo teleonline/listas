@@ -732,6 +732,8 @@ https://stream1.sersat.com/hls/garagetv.m3u8
 https://617c5175c970b.streamlock.net:4444/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Neo TV" tvg-logo="https://teleonline.org/wp-content/uploads/2025/10/Logo-Neo-Tv.avif" group-title="🇦🇷 Argentina",Neo TV
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="El Trece" tvg-logo="https://teleonline.org/wp-content/uploads/2025/09/TrgBAdA.png" group-title="🇦🇷 Argentina General",El Trece
+https://live-01-02-eltrece.vodgc.net/eltrecetv_noti/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Exitosa Noticias Perú" tvg-logo="https://graph.facebook.com/Exitosanoticias/picture?width=200&amp;height=200" group-title="🇵🇪 Perú",Exitosa Noticias Perú
 https://luna-4-video.mediaserver.digital/exitosatv_233b-4b49-a726-5a451262/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Panamericana Perú" tvg-logo="https://graph.facebook.com/panamericana.pe/picture?width=200&amp;height=200" group-title="🇵🇪 Perú",Panamericana Perú
