@@ -55,6 +55,10 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr_720.m3u8"
+                                },
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_P711AGS02584001.m3u8"
                                 }
                             ],
                             "catchup": {
