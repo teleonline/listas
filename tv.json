@@ -38,11 +38,11 @@
                             "options": [
                                 {
                                     "format": "m3u8",
-                                    "url": "https://d1yebix5w29z3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-haqfba85d1gvv/La2ES.m3u8"
+                                    "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8"
                                 },
                                 {
                                     "format": "m3u8",
-                                    "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8"
+                                    "url": "https://d1yebix5w29z3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-haqfba85d1gvv/La2ES.m3u8"
                                 }
                             ],
                             "catchup": {
@@ -7220,6 +7220,18 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://live20.bozztv.com/akamaissh101/ssh101/oasistv123/playlist.m3u8"
+                                }
+                            ],
+                            "epg_id": ""
+                        },
+                        {
+                            "name": "Canal C del Zulia",
+                            "web": "",
+                            "logo": "https://teleonline.org/wp-content/uploads/2026/02/Canal-C-venezuela.png",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://calm-forest-3478.cristianbracho904.workers.dev/master.m3u8"
                                 }
                             ],
                             "epg_id": ""
