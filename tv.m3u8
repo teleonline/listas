@@ -3,7 +3,7 @@
 #EXTINF:-1 tvg-id="La 1.TV" tvg-name="La 1" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201.png" group-title="🇪🇸 España",La 1
 https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La 2.TV" tvg-name="La 2" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202.png" group-title="🇪🇸 España",La 2
-https://d1yebix5w29z3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-haqfba85d1gvv/La2ES.m3u8
+https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 #EXTINF:-1 tvg-id="TRECE.TV" tvg-name="TRECE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png" group-title="🇪🇸 España",TRECE
 https://live-edge-eu-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/liveld/index.m3u8
 #EXTINF:-1 tvg-id="El Toro TV.TV" tvg-name="El Toro TV" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/El%20Toro%20TV.png" group-title="🇪🇸 España",El Toro TV
@@ -756,6 +756,8 @@ https://59d39900ebfb8.streamlock.net/globo-720p/globo-720p/playlist.m3u8
 https://d39cdj6x0ssnqk.cloudfront.net/out/v1/ae3f5ad3ac9d4bcfbedc1894a62782b4/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TvOasis" tvg-logo="https://teleonline.org/wp-content/uploads/2025/10/tvoasis_venezuela.avif" group-title="🇻🇪 Venezuela",TvOasis
 https://servilive.com:3562/live/vav4c8z38live.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Canal C del Zulia" tvg-logo="https://teleonline.org/wp-content/uploads/2026/02/Canal-C-venezuela.png" group-title="🇻🇪 Venezuela",Canal C del Zulia
+https://calm-forest-3478.cristianbracho904.workers.dev/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TELE13 Chile" tvg-logo="https://graph.facebook.com/teletrece/picture?width=200&amp;height=200" group-title="🇨🇱 Chile",TELE13 Chile
 https://rudo.video/live/t13?autostart=1
 #EXTINF:-1 tvg-id="" tvg-name="Oromar TV Ecuador" tvg-logo="https://yt3.googleusercontent.com/31MB1b2B_rb-wKXtAqWRFjNt4eh7z1gyVy2Jgke2KOBSmMLkZ24NB-AfwhvWisSDSMxU8Dxw2w=s900-c-k-c0x00ffffff-no-rj" group-title="🇪🇨 Ecuador",Oromar TV Ecuador
