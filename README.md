@@ -2,7 +2,7 @@
 
 # Teleonline - Curated TV Lists
 
-Teleonline maintains curated lists of publicly available television channels from around the world. These lists aggregate free-to-air (FTA) channels that are legally available to the general public.
+Teleonline maintains curated lists of publicly available television channels from around the world (official sources only). These lists group together free-to-air (FTA) channels that are legally available to the general public.
 
 ## Table of Contents
 
