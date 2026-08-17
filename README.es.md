@@ -2,7 +2,7 @@
 
 # Teleonline - Listas Curadas de TV
 
-Teleonline mantiene listas curadas de canales de televisión públicamente disponibles de todo el mundo. Estas listas reúnen canales de televisión digital terrestre (TDT) que están legalmente disponibles para el público general.
+Teleonline mantiene listas curadas de canales de televisión públicamente disponibles de todo el mundo (únicamente de fuentes oficiales). Estas listas reúnen canales de televisión digital terrestre (TDT) que están legalmente disponibles para el público general.
 
 ## Índice de Contenidos
 
