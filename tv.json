@@ -474,6 +474,186 @@
                                     "url": "https://dgrfwaj8stp69.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hmbd9k13g6zsa/live/fast-channel-elconfidencial/fast-channel-elconfidencial.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Sky News",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/dGnkztdrLtXRlzkdqReeL-NES2761xxmNVcJhGKqFpR0vQBoP9XaxnXF95FDpwrjyFr2iJvV8Es=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "SkyNews.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/live/YDvsBbKfLPA"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GB News",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/8hySIA7Ed6amMiAHJVNsG9oph0zoSlCAffYTmINH3gXJ8vvcToB_xh7uIlKSHA9fBEae3e_yl6I=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "GBNews.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@GBNewsOnline/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CGTN Europe",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/ytc/AIdro_m72n4fRBXMnz-Q8YYhrzAUhNf_O1bAK1NbikOPVNT_RY4Z=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "CGTNEurope.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@CGTNEurope/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ABC News",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/GJ8V0NX6NddGh9bf4zED4tsjPjjBK2hdp5FWHMy09pV7sdSkkE3yEhCRSch4waEb9ZavyUrWfw=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "ABCNews.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/live/iipR5yUp36o"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ABC News Australia",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/sc9xa2bYk6pIuKX3qgMHSrxEkuPmg57JMl_lRaJqCZxuSIeQt1B6BV23c-16Q3b7Aep0on1b=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "America.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@abcnewsaustralia/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "América TV",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/vIYh4fJ4FiOeD0U8sGUEUZQf3DaK-PME00Ckh7cFf4CRmC3EHopvUsjbgYKhNVkFXURSzltWYQ=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "America.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/live/zcWXboTnous"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Telefe Noticias",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/S4T593yU0BuL0AKg55PlJM8oJyq2TgDah1K9d7_pi-JQ2VgP_-_GABXUf1cTvn0Kk-sEIBQARSI=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "Telefe.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@Telefenoticias/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Noticias Caracol",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/dHWWoN9qQQz6IXAAU7VdROXXhql4QA_1Nc1W4pYzHcbnrSy4YOtrXwyrqbIEdyWv_gnddgWY=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "Caracol.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@noticiascaracol/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Todo Noticias",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/OL0n5KS1Yw3200B8OhLyq6Qa_g-aNGhJcuhNQJ2Ym3Ykan1Bptx1_yJrClMlMedhLR_W4cvoOw=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "Todo.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/live/cb12KmMMDJA"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Canal 26",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/iwy544rQZtfKaTCTqIFUSov8vJk3usPK8bqGzR-JdQwSBEBJiGIacr3v7L3t8w9Xq7Ny6E5z=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "Canal26.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@canal26/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FRANCE 24 Español",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/ytc/AIdro_kzqAgL2TukPL1ijpuPdoOgU75Av9cdQVf0mahAZSySyA=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "FRANCEEspañol.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@France24_es/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FRANCE 24",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/ytc/AIdro_k9aU_SRhYAWJjQ6AO7uzQDZE5mb7gmv4synLrC7hEWGjE=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "FRANCE24.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@FRANCE24/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DW Español",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/TOHGshxAMW2Meq-N9EWB3T71en-ziaWoiFYWcjrhxQpOW4Wog3HwrAjDZIeCvj1q9VLPt_YsCA=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "DWEspañol.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@dwespanol/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Al Jazeera",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/64ft09GPSveU-gHP_Tj1AQqERJmkA3SiS0ae8tlBuOSLA-QxOa7dtjFEpM3T6yr6pTRYxzrT=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "AlJazeera.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/live/gCNeDWCI0vo"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Record News",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/HCLS0suaZ1ZqXvIzGsxElF0RKkonHsd7LqMsgJOoJhtHcrj2sS61NYSciv7okzmIQ5Fj9gRyZA=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "RecordNews.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@recordnews/live"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -820,6 +1000,90 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://play.agenciastreaming.com:8081/futsalmafertv/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Teledeporte 2",
+                            "web": "",
+                            "logo": "https://img2.rtve.es/css/rtve.directos/logos_cadenas/tv-teledeporte_nac.svg",
+                            "epg_id": "TDP2.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/rtvesec/oca/irtve17_main.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Teledeporte 3",
+                            "web": "",
+                            "logo": "https://img2.rtve.es/css/rtve.directos/logos_cadenas/tv-teledeporte_nac.svg",
+                            "epg_id": "TDP3.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/rtvesec/oca/irtve22_main.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Teledeporte 4",
+                            "web": "",
+                            "logo": "https://img2.rtve.es/css/rtve.directos/logos_cadenas/tv-teledeporte_nac.svg",
+                            "epg_id": "TDP4.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/eventual/oca/irtve19_main_dvr.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TDP Play",
+                            "web": "",
+                            "logo": "https://img2.rtve.es/css/rtve.directos/logos_cadenas/tv-teledeporte_nac.svg",
+                            "epg_id": "TDPPlay.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/eventual/oca/irtve25_main_dvr.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB Deportes 2",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/deportes.eitb.kirolak/picture?width=200&height=200",
+                            "epg_id": "ETBD2.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn1.etbon.eus/oc2/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GOL TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/goltv.es/picture?width=200&height=200",
+                            "epg_id": "GOL.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://geo.dailymotion.com/video/k5cyQ3rl70nCl7Fhb5W.json?legacy=true&embedder=https%3A%2F%2Fwww.goltelevision.com%2Fen-directo%2Fgol_live&geo=1&player-id=x1k3pa&publisher-id=x3thb6e&locale=es-ES&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1juonmvhr2cd4808c75&parallelCalls=1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Real Betis TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/realbetisbalompie/picture?width=200&height=200",
+                            "epg_id": "Betis.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://backend.flumotion.com/api/v1/player_site/615/site.js?&asset=991046&v=2.93.3"
                                 }
                             ]
                         }
@@ -1423,6 +1687,114 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://hls-directo01-cope-stream.flumotion.com/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "RTVE en Play",
+                            "web": "",
+                            "logo": "https://css.rtve.es/css/rtve.directos/logos_cadenas/fast-rtveplayenplay_nac.svg",
+                            "epg_id": "RTVE_EnPlay.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ztnr.rtve.es/ztnr/17017351.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "RTVE Al Cielo con Ella",
+                            "web": "",
+                            "logo": "https://css.rtve.es/css/rtve.directos/logos_cadenas/fast-rtveplayalcieloconella_nac.svg",
+                            "epg_id": "RTVE_ElCielo.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ztnr.rtve.es/ztnr/16862827.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "RTVE Cocina",
+                            "web": "",
+                            "logo": "https://css2.rtve.es/css/rtve.directos/logos_cadenas/fast-rtveplaycocina_nac.svg",
+                            "epg_id": "RTVE_Cocina.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ztnr.rtve.es/ztnr/16656232.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "RTVE La Revuelta",
+                            "web": "",
+                            "logo": "https://css.rtve.es/css/rtve.directos/logos_cadenas/fast-rtveplayrevuelta_nac.svg",
+                            "epg_id": "RTVE_LaRevuelta.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ztnr.rtve.es/ztnr/16464388.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infinity Eventos",
+                            "web": "",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vNzc0YzViN2Y1ZWRiMDZkNy9vcmlnaW5hbC9FdmVudG9zLnBuZw/single/200/200?r=",
+                            "epg_id": "EventosInfinity.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/eventos/"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infinity Eventos 2",
+                            "web": "",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTViOTc0NzEwMDhlY2VhZi9vcmlnaW5hbC9DaGFubmVsX2xvZ28tZXZlbnRvczIucG5n/single/200/200?r=",
+                            "epg_id": "Eventos2Infinity.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/eventos-2/"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infinity Comedia",
+                            "web": "",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vNmFhMmMyNDRhYTUzMmEyNS9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktQ29tZWRpYS5wbmc/single/200/200?r=",
+                            "epg_id": "Mitele_Comedia.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/mitele-comedia/"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infinity Viajes",
+                            "web": "",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTVjMWUyNWJhZjhkNjE4MC9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktVmlhamVzLnBuZw/single/200/200?r=",
+                            "epg_id": "Mitele_Viajes.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/mitele-viajes/"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Infinity En la Calle",
+                            "web": "",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTA2ZGM0N2JhNmQ1ODMyNy9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktRW4tbGEtY2FsbGUucG5n/single/200/200?r=",
+                            "epg_id": "Mitele_Calle.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/mitele-en-la-calle/"
                                 }
                             ]
                         }
@@ -2328,6 +2700,162 @@
                                     "url": "https://stream2.parlamentodeandalucia.es/realizacion4/realizacion4/playlist.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "101TV Granada",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/101tvGranada/picture?width=200&height=200",
+                            "epg_id": "101Granada.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://liveingesta318.cdnmedia.tv/101weblive/smil:granada.smil/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "101TV Alahurín",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/costadelsol101tv/picture?width=200&height=200",
+                            "epg_id": "Alahurin.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://liveingesta318.cdnmedia.tv/101weblive/smil:ALHAURIN.smil/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Huelva Television",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/HuelvaTelevision/picture?width=200&height=200",
+                            "epg_id": "HuelvaTelevision.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://alacarta.huelvatv.com/directo/"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Sevilla",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Sevilla.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://especial7tv.gestec-video.com/hls/7TVSEVILLA.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Almería",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Almeria.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVALMERIA.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Cádiz",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Cadiz.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVCADIZ.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Cordoba",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Cordoba.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://especial7tv.gestec-video.com/hls/regional.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Granada",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Granada.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVGRANADA.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Jaén",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Jaen.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVJAEN.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Málaga",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Malaga.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVMALAGA.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "7TV Aljarafe",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
+                            "epg_id": "7Aljarafe.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming004.gestec-video.com/hls/7TVALJARAFE.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Almería 24h TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/107654981928274/picture?width=200&height=200",
+                            "epg_id": "Almeria24h.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://broadcast1.radioponiente.org/almeria24h_aac/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cadena Elite TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/cadena.elitegranada/picture?width=200&height=200",
+                            "epg_id": "CadenaElite.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2596,6 +3124,42 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://cloudvideo.servers10.com:8081/8108/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Televisión Canaria",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/RadioTelevisionCanaria/picture?width=200&height=200",
+                            "epg_id": "Canarias.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://cdnapi.codev8.net/apicloud/v1.0/public/iframe/8d417032-64cb-4f1e-9042-c97e05501eed"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tenerife Plus+ TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/tenerifeplustv/picture?width=200&height=200",
+                            "epg_id": "Tenerife Plus+ TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://k20.usastreams.com:8081/tenerifeplus/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Radio Calima TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/calimafm/picture?width=200&height=200",
+                            "epg_id": "Radio Calima TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://nrvideo1.newradio.it:443/calimafm/calimafm/playlist.m3u8"
                                 }
                             ]
                         }
@@ -3666,6 +4230,127 @@
                                     "url": "https://www.youtube.com/channel/UCGXp77nMffJ9lk5If2dYj3w/live"
                                 }
                             ]
+                        },
+                        {
+                            "name": "3CatInfo",
+                            "web": "",
+                            "logo": "https://www.3cat.cat/_resources/logos/3catinfo_W.svg",
+                            "epg_id": "324.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directes-tv-int.3catdirectes.cat/live-content/canal324-hls/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "3CAT Vinagre(ta)",
+                            "web": "",
+                            "logo": "https://statics.3cat.cat/recursos/3cat/logos/web/pucfc4.svg",
+                            "epg_id": "Vinagreta.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://fast-tailor.3catdirectes.cat/v1/channel/vinagreta/hls.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "3CAT Doraemon",
+                            "web": "",
+                            "logo": "https://statics.3cat.cat/recursos/3cat/logos/web/pucfc3.svg",
+                            "epg_id": "Doraemon.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://fast-tailor.3catdirectes.cat/v1/channel/doraemon/hls.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "3CAT Verdi Classics",
+                            "web": "",
+                            "logo": "https://statics.3cat.cat/recursos/3cat/logos/web/tem1.svg",
+                            "epg_id": "VerdiClassics.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directes-tv-es.3catdirectes.cat/live-content/tem1-hls/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "3CAT Anime",
+                            "web": "",
+                            "logo": "https://statics.3cat.cat/recursos/3cat/logos/web/tem2.svg",
+                            "epg_id": "Anime.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directes-tv-es.3catdirectes.cat/live-content/tem2-hls/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "3CAT Cámeres del temps",
+                            "web": "",
+                            "logo": "https://statics.3cat.cat/recursos/3cat/logos/web/beauties.svg",
+                            "epg_id": "CameresdeTemps.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "La 2 Cat",
+                            "web": "",
+                            "logo": "https://css.rtve.es/css/rtve.directos/logos_cadenas/tv-la2_cat.svg",
+                            "epg_id": "La2_CAT.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream.rtve.es/rtvesec/cat/la2_cat_main_dvr.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TV Girona",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/tvgirona/picture?width=200&height=200",
+                            "epg_id": "TVGirona.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ventdelnord.tv:8080/girona/directe.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Taronja Anoia",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/canaltaronjaanoia/picture?width=200&height=200",
+                            "epg_id": "TaronjaAnoia.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/anoia/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Televisió de Badalona",
+                            "web": "",
+                            "logo": "https://d22hf6hy3vcb1o.cloudfront.net/Tenant_1/Asset/76678b4564d94001a89fa8ddfc78e9d8/Images/b0052fad27d14b399e4a40cf9e00ab9b",
+                            "epg_id": "Badalona.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://liveingesta318.cdnmedia.tv/badalonatvlive/smil:live.smil/playlist.m3u8"
+                                }
+                            ],
+                            "referer": "https://player.instantvideocloud.net/"
                         }
                     ]
                 },
@@ -3868,6 +4553,18 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Telemadrid INT",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/telemadrid/picture?width=200&height=200",
+                            "epg_id": "TelemadridINT.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://live.telemadrid.cross-media.es/6389768804112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzY4ODA0MTEyIn0.BFiWvnDeEhA-nK2xb_GTgSA9SW3E72vcdXuGHYkLx2U/playlist-hls.m3u8"
                                 }
                             ]
                         }
@@ -4364,6 +5061,30 @@
                                     "url": "https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "TV Alcoi",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/tvArtequatre/picture?width=200&height=200",
+                            "epg_id": "Alcoi.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Punt 3",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/Punt3Television/picture?width=200&height=200",
+                            "epg_id": "Punt3.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -4415,6 +5136,42 @@
                                 {
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCIp5TEcJidiaN3p_mguOrTQ/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Extremadura Infantil",
+                            "web": "",
+                            "logo": "https://d32w934t8lugw.cloudfront.net/content_cards/1e2da41e745a4f9bab711abc52539f43.jpg",
+                            "epg_id": "ExtremaduraInfantil.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn-canalextremadura.watchity.net/fast2/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Extremadura Semos asina",
+                            "web": "",
+                            "logo": "https://d32w934t8lugw.cloudfront.net/content_cards/58dd727e44a64a8ebb2998227dbabd66.jpg",
+                            "epg_id": "ExtremaduraSemosasina.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn-canalextremadura.watchity.net/fast3/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Extremadura Toros",
+                            "web": "",
+                            "logo": "https://d32w934t8lugw.cloudfront.net/content_cards/aa085f233f2f42eb9907a74fe25c49c3.jpg",
+                            "epg_id": "ExtremaduraToros.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn-canalextremadura.watchity.net/fast1/master.m3u8"
                                 }
                             ]
                         }
@@ -4602,6 +5359,18 @@
                                     "url": "https://www.youtube.com/channel/UC4xDk-vc3i4CB45U7_wmm5g/live"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Radio Galega",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/aradiogalega/picture?width=200&height=200",
+                            "epg_id": "RGAL.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -4665,6 +5434,30 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://hls1.eu.peppermindmedia.com/av:vod1/SAMibiza/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "IB3",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/IB3org/picture?width=200&height=200",
+                            "epg_id": "IB3.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Fibwi TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/FibwiTV/picture?width=200&height=200",
+                            "epg_id": "Fibwi.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8"
                                 }
                             ]
                         }
@@ -4926,6 +5719,90 @@
                                     "url": "https://5940924978228.streamlock.net/j_Directo2/j_Directo2/playlist.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "ETB1 ON",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/ed567d1d-d540-44a7-ae94-77e73f22e293.png",
+                            "epg_id": "etb-1on.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn1.etbon.eus/etb1on/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB2 ON",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/4094ae91-ca1e-474e-b2fc-df4f9ff164ee.png",
+                            "epg_id": "etb-2on.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdn1.etbon.eus/etb2on/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB Herri txiki",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/2599ad0b-d253-4541-9973-044e0ed8c5e4.jpg",
+                            "epg_id": "Herritxiki.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://fast-cdn-eitb.mediapro-dev.com/v1/channel/eitb-etbon-herri-txiki/dash.mpd"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB Vaya Semanita",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/866ed253-0a9d-4474-b51c-6d89efde9786.jpg",
+                            "epg_id": "VayaSemanita.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://fast-cdn-eitb.mediapro-dev.com/v1/channel/eitb-vaya-semanita/dash.mpd"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB Vascos por el mundo",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/b0cca1b6-65af-456a-b11e-ad54f1f12dad.jpg",
+                            "epg_id": "ETBVascos.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://fast-cdn-eitb.mediapro-dev.com/v1/channel/eitb-etbon-gastronomia/dash.mpd"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB Conquistador",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/2945a8ad-1650-4811-8996-528afd1eb9ed.jpg",
+                            "epg_id": "Conquistador.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://fast-cdn-eitb.mediapro-dev.com/v1/channel/eitb-etbon-conquistador/dash.mpd"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ETB El Tiempo",
+                            "web": "",
+                            "logo": "https://cdnstorage.primeran.eus/directus/eitb/ecb46cb4-4c59-494f-9651-6250dd7d7532.jpg",
+                            "epg_id": "ETBElTiempo.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://cdn1.etbon.eus/meteo/index.mpd"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -5132,6 +6009,102 @@
                                 {
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Arabí TV Yecla",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/arabitvyecla/picture?width=200&height=200",
+                            "epg_id": "arabitvyecla.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streamtv2.elitecomunicacion.cloud:3628/live/arabitv2025live.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Canal 1 Mar Menor",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/tuwebtv/picture?width=200&height=200",
+                            "epg_id": "MarMenor.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directo.tuwebtv.es/canal1.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TVE Europa",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/tveInternacional/picture?width=200&height=200",
+                            "epg_id": "TVEEuropa.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_dvr_1080.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "STAR RTVE",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/STARTVEInternacional/picture?width=200&height=200",
+                            "epg_id": "STARHD.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_dvr_1080.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TV3 CAT internacional",
+                            "web": "",
+                            "logo": "https://www.3cat.cat/_resources/logos/tv3_W.svg",
+                            "epg_id": "TV3CAT.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TVG Europa",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/CRTVG/picture?width=200&height=200",
+                            "epg_id": "TVGEuropa.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://crtvg-europa.flumotion.cloud/playlist_dvr.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "N+ UNIVISION",
+                            "web": "",
+                            "logo": "https://yt3.googleusercontent.com/1J3Ol7Jq1yf3byJi-W6goxRdaJRknQqOO9ev-SUYH9qdmtTWZrNFEi6WEQZn1K5GiEtH20Ldgw=s160-c-k-c0x00ffffff-no-rj",
+                            "epg_id": "NUNIVISION.TV",
+                            "options": [
+                                {
+                                    "format": "youtube",
+                                    "url": "https://www.youtube.com/@nmasunivision/live"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tito TV",
+                            "web": "",
+                            "logo": "https://tvomix.com/Logos/Titotv.png",
+                            "epg_id": "TITO.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/TITOTV/index.m3u8"
                                 }
                             ]
                         }
@@ -6723,6 +7696,18 @@
                                     "url": "https://live.iplanay.gob.mx/hls/nayarittv.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Canal 6",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/multimediostv/picture?width=200&height=200",
+                            "epg_id": "Canal6.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://mdstrm.com/live-stream-playlist/5f2d9d6ff17144074bd8a284.m3u8"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6987,6 +7972,42 @@
                                 }
                             ],
                             "epg_id": ""
+                        },
+                        {
+                            "name": "Net TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/CanalNetAr/picture?width=200&height=200",
+                            "epg_id": "Net.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Telefe Rosario",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/teleferosario/picture?width=200&height=200",
+                            "epg_id": "TelefeRosario.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://rosario.mitelefe.com/vidya/tokenize"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TVP Argentina",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/TVPublica/picture?width=200&height=200",
+                            "epg_id": "TVPArgentina.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://g1.proy-hor.transport.edge-access.net/b16/ngrp:c7_vivo01_dai_source-20001_all/playlist.m3u8"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -7004,6 +8025,24 @@
                                 }
                             ],
                             "epg_id": ""
+                        },
+                        {
+                            "name": "Villa Altagracia TV",
+                            "web": "",
+                            "logo": "https://teleonline.org/wp-content/uploads/2025/09/uQAeKKa.png",
+                            "options": [
+                                {
+                                    "id": "manual_1",
+                                    "format": "m3u8",
+                                    "url": "https://mp.panelchs.com/hls/8028/8028.m3u8"
+                                },
+                                {
+                                    "id": "manual_1",
+                                    "format": "m3u8",
+                                    "url": "https://cdn.streamrd.cloud/watch/villa-altagracia-tv.m3u8"
+                                }
+                            ],
+                            "extra_info": []
                         }
                     ]
                 }
@@ -7125,6 +8164,30 @@
                             "logo": "https://pbs.twimg.com/profile_images/1574548998999998464/IK17LZ5K_200x200.jpg",
                             "epg_id": "",
                             "options": []
+                        },
+                        {
+                            "name": "Canal IPE",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/canalipe/picture?width=200&height=200",
+                            "epg_id": "canalipe.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cdnhd.iblups.com/hls/3f2cb1658d114f2693eff18d83199e677.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Latina TV Perú",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/Latina.pe/picture?width=200&height=200",
+                            "epg_id": "LatinaTVPeru.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/latina/latina.smil/playlist.m3u8"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -7392,6 +8455,31 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://glb.bozztv.com/glb/ssh101/pattv/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Bolivisión",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/red.bolivision/picture?width=200&height=200",
+                            "epg_id": "Bolivision.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://d135ohnuotzzyo.cloudfront.net/index_1.m3u8"
+                                }
+                            ],
+                            "referer": "https://redbolivision.tv.bo/"
+                        },
+                        {
+                            "name": "Bolivia TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/BTVCanalOficial/picture?width=200&height=200",
+                            "epg_id": "Bolivia.TV",
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://geo.dailymotion.com/video/x9nzqpo.json?legacy=true&embedder=https%3A%2F%2Fwww.boliviatv.bo%2F&geo=1&player-id=x12yfi&publisher-id=x36ur4y&enableAds=0&locale=es&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1jfnim9sg88e74af55f&parallelCalls=1"
                                 }
                             ]
                         }
@@ -9489,6 +10577,126 @@
                                     "url": "https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8"
                                 }
                             ]
+                        },
+                        {
+                            "name": "SOL Música",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/solmusica/picture?width=200&height=200",
+                            "epg_id": "SolMusica.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Euro Indie Music Chart TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/euroindiemusic/picture?width=200&height=200",
+                            "epg_id": "euroindiemusic.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://57068da1deb21.streamlock.net/euroindiemusic/euroindiemusic/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TVOMIX",
+                            "web": "",
+                            "logo": "https://ugc.production.linktr.ee/7ef61237-c46d-456b-afe3-a42ef49a979e_Mejorado2.png",
+                            "epg_id": "TVOMIX.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/TVOMIX/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CUMBIAMIX",
+                            "web": "",
+                            "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6901dfd41a05195b77301d7b/b306e57e4_Logo-TV-C.png",
+                            "epg_id": "CUMBIAMIX.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/CUMBIAMIX/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Kpop Mix",
+                            "web": "",
+                            "logo": "https://tvomix.com/Logos/Kpopmix.png",
+                            "epg_id": "KpopMix.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/KPOPMIX/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Urban Mix",
+                            "web": "",
+                            "logo": "https://tvomix.com/Logos/Urbanmix.png",
+                            "epg_id": "UrbanMix.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/URBANMIX/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Verbena TV",
+                            "web": "",
+                            "logo": "https://verbenafm.com/wp-content/uploads/2022/07/cropped-logo-verbena-web-2-1.png",
+                            "epg_id": "Verbena.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Activa TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/activafm.radiomusical/picture?width=200&height=200",
+                            "epg_id": "Activa.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://streamtv1.serviciospararadios.es/hls/activatv/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Spektra TV",
+                            "web": "",
+                            "logo": "https://graph.facebook.com/spektramusictv/picture?width=200&height=200",
+                            "epg_id": "Spektra.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloudvideo.servers10.com:8081/8026/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Planeta X TV",
+                            "web": "",
+                            "logo": "https://planetanetworkradio.com/tv/img/PLANETA-TV-LOGO-COLOR-2.png",
+                            "epg_id": "PlanetaX.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://limited43.todostreaming.es/live/simbana-livestream33.m3u8"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -9692,6 +10900,54 @@
                                 {
                                     "format": "m3u8",
                                     "url": "https://3abn-live.akamaized.net/hls/live/2010543/3ABN/master.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Alternativa TV",
+                            "web": "",
+                            "logo": "https://alternativartv.eu/wp-content/uploads/2025/04/logo_Alternativa-TV.png",
+                            "epg_id": "Alternativa.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/alternativartv.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "María+Visión España",
+                            "web": "",
+                            "logo": "https://static.wixstatic.com/media/ae9e39_465f6d0c13264bae99af9bbb4232437a~mv2.jpg/v1/fill/w_243,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20mv%20sevilla.jpg",
+                            "epg_id": "MariaVision.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://1601580044.rsc.cdn77.org/live/_jcn_/amls:Italiatre/playlist.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tvo Jesús",
+                            "web": "",
+                            "logo": "https://tvomix.com/Logos/Tvojesus.png",
+                            "epg_id": "TVOJESUS.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://cloud.tvomix.com/TVOJESUS/index.m3u8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Kairos TV",
+                            "web": "",
+                            "logo": "https://www.tdtspain.com/logos/Kairos.png",
+                            "epg_id": "Kairos.TV",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://vs20.live.opencaster.com/kairostv_846e1a39/index.m3u8"
                                 }
                             ]
                         }
