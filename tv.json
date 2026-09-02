@@ -1071,7 +1071,7 @@
                             "options": [
                                 {
                                     "format": "stream",
-                                    "url": "https://geo.dailymotion.com/video/k5cyQ3rl70nCl7Fhb5W.json?legacy=true&embedder=https%3A%2F%2Fwww.goltelevision.com%2Fen-directo%2Fgol_live&geo=1&player-id=x1k3pa&publisher-id=x3thb6e&locale=es-ES&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1juonmvhr2cd4808c75&parallelCalls=1"
+                                    "url": "https://geo.dailymotion.com/video/k5cyQ3rl70nCl7Fhb5W.json?legacy=true&embedder=httpswww.goltelevision.comen-directogol_live&geo=1&player-id=x1k3pa&publisher-id=x3thb6e&locale=es-ES&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1juonmvhr2cd4808c75&parallelCalls=1"
                                 }
                             ]
                         },
@@ -1513,7 +1513,7 @@
                         {
                             "name": "Mitele Comedia",
                             "web": "https://www.mediasetinfinity.es/directo/mitele-comedia/",
-                            "logo": "https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/509622309_1129470622546606_5083111900110931128_n.jpg",
+                            "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vNmFhMmMyNDRhYTUzMmEyNS9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktQ29tZWRpYS5wbmc/single/200/200?r=",
                             "epg_id": "Mitele_Comedia.TV",
                             "options": []
                         },
@@ -8032,17 +8032,15 @@
                             "logo": "https://teleonline.org/wp-content/uploads/2025/09/uQAeKKa.png",
                             "options": [
                                 {
-                                    "id": "manual_1",
                                     "format": "m3u8",
                                     "url": "https://mp.panelchs.com/hls/8028/8028.m3u8"
                                 },
                                 {
-                                    "id": "manual_1",
                                     "format": "m3u8",
                                     "url": "https://cdn.streamrd.cloud/watch/villa-altagracia-tv.m3u8"
                                 }
                             ],
-                            "extra_info": []
+                            "epg_id": ""
                         }
                     ]
                 }
@@ -8479,7 +8477,7 @@
                             "options": [
                                 {
                                     "format": "stream",
-                                    "url": "https://geo.dailymotion.com/video/x9nzqpo.json?legacy=true&embedder=https%3A%2F%2Fwww.boliviatv.bo%2F&geo=1&player-id=x12yfi&publisher-id=x36ur4y&enableAds=0&locale=es&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1jfnim9sg88e74af55f&parallelCalls=1"
+                                    "url": "https://geo.dailymotion.com/video/x9nzqpo.json?legacy=true&embedder=httpswww.boliviatv.bo&geo=1&player-id=x12yfi&publisher-id=x36ur4y&enableAds=0&locale=es&dmV1st=14499787-df6b-4c81-5927-f9993959faf9&dmTs=905228&is_native_app=0&dmViewId=1jfnim9sg88e74af55f&parallelCalls=1"
                                 }
                             ]
                         }
