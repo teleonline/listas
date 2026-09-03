@@ -84,6 +84,8 @@ https://ztnr.rtve.es/ztnr/6922467.m3u8
 https://ztnr.rtve.es/ztnr/6924117.m3u8
 #EXTINF:-1 tvg-id="RTVE_Crimen.TV" tvg-name="RTVE Crimen" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&amp;height=200" group-title="🇪🇸 España",RTVE Crimen
 https://ztnr.rtve.es/ztnr/2472037.m3u8
+#EXTINF:-1 tvg-id="Infinity Top Series.TV" tvg-name="Infinity Top Series" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r=" group-title="🇪🇸 España",Infinity Top Series
+https://www.mediasetinfinity.es/directo/mitele-top-series/
 #EXTINF:-1 tvg-id="" tvg-name="Canal Parlamento" tvg-logo="https://graph.facebook.com/CongresodelosDiputados/picture?width=200&amp;height=200" group-title="🇪🇸 España",Canal Parlamento
 https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Congreso de los Diputados" tvg-logo="https://graph.facebook.com/CongresodelosDiputados/picture?width=200&amp;height=200" group-title="🇪🇸 España",Congreso de los Diputados
