@@ -2675,7 +2675,7 @@
                         },
                         {
                             "name": "Huelva Television",
-                            "web": "https://alacarta.huelvatv.com/directo/",
+                            "web": "https://alacarta.huelvatv.com",
                             "logo": "https://graph.facebook.com/HuelvaTelevision/picture?width=200&height=200",
                             "epg_id": "HuelvaTelevision.TV",
                             "options": [
