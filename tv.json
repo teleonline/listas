@@ -4509,8 +4509,8 @@
                             "epg_id": "NaTV.TV",
                             "options": [
                                 {
-                                    "format": "geturl",
-                                    "url": "https://www.natvplay.es/player/75D7757C-BD70-4FAB-850A-B9EBA29A4C8/NavarraTelevisinLive"
+                                    "format": "stream",
+                                    "url": "https://www.dailymotion.com/video/x8dhap9"
                                 }
                             ]
                         },
