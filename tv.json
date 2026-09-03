@@ -1468,7 +1468,12 @@
                             "web": "https://www.mediasetinfinity.es/directo/mitele-top-series/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r=",
                             "epg_id": "Infinity Top Series.TV",
-                            "options": []
+                            "options": [
+                                {
+                                    "format": "stream",
+                                    "url": "https://www.mediasetinfinity.es/directo/mitele-top-series/"
+                                }
+                            ]
                         },
                         {
                             "name": "Mitele Comedia",
@@ -1700,7 +1705,7 @@
                         },
                         {
                             "name": "Infinity Eventos",
-                            "web": "",
+                            "web": "https://www.mediasetinfinity.es/directo/eventos/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vNzc0YzViN2Y1ZWRiMDZkNy9vcmlnaW5hbC9FdmVudG9zLnBuZw/single/200/200?r=",
                             "epg_id": "EventosInfinity.TV",
                             "options": [
@@ -1712,7 +1717,7 @@
                         },
                         {
                             "name": "Infinity Eventos 2",
-                            "web": "",
+                            "web": "https://www.mediasetinfinity.es/directo/eventos-2/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTViOTc0NzEwMDhlY2VhZi9vcmlnaW5hbC9DaGFubmVsX2xvZ28tZXZlbnRvczIucG5n/single/200/200?r=",
                             "epg_id": "Eventos2Infinity.TV",
                             "options": [
@@ -1724,7 +1729,7 @@
                         },
                         {
                             "name": "Infinity Comedia",
-                            "web": "",
+                            "web": "https://www.mediasetinfinity.es/directo/mitele-comedia/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vNmFhMmMyNDRhYTUzMmEyNS9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktQ29tZWRpYS5wbmc/single/200/200?r=",
                             "epg_id": "Mitele_Comedia.TV",
                             "options": [
@@ -1736,7 +1741,7 @@
                         },
                         {
                             "name": "Infinity Viajes",
-                            "web": "",
+                            "web": "https://www.mediasetinfinity.es/directo/mitele-viajes/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTVjMWUyNWJhZjhkNjE4MC9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktVmlhamVzLnBuZw/single/200/200?r=",
                             "epg_id": "Mitele_Viajes.TV",
                             "options": [
@@ -1748,7 +1753,7 @@
                         },
                         {
                             "name": "Infinity En la Calle",
-                            "web": "",
+                            "web": "https://www.mediasetinfinity.es/directo/mitele-en-la-calle/",
                             "logo": "https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMTA2ZGM0N2JhNmQ1ODMyNy9vcmlnaW5hbC9DaGFubmVsLWxvZ29fSW5maW5pdHktRW4tbGEtY2FsbGUucG5n/single/200/200?r=",
                             "epg_id": "Mitele_Calle.TV",
                             "options": [
