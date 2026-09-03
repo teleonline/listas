@@ -6607,18 +6607,6 @@
                             ]
                         },
                         {
-                            "name": "N1 Croacia",
-                            "web": "https://n1info.hr/n1-tv-live-stream/",
-                            "logo": "https://graph.facebook.com/N1Hrvatska/picture?width=200&height=200",
-                            "epg_id": "",
-                            "options": [
-                                {
-                                    "format": "stream",
-                                    "url": "https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0&player=m3u8"
-                                }
-                            ]
-                        },
-                        {
                             "name": "VizionPlus Albania",
                             "web": "https://www.vizionplus.tv/livestream/",
                             "logo": "https://graph.facebook.com/vizionplustv/picture?width=200&height=200",
