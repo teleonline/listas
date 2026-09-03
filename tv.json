@@ -1913,18 +1913,6 @@
                             ]
                         },
                         {
-                            "name": "Huelva TV",
-                            "web": "https://alacarta.huelvatv.com/directo/",
-                            "logo": "https://huelvatv.com/wp-content/uploads/2024/11/70_Huelva_TV_Logotipo_AZUL.png",
-                            "epg_id": "HuelvaTV.TV",
-                            "options": [
-                                {
-                                    "format": "youtube",
-                                    "url": "https://www.youtube.com/channel/UCfeAbEOHhmzJOTpSn0cxYuA/live"
-                                }
-                            ]
-                        },
-                        {
                             "name": "Canal Sierra de Cádiz",
                             "web": "https://www.canalsierradecadiz.com",
                             "logo": "https://graph.facebook.com/canalsierradecadiz/picture?width=200&height=200",
