@@ -258,8 +258,6 @@ https://streaming004.gestec-video.com/hls/7TVALJARAFE.m3u8
 https://broadcast1.radioponiente.org/almeria24h_aac/index.m3u8
 #EXTINF:-1 tvg-id="CadenaElite.TV" tvg-name="Cadena Elite TV" tvg-logo="https://graph.facebook.com/cadena.elitegranada/picture?width=200&amp;height=200" group-title="🇪🇸 España",Cadena Elite TV
 https://cloudvideo.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Aragón Noticias" tvg-logo="https://graph.facebook.com/AragonNoticias/picture?width=200&amp;height=200" group-title="🇪🇸 España",Aragón Noticias
-https://cartv-streaming.aranova.es/hls/live/anoticias_canal3.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Calamocha TV" tvg-logo="https://graph.facebook.com/CalamochaTV/picture?width=200&amp;height=200" group-title="🇪🇸 España",Calamocha TV
 http://calamochatv:SPrKAXJkZH0wb0ax@pub01.dav.tcscdn.net:1083/calamochatvtcs.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Canal 25 Barbastro TV" tvg-logo="https://graph.facebook.com/tvbarbastro/picture?width=200&amp;height=200" group-title="🇪🇸 España",Canal 25 Barbastro TV
