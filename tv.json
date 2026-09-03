@@ -2823,18 +2823,6 @@
                     "name": "",
                     "channels": [
                         {
-                            "name": "Aragón TV",
-                            "web": "https://www.aragontelevision.es/directo",
-                            "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Arag%C3%B3n%20TV.png",
-                            "epg_id": "AragonTV.TV",
-                            "options": [
-                                {
-                                    "format": "m3u8",
-                                    "url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8"
-                                }
-                            ]
-                        },
-                        {
                             "name": "Aragón Noticias",
                             "web": "https://www.cartv.es/aragonnoticias/directo",
                             "logo": "https://graph.facebook.com/AragonNoticias/picture?width=200&height=200",
