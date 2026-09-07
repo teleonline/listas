@@ -15,7 +15,7 @@
                     "channels": [
                         {
                             "name": "La 1",
-                            "web": "https://www.rtve.es/play/videos/directo/la-1/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201.png",
                             "epg_id": "La 1.TV",
                             "options": [
@@ -36,11 +36,12 @@
                                 "provider": "rtve",
                                 "channelId": "tv1",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "La 2",
-                            "web": "https://www.rtve.es/play/videos/directo/la-2/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202.png",
                             "epg_id": "La 2.TV",
                             "options": [
@@ -61,11 +62,12 @@
                                 "provider": "rtve",
                                 "channelId": "la2",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Antena 3",
-                            "web": "https://www.atresplayer.com/directos/antena3/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Antena%203.png",
                             "epg_id": "Antena 3.TV",
                             "options": [],
@@ -73,11 +75,12 @@
                                 "provider": "atresmedia",
                                 "channelId": "antena3",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Cuatro",
-                            "web": "https://www.mediasetinfinity.es/directo/cuatro/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Cuatro.png",
                             "epg_id": "Cuatro.TV",
                             "options": [],
@@ -85,11 +88,12 @@
                                 "provider": "mediaset",
                                 "channelId": "cuatro",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Telecinco",
-                            "web": "https://www.mediasetinfinity.es/directo/telecinco/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telecinco.png",
                             "epg_id": "Telecinco.TV",
                             "catchup": {
@@ -97,11 +101,12 @@
                                 "channelId": "telecinco",
                                 "days": 7
                             },
-                            "options": []
+                            "options": [],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "La Sexta",
-                            "web": "https://www.atresplayer.com/directos/lasexta/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%20Sexta.png",
                             "epg_id": "La Sexta.TV",
                             "options": [],
@@ -109,11 +114,12 @@
                                 "provider": "atresmedia",
                                 "channelId": "lasexta",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Neox",
-                            "web": "https://www.atresplayer.com/directos/neox/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Neox.png",
                             "epg_id": "Neox.TV",
                             "options": [],
@@ -121,11 +127,12 @@
                                 "provider": "atresmedia",
                                 "channelId": "neox",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Nova",
-                            "web": "https://www.atresplayer.com/directos/nova/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Nova.png",
                             "epg_id": "Nova.TV",
                             "options": [],
@@ -133,11 +140,12 @@
                                 "provider": "atresmedia",
                                 "channelId": "nova",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Mega",
-                            "web": "https://www.atresplayer.com/directos/mega/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Mega.png",
                             "epg_id": "Mega.TV",
                             "options": [],
@@ -145,11 +153,12 @@
                                 "provider": "atresmedia",
                                 "channelId": "mega",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Atreseries",
-                            "web": "https://www.atresplayer.com/directos/atreseries/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Atreseries.png",
                             "epg_id": "Atreseries.TV",
                             "options": [],
@@ -157,11 +166,12 @@
                                 "provider": "atreseries",
                                 "channelId": "antena3",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "FDF",
-                            "web": "https://www.mediasetinfinity.es/directo/fdf/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Factor%C3%ADa%20de%20Ficci%C3%B3n.png",
                             "epg_id": "Factoría de Ficción.TV",
                             "options": [],
@@ -169,11 +179,12 @@
                                 "provider": "mediaset",
                                 "channelId": "fdf",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Energy",
-                            "web": "https://www.mediasetinfinity.es/directo/energy/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Energy.png",
                             "epg_id": "Energy.TV",
                             "options": [],
@@ -181,11 +192,12 @@
                                 "provider": "mediaset",
                                 "channelId": "energy",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Divinity",
-                            "web": "https://www.mediasetinfinity.es/directo/divinity/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Divinity.png",
                             "epg_id": "Divinity.TV",
                             "options": [],
@@ -193,11 +205,12 @@
                                 "provider": "mediaset",
                                 "channelId": "divinity",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Be Mad",
-                            "web": "https://www.mediasetinfinity.es/directo/bemad/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Be%20Mad.png",
                             "epg_id": "Be Mad.TV",
                             "options": [],
@@ -205,11 +218,12 @@
                                 "provider": "mediaset",
                                 "channelId": "bemad",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "DMAX",
-                            "web": "https://dmax.marca.com/en-directo",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DMAX.png",
                             "epg_id": "DMax.TV",
                             "options": [
@@ -217,11 +231,12 @@
                                     "format": "stream",
                                     "url": "1"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "TRECE",
-                            "web": "https://www.cope.es/directos/trece",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png",
                             "epg_id": "TRECE.TV",
                             "options": [
@@ -233,11 +248,12 @@
                                     "format": "m3u8",
                                     "url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "El Toro TV",
-                            "web": "https://eltorotv.com/tv-en-directo",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/El%20Toro%20TV.png",
                             "epg_id": "El Toro TV.TV",
                             "options": [
@@ -249,18 +265,20 @@
                                     "format": "m3u8",
                                     "url": "https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "mtmad 24h",
-                            "web": "https://www.mediasetinfinity.es/directo/mtmad-24h/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/mtmad.es/picture?width=200&height=200",
                             "epg_id": "",
-                            "options": []
+                            "options": [],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "RNE para todos",
-                            "web": "https://www.rtve.es/play/videos/directo/canales-lineales/rne-para-todos/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
@@ -272,11 +290,12 @@
                                     "format": "m3u8",
                                     "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Ten",
-                            "web": "https://tentv.es",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Ten.png",
                             "epg_id": "TEN.TV",
                             "options": [
@@ -284,11 +303,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCX_GBaJP8CtYdI8-lH2VrJA/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "DKISS",
-                            "web": "https://www.dkiss.es",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DKISS.png",
                             "epg_id": "DKISS.TV",
                             "options": [
@@ -296,11 +316,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCYyaquuf8GnQupjx2FW_n3Q/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Paramount Network",
-                            "web": "https://www.paramountnetwork.es",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/ParamountNetworkES/picture?width=200&height=200",
                             "epg_id": "Paramount.TV",
                             "options": [
@@ -308,11 +329,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCgChUBhjz676-JXJNF_yjig/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "BOM Cine",
-                            "web": "https://www.bomcine.com",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/BOM%20Cine.png",
                             "epg_id": "BOM Cine.TV",
                             "options": [
@@ -320,11 +342,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCC-19yD8MSctmbyyLacWRQA/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Castilla-La Mancha Media",
-                            "web": "https://www.cmmedia.es/play/en-directo/tv",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/CMMediaes/picture?width=200&height=200",
                             "options": [
                                 {
@@ -332,11 +355,12 @@
                                     "url": "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8"
                                 }
                             ],
-                            "epg_id": "CMM.TV"
+                            "epg_id": "CMM.TV",
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Star TVE Europa",
-                            "web": "https://www.rtve.es",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg",
                             "options": [
                                 {
@@ -344,11 +368,12 @@
                                     "url": "https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8"
                                 }
                             ],
-                            "epg_id": ""
+                            "epg_id": "",
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Star TVE",
-                            "web": "https://www.rtve.es",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Star%20TVE.png",
                             "options": [
                                 {
@@ -356,7 +381,8 @@
                                     "url": "https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8"
                                 }
                             ],
-                            "epg_id": ""
+                            "epg_id": "",
+                            "country": "🇪🇸 España"
                         }
                     ]
                 },
@@ -365,7 +391,7 @@
                     "channels": [
                         {
                             "name": "24h",
-                            "web": "https://www.rtve.es/play/videos/directo/24h/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png",
                             "epg_id": "24Horas.TV",
                             "options": [
@@ -381,11 +407,12 @@
                                     "format": "m3u8",
                                     "url": "https://dpcj1q84r586o.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zkqd2yaveiqbt/24HES.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Euronews",
-                            "web": "https://es.euronews.com/live",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/EuroNews.png",
                             "epg_id": "Euronews.TV",
                             "options": [
@@ -393,11 +420,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCyoGb3SMlTlB8CLGVH4c8Rw/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "El País",
-                            "web": "https://elpais.com",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/elpais/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
@@ -409,11 +437,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCnsvJeZO4RigQ898WdDNoBw/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "La Vanguardia",
-                            "web": "https://www.lavanguardia.com",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/LaVanguardia/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
@@ -421,11 +450,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UClLLRs_mFTsNT5U-DqTYAGg/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Agencia EFE",
-                            "web": "https://www.efe.com",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/AgenciaEFEnoticias/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
@@ -433,11 +463,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCvJS-YNyaWyOucx8bGrHVvw/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Libertad Digital TV",
-                            "web": "https://tv.libertaddigital.com/directo.html",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_mJBwGvGJx9rJx7Fyo19zzImyR7p9O2WXRS1uPaSMoP6HE=s900-c-k-c0x00ffffff-no-rj",
                             "epg_id": "Libertad.TV",
                             "options": [
@@ -445,11 +476,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCUS73_bjTYwBFAfXbvIjM8Q/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Negocios TV",
-                            "web": "https://www.negocios.com/directo",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Negocios%20TV.png",
                             "epg_id": "Negocios.TV",
                             "options": [
@@ -461,11 +493,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/channel/UCwd8Byi93KbnsYmCcKLExvQ/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "El Confidencial",
-                            "web": "https://www.elconfidencial.com/television/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/elconfidencial/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
@@ -473,11 +506,12 @@
                                     "format": "m3u8",
                                     "url": "https://dgrfwaj8stp69.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hmbd9k13g6zsa/live/fast-channel-elconfidencial/fast-channel-elconfidencial.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Sky News",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/dGnkztdrLtXRlzkdqReeL-NES2761xxmNVcJhGKqFpR0vQBoP9XaxnXF95FDpwrjyFr2iJvV8Es=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "SkyNews.TV",
                             "options": [
@@ -485,11 +519,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/live/YDvsBbKfLPA"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "GB News",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/8hySIA7Ed6amMiAHJVNsG9oph0zoSlCAffYTmINH3gXJ8vvcToB_xh7uIlKSHA9fBEae3e_yl6I=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "GBNews.TV",
                             "options": [
@@ -497,11 +532,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@GBNewsOnline/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "CGTN Europe",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_m72n4fRBXMnz-Q8YYhrzAUhNf_O1bAK1NbikOPVNT_RY4Z=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "CGTNEurope.TV",
                             "options": [
@@ -509,11 +545,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@CGTNEurope/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "ABC News",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/GJ8V0NX6NddGh9bf4zED4tsjPjjBK2hdp5FWHMy09pV7sdSkkE3yEhCRSch4waEb9ZavyUrWfw=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "ABCNews.TV",
                             "options": [
@@ -521,11 +558,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/live/iipR5yUp36o"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "ABC News Australia",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/sc9xa2bYk6pIuKX3qgMHSrxEkuPmg57JMl_lRaJqCZxuSIeQt1B6BV23c-16Q3b7Aep0on1b=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "America.TV",
                             "options": [
@@ -533,11 +571,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@abcnewsaustralia/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "América TV",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/vIYh4fJ4FiOeD0U8sGUEUZQf3DaK-PME00Ckh7cFf4CRmC3EHopvUsjbgYKhNVkFXURSzltWYQ=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "America.TV",
                             "options": [
@@ -545,11 +584,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/live/zcWXboTnous"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Telefe Noticias",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/S4T593yU0BuL0AKg55PlJM8oJyq2TgDah1K9d7_pi-JQ2VgP_-_GABXUf1cTvn0Kk-sEIBQARSI=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "Telefe.TV",
                             "options": [
@@ -557,11 +597,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@Telefenoticias/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Noticias Caracol",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/dHWWoN9qQQz6IXAAU7VdROXXhql4QA_1Nc1W4pYzHcbnrSy4YOtrXwyrqbIEdyWv_gnddgWY=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "Caracol.TV",
                             "options": [
@@ -569,11 +610,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@noticiascaracol/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Todo Noticias",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/OL0n5KS1Yw3200B8OhLyq6Qa_g-aNGhJcuhNQJ2Ym3Ykan1Bptx1_yJrClMlMedhLR_W4cvoOw=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "Todo.TV",
                             "options": [
@@ -581,11 +623,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/live/cb12KmMMDJA"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Canal 26",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/iwy544rQZtfKaTCTqIFUSov8vJk3usPK8bqGzR-JdQwSBEBJiGIacr3v7L3t8w9Xq7Ny6E5z=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "Canal26.TV",
                             "options": [
@@ -593,11 +636,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@canal26/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "FRANCE 24 Español",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_kzqAgL2TukPL1ijpuPdoOgU75Av9cdQVf0mahAZSySyA=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "FRANCEEspañol.TV",
                             "options": [
@@ -605,11 +649,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@France24_es/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "FRANCE 24",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_k9aU_SRhYAWJjQ6AO7uzQDZE5mb7gmv4synLrC7hEWGjE=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "FRANCE24.TV",
                             "options": [
@@ -617,11 +662,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@FRANCE24/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "DW Español",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/TOHGshxAMW2Meq-N9EWB3T71en-ziaWoiFYWcjrhxQpOW4Wog3HwrAjDZIeCvj1q9VLPt_YsCA=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "DWEspañol.TV",
                             "options": [
@@ -629,11 +675,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@dwespanol/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Al Jazeera",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/64ft09GPSveU-gHP_Tj1AQqERJmkA3SiS0ae8tlBuOSLA-QxOa7dtjFEpM3T6yr6pTRYxzrT=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "AlJazeera.TV",
                             "options": [
@@ -641,11 +688,12 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/live/gCNeDWCI0vo"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Record News",
-                            "web": "",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://yt3.googleusercontent.com/HCLS0suaZ1ZqXvIzGsxElF0RKkonHsd7LqMsgJOoJhtHcrj2sS61NYSciv7okzmIQ5Fj9gRyZA=s160-c-k-c0x00ffffff-no-rj",
                             "epg_id": "RecordNews.TV",
                             "options": [
@@ -653,7 +701,8 @@
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@recordnews/live"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         }
                     ]
                 },
@@ -662,7 +711,7 @@
                     "channels": [
                         {
                             "name": "Teledeporte",
-                            "web": "https://www.rtve.es/play/videos/directo/tdp/",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Teledeporte.png",
                             "epg_id": "Teledeporte.TV",
                             "options": [
@@ -683,7 +732,8 @@
                                 "provider": "rtve",
                                 "channelId": "dep",
                                 "days": 7
-                            }
+                            },
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "GOL Play",
@@ -3164,7 +3214,7 @@
                     "channels": [
                         {
                             "name": "Castilla-La Mancha Media",
-                            "web": "https://www.cmmedia.es/play/en-directo/tv",
+                            "web": "http://🇪🇸%20España",
                             "logo": "https://graph.facebook.com/CMMediaes/picture?width=200&height=200",
                             "epg_id": "CMM.TV",
                             "options": [
@@ -3172,7 +3222,8 @@
                                     "format": "m3u8",
                                     "url": "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Castilla-La Mancha Radio",
