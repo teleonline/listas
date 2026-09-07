@@ -360,21 +360,8 @@
                             "country": "🇪🇸 España"
                         },
                         {
-                            "name": "Star TVE Europa",
-                            "web": "https://www.rtve.es/play/videos/directo/play-plus-europa/star-hd/",
-                            "logo": "https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg",
-                            "options": [
-                                {
-                                    "format": "m3u8",
-                                    "url": "https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8"
-                                }
-                            ],
-                            "epg_id": "",
-                            "country": "🇪🇸 España"
-                        },
-                        {
                             "name": "Star TVE",
-                            "web": "",
+                            "web": "https://www.rtve.es/play/videos/directo/play-plus-europa/star-hd/",
                             "logo": "https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg",
                             "options": [
                                 {
