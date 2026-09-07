@@ -14,7 +14,7 @@ https://ztnr.rtve.es/ztnr/6688753.m3u8
 https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Star TVE Europa" tvg-logo="https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg" group-title="🇪🇸 España",Star TVE Europa
 https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Star TVE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Star%20TVE.png" group-title="🇪🇸 España",Star TVE
+#EXTINF:-1 tvg-id="" tvg-name="Star TVE" tvg-logo="https://teleonline.org/wp-content/uploads/2026/04/322583677_844046950227383_1975546257245917530_n.jpg" group-title="🇪🇸 España",Star TVE
 https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8
 #EXTINF:-1 tvg-id="24Horas.TV" tvg-name="24h" tvg-logo="https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png" group-title="🇪🇸 España",24h
 https://ztnr.rtve.es/ztnr/1694255.m3u8
