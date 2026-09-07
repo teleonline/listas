@@ -6,6 +6,7 @@
     "epg": {
         "json": "https://raw.githubusercontent.com/teleonline/lista/main/epg.json"
     },
+    "tmdbDefaultKey": "084b03040570e337c03d52bafce871b7",
     "countries": [
         {
             "name": "🇪🇸 España",
