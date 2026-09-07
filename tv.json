@@ -68,7 +68,7 @@
                         },
                         {
                             "name": "Antena 3",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/antena3/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Antena%203.png",
                             "epg_id": "Antena 3.TV",
                             "options": [],
@@ -107,7 +107,7 @@
                         },
                         {
                             "name": "La Sexta",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/lasexta/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%20Sexta.png",
                             "epg_id": "La Sexta.TV",
                             "options": [],
@@ -120,7 +120,7 @@
                         },
                         {
                             "name": "Neox",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/neox/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Neox.png",
                             "epg_id": "Neox.TV",
                             "options": [],
@@ -133,7 +133,7 @@
                         },
                         {
                             "name": "Nova",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/nova/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Nova.png",
                             "epg_id": "Nova.TV",
                             "options": [],
@@ -146,7 +146,7 @@
                         },
                         {
                             "name": "Mega",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/mega/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Mega.png",
                             "epg_id": "Mega.TV",
                             "options": [],
@@ -159,7 +159,7 @@
                         },
                         {
                             "name": "Atreseries",
-                            "web": "",
+                            "web": "https://www.atresplayer.com/directos/atreseries/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Atreseries.png",
                             "epg_id": "Atreseries.TV",
                             "options": [],
