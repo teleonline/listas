@@ -5361,7 +5361,7 @@
                         },
                         {
                             "name": "Fibwi Diario",
-                            "web": "https://fibwi.live/es/tv",
+                            "web": "https://fibwi.live/es/tv%20",
                             "logo": "https://graph.facebook.com/Fibwidiario/picture?width=200&height=200",
                             "epg_id": "",
                             "options": [
