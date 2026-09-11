@@ -5367,9 +5367,10 @@
                             "options": [
                                 {
                                     "format": "m3u8",
-                                    "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8"
+                                    "url": "https://webstream.fibwi.com/manifest/fibwitv/index.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "SAM Ibiza",
@@ -5405,7 +5406,8 @@
                                     "format": "m3u8",
                                     "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         }
                     ]
                 },
