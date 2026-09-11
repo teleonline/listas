@@ -823,9 +823,10 @@
                                 },
                                 {
                                     "format": "stream",
-                                    "url": "https://player.twitch.tv/?channel=realmadrid&parent=play.teleonline.org"
+                                    "url": "https://player.twitch.tv/?channel=realmadrid&parent=teleonline.org"
                                 }
-                            ]
+                            ],
+                            "country": "🇪🇸 España"
                         },
                         {
                             "name": "Barça TV",
