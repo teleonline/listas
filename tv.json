@@ -5395,19 +5395,6 @@
                                     "url": "https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live"
                                 }
                             ]
-                        },
-                        {
-                            "name": "Fibwi TV",
-                            "web": "",
-                            "logo": "https://graph.facebook.com/FibwiTV/picture?width=200&height=200",
-                            "epg_id": "Fibwi.TV",
-                            "options": [
-                                {
-                                    "format": "m3u8",
-                                    "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8"
-                                }
-                            ],
-                            "country": "🇪🇸 España"
                         }
                     ]
                 },
