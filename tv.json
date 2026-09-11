@@ -10982,13 +10982,14 @@
                             "options": [
                                 {
                                     "format": "stream",
-                                    "url": "https://player.twitch.tv/?channel=Illojuan&parent=play.teleonline.org"
+                                    "url": "https://player.twitch.tv/?channel=Illojuan&parent=teleonline.org"
                                 },
                                 {
                                     "format": "youtube",
                                     "url": "https://www.youtube.com/@IlloJuan_"
                                 }
-                            ]
+                            ],
+                            "country": "🌐 Temáticos"
                         },
                         {
                             "name": "Juansguarnizo",
