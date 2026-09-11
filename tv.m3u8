@@ -565,7 +565,7 @@ https://tef.servertv.online:3268/live/teflive.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Canal 4 Televisió" tvg-logo="https://graph.facebook.com/GRUP4COM/picture?width=200&amp;height=200" group-title="🇪🇸 España",Canal 4 Televisió
 https://limited35.todostreaming.es/live/mitjans-livestream1.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Fibwi Diario" tvg-logo="https://graph.facebook.com/Fibwidiario/picture?width=200&amp;height=200" group-title="🇪🇸 España",Fibwi Diario
-https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8
+https://webstream.fibwi.com/manifest/fibwitv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SAM Ibiza" tvg-logo="https://graph.facebook.com/SAMibizaradio/picture?width=200&amp;height=200" group-title="🇪🇸 España",SAM Ibiza
 https://hls1.eu.peppermindmedia.com/av:vod1/SAMibiza/index.m3u8
 #EXTINF:-1 tvg-id="Fibwi.TV" tvg-name="Fibwi TV" tvg-logo="https://graph.facebook.com/FibwiTV/picture?width=200&amp;height=200" group-title="🇪🇸 España",Fibwi TV
