@@ -1112,7 +1112,7 @@ https://cloud.tvomix.com/URBANMIX/index.m3u8
 https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8
 #EXTINF:-1 tvg-id="Activa.TV" tvg-name="Activa TV" tvg-logo="https://graph.facebook.com/activafm.radiomusical/picture?width=200&amp;height=200" group-title="🌐 Temáticos Musicales",Activa TV
 https://streamtv1.serviciospararadios.es/hls/activatv/index.m3u8
-#EXTINF:-1 tvg-id="Spektra.TV" tvg-name="Spektra TV" tvg-logo="https://graph.facebook.com/spektramusictv/picture?width=200&amp;height=200" group-title="🌐 Temáticos Musicales",Spektra TV
+#EXTINF:-1 tvg-id="Spektra.TV" tvg-name="Spektra Music Television" tvg-logo="https://pbs.twimg.com/profile_images/2104199974850326528/1DdbRRZm_400x400.png" group-title="🌐 Temáticos Musicales",Spektra Music Television
 https://cloudvideo.servers10.com:8081/8026/index.m3u8
 #EXTINF:-1 tvg-id="PlanetaX.TV" tvg-name="Planeta X TV" tvg-logo="https://planetanetworkradio.com/tv/img/PLANETA-TV-LOGO-COLOR-2.png" group-title="🌐 Temáticos Musicales",Planeta X TV
 https://limited43.todostreaming.es/live/simbana-livestream33.m3u8
