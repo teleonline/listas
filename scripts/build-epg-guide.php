@@ -148,7 +148,7 @@ function buildDisplayNames(array $originalNames): array {
         $base = preg_replace('/\.TV$/i', '', $base);
         $base = trim($base);
 
-        if ($base === '' || $base === $n) continue;
+        if ($base === '') continue;
 
         // Add variants based on base
         $names[] = $base;
