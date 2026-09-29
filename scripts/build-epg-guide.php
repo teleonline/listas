@@ -225,12 +225,15 @@ logMsg('Total programmes across sources: ' . count($allProgrammes));
 // 5. Build search indexes for fast lookup
 $sourceIdIndex = [];         // exact id => source_id
 $sourceIdCiIndex = [];       // lowercase id => source_id
+$sourceNormIdIndex = [];
 $sourceNameIndex = [];       // lowercase display-name => source_id
 $sourceNormNameIndex = [];   // normalized display-name => source_id
 
 foreach ($allChannels as $srcId => $ch) {
     $sourceIdIndex[$srcId] = $srcId;
     $sourceIdCiIndex[strtolower($srcId)] = $srcId;
+    // NEW: index by normalized source ID
+    $sourceNormIdIndex[normalizeName($srcId)] = $srcId;
     foreach ($ch['display_names'] as $dn) {
         $sourceNameIndex[strtolower(trim($dn))] = $srcId;
         $sourceNormNameIndex[normalizeName($dn)] = $srcId;
@@ -276,12 +279,22 @@ foreach ($epgIdToName as $epgId => $canonicalName) {
         $methodCount['name-norm']++;
         continue;
     }
-    // f) Variants
+    // f) Variants — check both normalized display-name and normalized source ID
     $found = false;
     foreach (nameVariants($canonicalName) as $variant) {
         $vn = normalizeName($variant);
-        if ($vn !== '' && isset($sourceNormNameIndex[$vn])) {
+        if ($vn === '') continue;
+    
+        // Try normalized display-name first
+        if (isset($sourceNormNameIndex[$vn])) {
             $matched[$epgId] = ['source_id' => $sourceNormNameIndex[$vn], 'method' => 'variant'];
+            $methodCount['variant']++;
+            $found = true;
+            break;
+        }
+        // Try normalized source ID (this catches "La1.es" <-> "La 1")
+        if (isset($sourceNormIdIndex[$vn])) {
+            $matched[$epgId] = ['source_id' => $sourceNormIdIndex[$vn], 'method' => 'variant'];
             $methodCount['variant']++;
             $found = true;
             break;
