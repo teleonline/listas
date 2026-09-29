@@ -2,13 +2,14 @@
 /**
  * build-epg-guide.php
  *
- * Downloads multiple XMLTV EPG sources and generates:
+ * Downloads multiple XMLTV EPG sources and generates a complete merged guide:
  *   - epg.xml      (uncompressed, for GitHub Release)
  *   - epg.json     (uncompressed, for GitHub Release)
  *   - epg.xml.gz   (compressed, committed to repo)
  *   - epg.json.gz  (compressed, committed to repo)
  *
  * Includes ALL channels from all sources (no filtering by tv.json).
+ * Adds automatic display-name variants (HD, SD, .TV, base name).
  * Channels can be excluded via epg/exclusions.txt.
  *
  * Usage: php scripts/build-epg-guide.php
@@ -44,18 +45,18 @@ function downloadContent(string $url): ?string {
     ]);
     $data = @file_get_contents($url, false, $ctx);
     if ($data === false) {
-        logMsg("  ⚠️  Failed to download.");
+        logMsg("  Failed to download.");
         return null;
     }
     if (substr($url, -3) === '.gz' || substr($data, 0, 2) === "\x1f\x8b") {
         $uncompressed = @gzdecode($data);
         if ($uncompressed === false) {
-            logMsg("  ⚠️  Failed to decompress gzip.");
+            logMsg("  Failed to decompress gzip.");
             return null;
         }
         $data = $uncompressed;
     }
-    logMsg('  ✓ Downloaded ' . number_format(strlen($data)) . ' bytes.');
+    logMsg('  Downloaded ' . number_format(strlen($data)) . ' bytes.');
     return $data;
 }
 
@@ -124,10 +125,60 @@ function writeGzip(string $path, string $content): int {
     return filesize($path) ?: 0;
 }
 
+/**
+ * Generates display-name variants for a channel.
+ * Returns the list of display-names: original + variants, deduplicated.
+ */
+function buildDisplayNames(array $originalNames): array {
+    $names = [];
+
+    // 1. Original names (trimmed, non-empty)
+    foreach ($originalNames as $n) {
+        $n = trim($n);
+        if ($n !== '') $names[] = $n;
+    }
+
+    // 2. Automatic variants from each original name
+    foreach ($originalNames as $n) {
+        $n = trim($n);
+        if ($n === '') continue;
+
+        // Generate base (strip suffixes)
+        $base = preg_replace('/\s+(HD|SD|FHD|UHD|4K|720|1080)$/i', '', $n);
+        $base = preg_replace('/\.TV$/i', '', $base);
+        $base = trim($base);
+
+        if ($base === '' || $base === $n) continue;
+
+        // Add variants based on base
+        $names[] = $base;
+        $names[] = $base . '.TV';
+        $names[] = $base . ' HD';
+        $names[] = $base . ' SD';
+        $names[] = $base . ' FHD';
+    }
+
+    // 3. Deduplicate (case-insensitive), preserve order
+    $out = [];
+    $seen = [];
+    foreach ($names as $n) {
+        $n = trim($n);
+        if ($n === '') continue;
+        $key = strtolower($n);
+        if (isset($seen[$key])) continue;
+        $seen[$key] = true;
+        $out[] = $n;
+    }
+    return $out;
+}
+
+/**
+ * Parses XMLTV content using XMLReader (streaming, low memory).
+ */
 function parseXmltvStreaming(string $xmlContent, array &$channels, array &$programmes, int $minTime, int $maxTime): void {
     $reader = new XMLReader();
     if (!$reader->XML($xmlContent)) {
-        logMsg("  ⚠️  XMLReader failed to load XML.");
+        logMsg("  XMLReader failed to load XML.");
         return;
     }
 
@@ -205,13 +256,13 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
         }
     }
     $reader->close();
-    logMsg("  ✓ Parsed: $chCount new channels, $prCount programmes in window.");
+    logMsg("  Parsed: $chCount new channels, $prCount programmes in window.");
 }
 
 // ─────────────────────────────────────────────
 // Main
 // ─────────────────────────────────────────────
-logMsg('=== EPG Builder started (FULL mode, gz + raw output) ===');
+logMsg('=== EPG Builder started (universal mode with variants) ===');
 
 $settings   = readSettings($settingsPath);
 $daysPast   = (int)($settings['dias-pasados']  ?? 1);
@@ -282,16 +333,21 @@ $xml[] = '<?xml version="1.0" encoding="UTF-8"?>';
 $xml[] = '<!DOCTYPE tv SYSTEM "xmltv.dtd">';
 $xml[] = '<tv generator-info-name="build-epg-guide.php" generator-info-url="https://github.com/teleonline/listas">';
 
+$totalDisplayNames = 0;
 foreach ($allChannels as $id => $ch) {
+    $displayNames = buildDisplayNames($ch['names']);
+    $totalDisplayNames += count($displayNames);
+
     $xml[] = '  <channel id="' . htmlspecialchars($id, ENT_XML1) . '">';
-    foreach ($ch['names'] as $n) {
-        if ($n !== '') $xml[] = '    <display-name>' . htmlspecialchars($n, ENT_XML1) . '</display-name>';
+    foreach ($displayNames as $n) {
+        $xml[] = '    <display-name>' . htmlspecialchars($n, ENT_XML1) . '</display-name>';
     }
     if ($ch['icon'] !== '') {
         $xml[] = '    <icon src="' . htmlspecialchars($ch['icon'], ENT_XML1) . '"/>';
     }
     $xml[] = '  </channel>';
 }
+logMsg("Total display-names generated: $totalDisplayNames");
 
 foreach ($finalProgrammes as $pr) {
     $xml[] = '  <programme start="' . htmlspecialchars($pr['start'], ENT_XML1) . '"'
@@ -308,14 +364,12 @@ $xmlOutput = implode("\n", $xml);
 $xmlSize = strlen($xmlOutput);
 unset($xml);
 
-// Write uncompressed (for Release)
 file_put_contents($xmlPath, $xmlOutput);
-logMsg('✅ XML raw written: ' . $xmlPath . ' (' . number_format($xmlSize) . ' bytes)');
+logMsg('XML raw written: ' . $xmlPath . ' (' . number_format($xmlSize) . ' bytes)');
 
-// Write compressed (for repo)
 $xmlGzSize = writeGzip($xmlGzPath, $xmlOutput);
 unset($xmlOutput);
-logMsg('✅ XML gz written: ' . $xmlGzPath . ' (' . number_format($xmlGzSize) . ' bytes)');
+logMsg('XML gz written: ' . $xmlGzPath . ' (' . number_format($xmlGzSize) . ' bytes)');
 
 // ─────────────────────────────────────────────
 // JSON output
@@ -334,11 +388,13 @@ unset($finalProgrammes);
 
 $jsonChannels = [];
 foreach ($allChannels as $id => $ch) {
+    $displayNames = buildDisplayNames($ch['names']);
     $jsonChannels[] = [
-        'id'         => sanitizeUtf8($id),
-        'name'       => sanitizeUtf8($ch['names'][0] ?? $id),
-        'logo'       => sanitizeUtf8($ch['icon']),
-        'programmes' => $programmesByChannel[$id] ?? [],
+        'id'            => sanitizeUtf8($id),
+        'name'          => sanitizeUtf8($displayNames[0] ?? $id),
+        'display_names' => array_map('sanitizeUtf8', $displayNames),
+        'logo'          => sanitizeUtf8($ch['icon']),
+        'programmes'    => $programmesByChannel[$id] ?? [],
     ];
 }
 unset($programmesByChannel, $allChannels);
@@ -357,18 +413,16 @@ $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8
 $jsonOutput = json_encode($jsonPayload, $jsonFlags);
 
 if ($jsonOutput === false) {
-    logMsg('⚠️  JSON encoding failed: ' . json_last_error_msg());
+    logMsg('JSON encoding failed: ' . json_last_error_msg());
 } else {
     $jsonSize = strlen($jsonOutput);
 
-    // Write uncompressed (for Release)
     file_put_contents($jsonPath, $jsonOutput);
-    logMsg('✅ JSON raw written: ' . $jsonPath . ' (' . number_format($jsonSize) . ' bytes)');
+    logMsg('JSON raw written: ' . $jsonPath . ' (' . number_format($jsonSize) . ' bytes)');
 
-    // Write compressed (for repo)
     $jsonGzSize = writeGzip($jsonGzPath, $jsonOutput);
     unset($jsonOutput);
-    logMsg('✅ JSON gz written: ' . $jsonGzPath . ' (' . number_format($jsonGzSize) . ' bytes)');
+    logMsg('JSON gz written: ' . $jsonGzPath . ' (' . number_format($jsonGzSize) . ' bytes)');
 }
 
 logMsg('=== EPG Builder finished ===');
