@@ -1,5 +1,25 @@
+# ─── España ───
 https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml
-https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz
 https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz
+
+# ─── Latinoamérica ───
+https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz
+https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz
+
+# ─── Reino Unido  ───
 https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz
-https://epg.ovh/pl.xml
+
+# ─── Francia  ───
+https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz
+
+# ─── Alemania  ───
+https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz
+
+# ─── Italia  ───
+https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz
+
+# ─── Portugal  ───
+https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz
+
+# ─── Internacional general ───
+# https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz
