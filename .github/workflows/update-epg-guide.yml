@@ -28,4 +28,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update EPG guide [skip ci]"
-          file_pattern: "epg.xml, epg.json, epg/unmatched.txt"
+          file_pattern: "epg.xml epg.json epg/unmatched.txt"
