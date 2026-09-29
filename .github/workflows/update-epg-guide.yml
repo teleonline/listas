@@ -24,17 +24,8 @@ jobs:
       - name: Run EPG builder
         run: php scripts/build-epg-guide.php
 
-      - name: Show files before commit
-        run: |
-          echo "=== Root directory ==="
-          ls -la
-          echo "=== epg/ directory ==="
-          ls -la epg/ || true
-          echo "=== git status ==="
-          git status
-
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update EPG guide [skip ci]"
-          file_pattern: "epg.xml,epg.json,epg/unmatched.txt"
+          file_pattern: "epg.xml, epg.json, epg/unmatched.txt"
