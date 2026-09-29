@@ -1,0 +1,31 @@
+name: Update channels list
+
+on:
+  schedule:
+    # Runs every day at 03:15 UTC (adjust as needed)
+    - cron: '15 3 * * *'
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for the bot to commit and push
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Run build script
+        run: php scripts/build-channels-list.php
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update canales.txt [skip ci]"
+          file_pattern: varios/canales.txt
