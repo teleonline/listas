@@ -1,4 +1,4 @@
-[Read in English](README.md)
+[Read in English](README.en.md)
 
 # Teleonline - Listas Curadas de TV
 
