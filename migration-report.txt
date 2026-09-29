@@ -1,0 +1,305 @@
+=== TV.JSON MIGRATION REPORT ===
+Generated: 2026-09-29 14:27:01 UTC
+
+SUMMARY:
+  Migrated (epg_id changed): 5
+  Unchanged (already matched): 0
+  Ambiguous (multiple EPG candidates): 0
+  Not found in EPG: 286
+
+--- MIGRATED CHANNELS ---
+
+  24h                                       24Horas.TV                     -> 24h.fr
+  7TV Andalucía                            7Andalucia.TV                  -> 7TV.Andalucía.es
+  324                                       324.TV                         -> 324.es
+  33                                        C33.TV                         -> 33.es
+  3CatInfo                                  324.TV                         -> 3CatInfo.es
+
+--- NOT FOUND IN EPG (not changed) ---
+
+  La 1                                      La 1.TV
+  La 2                                      La 2.TV
+  Antena 3                                  Antena 3.TV
+  Cuatro                                    Cuatro.TV
+  Telecinco                                 Telecinco.TV
+  La Sexta                                  La Sexta.TV
+  Neox                                      Neox.TV
+  Nova                                      Nova.TV
+  Mega                                      Mega.TV
+  Atreseries                                Atreseries.TV
+  FDF                                       Factoría de Ficción.TV
+  Energy                                    Energy.TV
+  Divinity                                  Divinity.TV
+  Be Mad                                    Be Mad.TV
+  DMAX                                      DMax.TV
+  TRECE                                     TRECE.TV
+  El Toro TV                                El Toro TV.TV
+  Ten                                       TEN.TV
+  DKISS                                     DKISS.TV
+  Paramount Network                         Paramount.TV
+  BOM Cine                                  BOM Cine.TV
+  Castilla-La Mancha Media                  CMM.TV
+  Euronews                                  Euronews.TV
+  Libertad Digital TV                       Libertad.TV
+  Negocios TV                               Negocios.TV
+  Sky News                                  SkyNews.TV
+  GB News                                   GBNews.TV
+  CGTN Europe                               CGTNEurope.TV
+  ABC News                                  ABCNews.TV
+  ABC News Australia                        America.TV
+  América TV                               America.TV
+  Telefe Noticias                           Telefe.TV
+  Noticias Caracol                          Caracol.TV
+  Todo Noticias                             Todo.TV
+  Canal 26                                  Canal26.TV
+  FRANCE 24 Español                        FRANCEEspañol.TV
+  FRANCE 24                                 FRANCE24.TV
+  DW Español                               DWEspañol.TV
+  Al Jazeera                                AlJazeera.TV
+  Record News                               RecordNews.TV
+  Teledeporte                               Teledeporte.TV
+  GOL Play                                  GOL.TV
+  Esport 3                                  E3.TV
+  ETB Deportes                              ETBD.TV
+  Real Madrid TV                            RMTV.TV
+  Sevilla TV                                SevillaTV.TV
+  Betis TV                                  BetisTV.TV
+  Teledeporte 2                             TDP2.TV
+  Teledeporte 3                             TDP3.TV
+  Teledeporte 4                             TDP4.TV
+  TDP Play                                  TDPPlay.TV
+  ETB Deportes 2                            ETBD2.TV
+  GOL TV                                    GOL.TV
+  Real Betis TV                             Betis.TV
+  Boing                                     Boing.TV
+  Clan                                      Clan.TV
+  Kidz                                      Kidz.TV
+  flooxer                                   Flooxer.TV
+  Atresplayer Clásicos                     A3P_Clasicos.TV
+  Atresplayer Comedia                       A3P_Comedia.TV
+  Atresplayer Mentes Inquietas              A3P_MentesInqui.TV
+  Atresplayer Multicine                     A3P_Multicine.TV
+  El Hormiguero                             A3P_Hormiguero.TV
+  El club de la comedia                     A3P_ClubComedia.TV
+  Equipo de investigación                  A3P_EqInvestigacion.TV
+  Aquí no hay quién viva                  A3P_AquiNoHayQ.TV
+  Física o química                        A3P_FisicaOQuimica.TV
+  RTVE 4 Estrellas                          RTVE_Estrellas.TV
+  RTVE Cuéntame                            RTVE_Cuentame.TV
+  RTVE Somos Cine                           RTVE_SomosCine.TV
+  RTVE Viajes                               RTVE_Viajes.TV
+  RTVE La promesa                           RTVE_Promesa.TV
+  RTVE Época                               RTVE_Epoca.TV
+  RTVE Series                               RTVE_Series.TV
+  RTVE Conciertos Radio 3                   RTVE_Conciertos_R3.TV
+  RTVE Crimen                               RTVE_Crimen.TV
+  Infinity Top Series                       Infinity Top Series.TV
+  Mitele Comedia                            Mitele_Comedia.TV
+  Mitele Viajes                             Mitele_Viajes.TV
+  Mitele En la Calle                        Mitele_Calle.TV
+  Mitele Top Series                         Mitele_Series.TV
+  RTVE en Play                              RTVE_EnPlay.TV
+  RTVE Al Cielo con Ella                    RTVE_ElCielo.TV
+  RTVE Cocina                               RTVE_Cocina.TV
+  RTVE La Revuelta                          RTVE_LaRevuelta.TV
+  Infinity Eventos                          EventosInfinity.TV
+  Infinity Eventos 2                        Eventos2Infinity.TV
+  Infinity Comedia                          Mitele_Comedia.TV
+  Infinity Viajes                           Mitele_Viajes.TV
+  Infinity En la Calle                      Mitele_Calle.TV
+  Canal Sur Andalucía                      CanalSurA.TV
+  101TV Málaga                             101Malaga.TV
+  Onda Cádiz                               OndaCadiz.TV
+  Costa Noroeste TV                         CostaNO.TV
+  Teleonuba                                 Teleonuba.TV
+  Condavisión                              Condavision.TV
+  CanalCosta                                CanalCosta.TV
+  Interalmería TV                          InterAlmeria.TV
+  Onda Algeciras TV                         OndaAlgeciras.TV
+  PTV Linares                               PTV Linares.TV
+  Marbella TV                               MarbellaTV.TV
+  Torrevisión                              Torrevision.TV
+  Telemotril                                Telemotril.TV
+  Diez TV Úbeda                            DiezTV.TV
+  Diez TV Las Villas                        DiezTV.TV
+  101TV Antequera                           101Antequera.TV
+  9 la Loma TV                              9LaLoma.TV
+  Canal Málaga                             CanalMalaga.TV
+  101TV Axarquía                           101Axarquía.TV
+  Mijas 3.40 TV                             Mijas340TV.TV
+  Fuengirola TV                             FuengirolaTV.TV
+  Canal Coín                               CanalCoin.TV
+  101TV Granada                             101Granada.TV
+  101TV Alahurín                           Alahurin.TV
+  Huelva Television                         HuelvaTelevision.TV
+  7TV Sevilla                               7Sevilla.TV
+  7TV Almería                              7Almeria.TV
+  7TV Cádiz                                7Cadiz.TV
+  7TV Cordoba                               7Cordoba.TV
+  7TV Granada                               7Granada.TV
+  7TV Jaén                                 7Jaen.TV
+  7TV Málaga                               7Malaga.TV
+  7TV Aljarafe                              7Aljarafe.TV
+  Almería 24h TV                           Almeria24h.TV
+  Cadena Elite TV                           CadenaElite.TV
+  TV Canaria                                Canarias.TV
+  La 1 Canarias                             La1_CAN.TV
+  La 2 Canarias                             La2_CAN.TV
+  24h Canarias                              24H_CAN.TV
+  Mírame TV                                MirameTV.TV
+  Televisión Canaria                       Canarias.TV
+  Tenerife Plus+ TV                         Tenerife Plus+ TV
+  Radio Calima TV                           Radio Calima TV
+  Popular TV Cantabria                      PopularTV_S.TV
+  Castilla-La Mancha Media                  CMM.TV
+  La 7                                      La7.TV
+  La 8 Avila                                8Avila.TV
+  La 8 Bierzo                               8Bierzo.TV
+  La 8 Burgos                               8Burgos.TV
+  La 8 Leon                                 8Leon.TV
+  La 8 Palencia                             8Palencia.TV
+  La 8 Salamanca                            8Salamanca.TV
+  La 8 Segovia                              8Segovia
+  La 8 Soria                                8Soria.TV
+  La 8 Valladolid                           8Valladolid.TV
+  La 8 Zamora                               8Zamora.TV
+  TV3                                       TV3.TV
+  SX3                                       SX3.TV
+  La 1 Catalunya                            La1_CAT.TV
+  La 2 Catalunya                            La2_CAT.TV
+  24h Catalunya                             24H_CAT
+  Bon Dia TV                                BonDiaTV_CAT.TV
+  betevé                                   BTV.TV
+  Canal Terres de l'Ebre                    Xarxa_Canal_Terres_Ebre.TV
+  Canal Reus TV                             Xarxa_Canal_Reus_TV.TV
+  El 9 TV                                   Xarxa_El_9_TV.TV
+  Empordà TV                               Xarxa_EmpordaTV.TV
+  BDN                                       Xarxa_Televisio_BDN.TV
+  TAC 12                                    Xarxa_TAC12.TV
+  Canal Terrassa                            Xarxa_Canal_Terrassa.TV
+  Canal 21 Ebre                             Xarxa_Canal21_Ebre.TV
+  Lleida TV                                 Xarxa_LleidaTV.TV
+  TV Costa Brava                            Xarxa_TV_Costa_Brava.TV
+  Olot TV                                   Xarxa_Olot_TV.TV
+  Canal Blau                                Xarxa_Canal_Blau.TV
+  Canal Taronja Central                     Xarxa_Canal_Taronja_Central.TV
+  TV L'Hospitalet                           Xarxa_Televisio_Hospitalet.TV
+  TV del Berguedà                          Xarxa_TV_Bergueda.TV
+  Canal Taronja Anoia                       Xarxa_Canal_Taronja_Anoia.TV
+  Cugat Mèdia                              Xarxa_Cugat_Media.TV
+  VOTV                                      Xarxa_VOTV.TV
+  tvmataró                                 Xarxa_TVMataro.TV
+  Penedès TV                               Xarxa_Penedes_TV.TV
+  Banyoles Televisió                       Xarxa_Banyoles_TV.TV
+  TV de Girona                              Xarxa_TV_Girona.TV
+  Canal 10 Empordà                         Xarxa_Canal_10_Emporda.TV
+  Vallès Visió                            Xarxa_Valles_Visio.TV
+  TV del Ripollès                          Xarxa_Televisio_Ripolles.TV
+  etv                                       Xarxa_ETV.TV
+  TV Sabadell Vallès                       Xarxa_TV_Sabadell_Valles.TV
+  3CAT Vinagre(ta)                          Vinagreta.TV
+  3CAT Doraemon                             Doraemon.TV
+  3CAT Verdi Classics                       VerdiClassics.TV
+  3CAT Anime                                Anime.TV
+  3CAT Cámeres del temps                   CameresdeTemps.TV
+  La 2 Cat                                  La2_CAT.TV
+  TV Girona                                 TVGirona.TV
+  Taronja Anoia                             TaronjaAnoia.TV
+  Televisió de Badalona                    Badalona.TV
+  Telemadrid                                Telemadrid.TV
+  LaOtra                                    LaOtra.TV
+  Webcam OndaMadrid                         OndaMadrid.TV
+  Distrito TV                               Distrito.TV
+  Déjate de Historias TV                   Dejate.TV
+  C33 Madrid                                C33M.TV
+  Telemadrid INT                            TelemadridINT.TV
+  Navarra TV                                NaTV.TV
+  À Punt                                   À Punt.TV
+  TeleElx                                   TeleElx.TV
+  La 8 Mediterráneo                        8M.TV
+  Distrito TV Valencia                      Distrito.TV
+  TV Alcoi                                  Alcoi.TV
+  Punt 3                                    Punt3.TV
+  Canal Extremadura                         Extremadura.TV
+  Extremadura Infantil                      ExtremaduraInfantil.TV
+  Extremadura Semos asina                   ExtremaduraSemosasina.TV
+  Extremadura Toros                         ExtremaduraToros.TV
+  TVG                                       TVGAL.TV
+  TVG 2                                     TVG2.TV
+  Radio Galega                              RGAL.TV
+  IB3 Global                                IB3.TV
+  IB3                                       IB3.TV
+  TV Rioja                                  TVR.TV
+  7 La Rioja                                7Rioja.TV
+  Melilla TV                                MelillaTV.TV
+  ETB 1                                     ETB1.TV
+  ETB 2                                     ETB2.TV
+  ETB1 ON                                   etb-1on.TV
+  ETB2 ON                                   etb-2on.TV
+  ETB Herri txiki                           Herritxiki.TV
+  ETB Vaya Semanita                         VayaSemanita.TV
+  ETB Vascos por el mundo                   ETBVascos.TV
+  ETB Conquistador                          Conquistador.TV
+  ETB El Tiempo                             ETBElTiempo.TV
+  TPA7                                      TPA.TV
+  7 R. de Murcia                            7RM.TV
+  Popular TV Murcia                         PopularMU.TV
+  8 TV Catalunya                            8TVCatalunya.TV
+  TV3.CAT                                   TVC.TV
+  EITB Basque                               ETBSAT.TV
+  TVG América                              TVGA.TV
+  Telemadrid Internacional                  TeleMadridInt.TV
+  CNN Internacional                         CNNInt.TV
+  Arabí TV Yecla                           arabitvyecla.TV
+  Canal 1 Mar Menor                         MarMenor.TV
+  TVE Europa                                TVEEuropa.TV
+  STAR RTVE                                 STARHD.TV
+  TV3 CAT internacional                     TV3CAT.TV
+  TVG Europa                                TVGEuropa.TV
+  N+ UNIVISION                              NUNIVISION.TV
+  Tito TV                                   TITO.TV
+  ATV Andorra                               ATVHD.TV
+  ATV Web Andorra                           ATVCW.TV
+  DW Alemania                               DW.TV
+  France 24 Francia                         France24.TV
+  TV5Monde Francia                          TV5Monde.TV
+  Rai News 24 Italia                        RaiN.TV
+  DW Alemania                               DW.TV
+  RTP 1 Portugal                            RTP1.TV
+  RTP 2 Portugal                            RTP2.TV
+  RTP 3 Portugal                            RTP3.TV
+  Bloomberg Europe                          Bloom.TV
+  RTP 1 Portugal                            RTP1.TV
+  RTP 2 Portugal                            RTP2.TV
+  RTP 3 Portugal                            RTP3.TV
+  ADN40 Mexico                              ADN40.TV
+  Canal 6                                   Canal6.TV
+  NTN24 América                            NTN24.TV
+  Net TV                                    Net.TV
+  Telefe Rosario                            TelefeRosario.TV
+  TVP Argentina                             TVPArgentina.TV
+  Canal IPE                                 canalipe.TV
+  Latina TV Perú                           LatinaTVPeru.TV
+  TeleSUR Venezuela                         TeleSUR.TV
+  Bolivisión                               Bolivision.TV
+  Bolivia TV                                Bolivia.TV
+  Cubavisión TV                            Cubavision.TV
+  CGTN                                      CGTN.TV
+  CGTN News                                 CGTNN.TV
+  CGTN Documentary                          CGTNDoc.TV
+  Al Jazeera Qatar                          AlJQ.TV
+  SOL Música                               SolMusica.TV
+  Euro Indie Music Chart TV                 euroindiemusic.TV
+  TVOMIX                                    TVOMIX.TV
+  CUMBIAMIX                                 CUMBIAMIX.TV
+  Kpop Mix                                  KpopMix.TV
+  Urban Mix                                 UrbanMix.TV
+  Verbena TV                                Verbena.TV
+  Activa TV                                 Activa.TV
+  Spektra Music Television                  Spektra.TV
+  Planeta X TV                              PlanetaX.TV
+  EWTN España                              EWTN.TV
+  Alternativa TV                            Alternativa.TV
+  María+Visión España                    MariaVision.TV
+  Tvo Jesús                                TVOJESUS.TV
+  Kairos TV                                 Kairos.TV
