@@ -2,9 +2,11 @@
 /**
  * build-epg-guide.php
  *
- * Downloads multiple XMLTV EPG sources and generates a complete merged guide:
- *   - epg.xml.gz  (XMLTV format, gzip compressed)
- *   - epg.json.gz (JSON format, gzip compressed)
+ * Downloads multiple XMLTV EPG sources and generates:
+ *   - epg.xml      (uncompressed, for GitHub Release)
+ *   - epg.json     (uncompressed, for GitHub Release)
+ *   - epg.xml.gz   (compressed, committed to repo)
+ *   - epg.json.gz  (compressed, committed to repo)
  *
  * Includes ALL channels from all sources (no filtering by tv.json).
  * Channels can be excluded via epg/exclusions.txt.
@@ -22,8 +24,10 @@ $rootDir         = __DIR__ . '/..';
 $sourcesPath     = $rootDir . '/epg/sources.txt';
 $settingsPath    = $rootDir . '/epg/settings.txt';
 $exclusionsPath  = $rootDir . '/epg/exclusions.txt';
-$xmlOutputPath   = $rootDir . '/epg.xml.gz';
-$jsonOutputPath  = $rootDir . '/epg.json.gz';
+$xmlPath         = $rootDir . '/epg.xml';
+$jsonPath        = $rootDir . '/epg.json';
+$xmlGzPath       = $rootDir . '/epg.xml.gz';
+$jsonGzPath      = $rootDir . '/epg.json.gz';
 
 // ─────────────────────────────────────────────
 // Helpers
@@ -112,9 +116,6 @@ function sanitizeUtf8(string $s): string {
     return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $s) ?? $s;
 }
 
-/**
- * Writes a string to a gzip file (maximum compression).
- */
 function writeGzip(string $path, string $content): int {
     $fp = gzopen($path, 'wb9');
     if ($fp === false) return 0;
@@ -123,9 +124,6 @@ function writeGzip(string $path, string $content): int {
     return filesize($path) ?: 0;
 }
 
-/**
- * Parses XMLTV content using XMLReader (streaming, low memory).
- */
 function parseXmltvStreaming(string $xmlContent, array &$channels, array &$programmes, int $minTime, int $maxTime): void {
     $reader = new XMLReader();
     if (!$reader->XML($xmlContent)) {
@@ -213,7 +211,7 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
 // ─────────────────────────────────────────────
 // Main
 // ─────────────────────────────────────────────
-logMsg('=== EPG Builder started (FULL mode, gzip output) ===');
+logMsg('=== EPG Builder started (FULL mode, gz + raw output) ===');
 
 $settings   = readSettings($settingsPath);
 $daysPast   = (int)($settings['dias-pasados']  ?? 1);
@@ -310,11 +308,14 @@ $xmlOutput = implode("\n", $xml);
 $xmlSize = strlen($xmlOutput);
 unset($xml);
 
-$xmlGzSize = writeGzip($xmlOutputPath, $xmlOutput);
+// Write uncompressed (for Release)
+file_put_contents($xmlPath, $xmlOutput);
+logMsg('✅ XML raw written: ' . $xmlPath . ' (' . number_format($xmlSize) . ' bytes)');
+
+// Write compressed (for repo)
+$xmlGzSize = writeGzip($xmlGzPath, $xmlOutput);
 unset($xmlOutput);
-logMsg('✅ XML generated: ' . $xmlOutputPath);
-logMsg('   Uncompressed: ' . number_format($xmlSize) . ' bytes');
-logMsg('   Compressed:   ' . number_format($xmlGzSize) . ' bytes');
+logMsg('✅ XML gz written: ' . $xmlGzPath . ' (' . number_format($xmlGzSize) . ' bytes)');
 
 // ─────────────────────────────────────────────
 // JSON output
@@ -359,11 +360,15 @@ if ($jsonOutput === false) {
     logMsg('⚠️  JSON encoding failed: ' . json_last_error_msg());
 } else {
     $jsonSize = strlen($jsonOutput);
-    $jsonGzSize = writeGzip($jsonOutputPath, $jsonOutput);
+
+    // Write uncompressed (for Release)
+    file_put_contents($jsonPath, $jsonOutput);
+    logMsg('✅ JSON raw written: ' . $jsonPath . ' (' . number_format($jsonSize) . ' bytes)');
+
+    // Write compressed (for repo)
+    $jsonGzSize = writeGzip($jsonGzPath, $jsonOutput);
     unset($jsonOutput);
-    logMsg('✅ JSON generated: ' . $jsonOutputPath);
-    logMsg('   Uncompressed: ' . number_format($jsonSize) . ' bytes');
-    logMsg('   Compressed:   ' . number_format($jsonGzSize) . ' bytes');
+    logMsg('✅ JSON gz written: ' . $jsonGzPath . ' (' . number_format($jsonGzSize) . ' bytes)');
 }
 
 logMsg('=== EPG Builder finished ===');
