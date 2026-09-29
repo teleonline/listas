@@ -1,5 +1,5 @@
 # ─── España ───
-https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz
+https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml
 
 # ─── Latinoamérica ───
 https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz
