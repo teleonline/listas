@@ -18341,10 +18341,6 @@
     <title lang="es">Telenotícies vespre</title>
     <desc lang="es">Informatiu diari que recull els esdeveniments més destacats en l’àmbit català, estatal i internacional. De dilluns a divendres, Toni Cruanyes és l'encarregat de presentar les notícies de la jornada.</desc>
   </programme>
-  <programme start="20260928100000 +0200" stop="20260928110000 +0200" channel="7Andalucia.TV">
-    <title lang="es">Mujeres Valientes. Andaluzas del Siglo XXI</title>
-    <desc lang="es">Serie documental para resaltar las historias de mujeres emprendedoras que con su talento cambian los tiempos y aportan a nuestra sociedad para que sea un poco mejor. Conocer sus historias, sus esfuerzos, sus desvelos, sus preocupaciones. Tenerlas de referencia.</desc>
-  </programme>
   <programme start="20260928110000 +0200" stop="20260928130000 +0200" channel="7Andalucia.TV">
     <title lang="es">El Virginiano</title>
   </programme>
@@ -18704,9 +18700,6 @@
   <programme start="20261001180000 +0200" stop="20261001220000 +0200" channel="BOM Cine.TV">
     <title lang="es">Bom Cine</title>
     <desc lang="es">Bom Cine.</desc>
-  </programme>
-  <programme start="20260928100000 +0200" stop="20260928110000 +0200" channel="CNNInt.TV">
-    <title lang="es">CNN Newsroom</title>
   </programme>
   <programme start="20260928110000 +0200" stop="20260928120000 +0200" channel="CNNInt.TV">
     <title lang="es">CNN Headline Express</title>
@@ -20368,10 +20361,6 @@
   <programme start="20261001230000 +0200" stop="20261001234500 +0200" channel="etb-1on.TV">
     <title lang="es">Euskal Herria Hegan</title>
   </programme>
-  <programme start="20260928095500 +0200" stop="20260928103000 +0200" channel="etb-2on.TV">
-    <title lang="es">Palabra de ley</title>
-    <desc lang="es">Programa presentado y dirigido por Mikel Ugalde que acerca a los telespectadores vascos los puntos principales de lo que ha dado de sí la actualidad en los distintos foros parlamentarios, con especial atención a lo que sucede en el Parlamento vasco.</desc>
-  </programme>
   <programme start="20260928103000 +0200" stop="20260928112500 +0200" channel="etb-2on.TV">
     <title lang="es">Una historia de Vasconia</title>
     <desc lang="es">El origen y expansión del euskera suma una nueva hipótesis después de unos hallazgos arqueológicos y lingüísticos. Estos descubrimientos permiten elaborar una teoría novedosa sobre el nacimiento de la lengua vasca en el S.VI y su aceptación en la actual Euskal Herria.</desc>
@@ -20964,10 +20953,6 @@
   <programme start="20261001212600 +0200" stop="20261001214500 +0200" channel="El Toro TV.TV">
     <title lang="es">Tiempos modernos</title>
     <desc lang="es">Un espacio en el que les contamos la historia tal y como fue, con sus luces y con sus sombras, al margen de los relatos oficialistas. Damos las claves del pasado que definen nuestro presente y que marcarán nuestro futuro.</desc>
-  </programme>
-  <programme start="20260928100000 +0200" stop="20260928104300 +0200" channel="E3.TV">
-    <title lang="es">Viatges insòlits</title>
-    <desc lang="es">L'actor i presentador belga Tom Waes viatja a diferents països d'arreu del món que acostumen a ésser ignorats per la massa turista. Guerres civils, desastres naturals i altres perills són els motius pels quals són poc visitats.</desc>
   </programme>
   <programme start="20260928104300 +0200" stop="20260928113000 +0200" channel="E3.TV">
     <title lang="es">Viatges insòlits</title>
@@ -22022,10 +22007,6 @@
     <title lang="es">La revuelta</title>
     <desc lang="es">David Broncano y su equipo reciben a todo tipo de personalidades en este irreverente programa en el que el público es protagonista.</desc>
   </programme>
-  <programme start="20260928095500 +0200" stop="20260928105500 +0200" channel="La2_CAN.TV">
-    <title lang="es">La aventura del saber</title>
-    <desc lang="es">Programa diario matinal destinado a la formación educativa y la divulgación mediante entrevistas y series documentales. Coproducido por RTVE y el Ministerio de Educación, se trata de uno de los espacios más veteranos de la cadena, con más de 21 años en antena.</desc>
-  </programme>
   <programme start="20260928105500 +0200" stop="20260928110500 +0200" channel="La2_CAN.TV">
     <title lang="es">La 2 express</title>
     <desc lang="es">En este espacio de corta duración se ofrece un adelanto de los contenidos que se van a emitir en la cadena. También hay lugar para resúmenes y momentos destacados de programas ya emitidos.</desc>
@@ -22389,10 +22370,6 @@
   </programme>
   <programme start="20261001220000 +0200" stop="20261001223500 +0200" channel="La2_CAN.TV">
     <title lang="es">Cifras y letras</title>
-  </programme>
-  <programme start="20260928100000 +0200" stop="20260928110000 +0200" channel="LaOtra.TV">
-    <title lang="es">Desmontando Madrid</title>
-    <desc lang="es">Nos adentramos en la transformación que, desde mediados del XIX, hizo que la capital pasase de ser una pequeña ciudad limitada por una cerca a ser una ciudad extensa y densa. Veremos como siguiendo ideas y tendencias europeas Madrid creció, derribó y construyó.</desc>
   </programme>
   <programme start="20260928110000 +0200" stop="20260928114500 +0200" channel="LaOtra.TV">
     <title lang="es">Callejeando</title>
@@ -24929,10 +24906,6 @@
   <programme start="20261001230200 +0200" stop="20261001235900 +0200" channel="TEN.TV">
     <title lang="es">Hermanos asesinos</title>
   </programme>
-  <programme start="20260928095500 +0200" stop="20260928110000 +0200" channel="TRECE.TV">
-    <title lang="es">Palabra de vida</title>
-    <desc lang="es">Programa en el que el padre Jesús Higueras de la parroquia de Ntra. Sra. de Caná de Pozuelo de Alarcón realiza el comentario del Evangelio. Posteriormente, el padre cuelga en la web de la cadena las oraciones de toda la semana para sus fieles.</desc>
-  </programme>
   <programme start="20260928110000 +0200" stop="20260928114000 +0200" channel="TRECE.TV">
     <title lang="es">Santa Misa</title>
   </programme>
@@ -27379,10 +27352,6 @@
     <title lang="es">El tiempo</title>
     <desc lang="es">De lunes a viernes, al término del Telenoticias 2, se recogen las principales previsiones meteorológicas y se comentan las temperaturas registradas en diferentes puntos de la Comunidad Autónoma de Madrid.</desc>
   </programme>
-  <programme start="20260928100000 +0200" stop="20260928102100 +0200" channel="Canarias.TV">
-    <title lang="es">Buenos Días Canarias, la mañana en juego</title>
-    <desc lang="es">Espacio informativo dedicado a la actualidad deportiva de la mano de Aarón Suárez.</desc>
-  </programme>
   <programme start="20260928102100 +0200" stop="20260928111000 +0200" channel="Canarias.TV">
     <title lang="es">1 hora menos</title>
     <desc lang="es">Victorio Pérez Moreno, y todo el equipo de 1 Hora Menos, regresa a las noches de Televisión Canaria con nuevas propuestas de entretenimiento, entre otras, ''Casas extraordinarias'' o 'Las Canarias del pasado'. Entre las novedades de esta temporada también sobresale el nuevo escenario: un nuevo plató virtual, el más grande de España, más cálido y versátil y con mayores posibilidades creativas. Los/as espectadores/as de Televisión Canaria podrán ser partícipes del programa a través de WhatsApp y las Redes Sociales de 1 Hora Menos, y podrán, también, sugerir temas que les gustaría ver en el programa.</desc>
@@ -27794,10 +27763,6 @@
   <programme start="20261001213500 +0200" stop="20261001223000 +0200" channel="Canarias.TV">
     <title lang="es">1 hora menos</title>
     <desc lang="es">Victorio Pérez Moreno, y todo el equipo de 1 Hora Menos, regresa a las noches de Televisión Canaria con nuevas propuestas de entretenimiento, entre otras, ''Casas extraordinarias'' o 'Las Canarias del pasado'. Entre las novedades de esta temporada también sobresale el nuevo escenario: un nuevo plató virtual, el más grande de España, más cálido y versátil y con mayores posibilidades creativas. Los/as espectadores/as de Televisión Canaria podrán ser partícipes del programa a través de WhatsApp y las Redes Sociales de 1 Hora Menos, y podrán, también, sugerir temas que les gustaría ver en el programa.</desc>
-  </programme>
-  <programme start="20260928100000 +0200" stop="20260928113000 +0200" channel="BTV.TV">
-    <title lang="es">Efecte Mosaic</title>
-    <desc lang="es">Programa de càpsules temàtiques i territorials en carrussel aleatori. Un format televisiu innovador, flexible i sostenible, inspirat en els nous hàbits de consum audiovisuals, com els Reels d'Instagram.</desc>
   </programme>
   <programme start="20260928113000 +0200" stop="20260928120000 +0200" channel="BTV.TV">
     <title lang="es">Teló de Fons</title>
@@ -28696,9 +28661,6 @@
   <programme start="20261001223200 +0200" stop="20261001231000 +0200" channel="TVG2.TV">
     <title lang="es">Clac</title>
     <desc lang="es">Dirigido y presentado por la periodista Tania Fernández Lombao, este programa descubre cada semana un título de cine gallego con un coloquio y su posterior proyección.</desc>
-  </programme>
-  <programme start="20260928100000 +0200" stop="20260928110000 +0200" channel="À Punt.TV">
-    <title lang="es">L'Alqueria Blanca</title>
   </programme>
   <programme start="20260928110000 +0200" stop="20260928120000 +0200" channel="À Punt.TV">
     <title lang="es">Obert pel matí</title>
@@ -29638,10 +29600,6 @@
   </programme>
   <programme start="20261001233000 +0000" stop="20261002000000 +0000" channel="24Horas.TV">
     <title lang="es">Noticias 24H</title>
-    <category lang="es">Journal</category>
-  </programme>
-  <programme start="20260928100000 +0000" stop="20260928101000 +0000" channel="FRANCEEspañol.TV">
-    <title lang="es">Noticias</title>
     <category lang="es">Journal</category>
   </programme>
   <programme start="20260928101000 +0000" stop="20260928101600 +0000" channel="FRANCEEspañol.TV">
@@ -31547,10 +31505,6 @@
   <programme start="20261001233500 +0000" stop="20261002003500 +0000" channel="TVGEuropa.TV">
     <title lang="es">A vida do mercado</title>
     <category lang="es">Documentaire de société</category>
-  </programme>
-  <programme start="20260928100000 +0000" stop="20260928101000 +0000" channel="FRANCE24.TV">
-    <title lang="es">Paris direct : le journal</title>
-    <category lang="es">Journal</category>
   </programme>
   <programme start="20260928101000 +0000" stop="20260928103000 +0000" channel="FRANCE24.TV">
     <title lang="es">A l'affiche</title>
@@ -37589,11 +37543,6 @@
     <desc lang="es">Notícias internacionais numa perspectiva europeia na euronews.</desc>
     <category lang="es">Atualidade</category>
   </programme>
-  <programme start="20260928100000 +0000" stop="20260928123000 +0000" channel="RecordNews.TV">
-    <title lang="es">Balanço Geral - Manhã</title>
-    <desc lang="es">Noticiário que mostra reportagens exclusivas, denúncias e os destaques da atualidade de São Paulo.</desc>
-    <category lang="es">Noticiário</category>
-  </programme>
   <programme start="20260928123000 +0000" stop="20260928131500 +0000" channel="RecordNews.TV">
     <title lang="es">Record News Séries</title>
     <desc lang="es">Grandes reportagens sobre variados temas, através de uma abordagem ampla e aprofundada.</desc>
@@ -38264,11 +38213,6 @@
     <desc lang="es">A round up of all the latest news from the UK and around the world.</desc>
     <category lang="es">Noticiário</category>
   </programme>
-  <programme start="20260928100000 +0000" stop="20260928110000 +0000" channel="AlJazeera.TV">
-    <title lang="es">Newshour</title>
-    <desc lang="es">Live, breaking and in-depth news reports from Al Jazeera.</desc>
-    <category lang="es">Noticiário</category>
-  </programme>
   <programme start="20260928110000 +0000" stop="20260928113000 +0000" channel="AlJazeera.TV">
     <title lang="es">News Live</title>
     <desc lang="es">Get the latest news every evening about what is happening around the globe.</desc>
@@ -38923,11 +38867,6 @@
     <title lang="es">Inside Story</title>
     <desc lang="es">Beyond the headlines to the heart of the news of the day. Al Jazeera gets the Inside Story from some of the best minds from around the globe.</desc>
     <category lang="es">Debate</category>
-  </programme>
-  <programme start="20260928100000 +0000" stop="20260928101500 +0000" channel="CGTN.TV">
-    <title lang="es">The World Today</title>
-    <desc lang="es">The World Today is the core rolling service of CGTN. keep viewers up-to-date with all the world's top stories as they happen.</desc>
-    <category lang="es">Noticiário</category>
   </programme>
   <programme start="20260928101500 +0000" stop="20260928110000 +0000" channel="CGTN.TV">
     <title lang="es">Africa Live</title>
