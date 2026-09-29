@@ -102,14 +102,10 @@ foreach ($tvData['countries'] as $ci => &$country) {
             $oldId = trim($channel['epg_id'] ?? '');
             if ($name === '' || $oldId === '') continue;
 
-            // Try by epg_id first, then by name
+            // Match ONLY by epg_id
             $candidates = null;
             $k = normalizeName($oldId);
             if ($k !== '' && isset($epgIndex[$k])) $candidates = $epgIndex[$k];
-            if ($candidates === null) {
-                $k = normalizeName($name);
-                if ($k !== '' && isset($epgIndex[$k])) $candidates = $epgIndex[$k];
-            }
 
             if ($candidates === null) {
                 $notFound[] = ['name' => $name, 'old' => $oldId];
