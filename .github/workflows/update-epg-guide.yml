@@ -31,7 +31,7 @@ jobs:
           file_pattern: "epg.xml.gz epg.json.gz"
 
       - name: Upload uncompressed files to Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: epg-latest
           name: "EPG latest"
