@@ -24,8 +24,29 @@ jobs:
       - name: Run EPG builder
         run: php scripts/build-epg-guide.php
 
-      - name: Commit and push changes
+      - name: Commit and push compressed files
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update EPG guide [skip ci]"
           file_pattern: "epg.xml.gz epg.json.gz"
+
+      - name: Upload uncompressed files to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: epg-latest
+          name: "EPG latest"
+          body: |
+            EPG files updated automatically.
+
+            Includes both uncompressed files:
+            - epg.xml
+            - epg.json
+
+            Compressed versions are available in the repository root:
+            - epg.xml.gz
+            - epg.json.gz
+          files: |
+            epg.xml
+            epg.json
+          make_latest: true
+          overwrite_files: true
