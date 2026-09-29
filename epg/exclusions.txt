@@ -1,0 +1,8 @@
+# Channels to exclude from the final EPG.
+# One pattern per line. Case-insensitive. Substring match against channel ID.
+# Lines starting with # are ignored.
+
+# Junk / test channels
+DUMMY_CHANNELS
+# Channels with no useful data
+epg_ripper_DUMMY
