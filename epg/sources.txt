@@ -1,5 +1,5 @@
 # ─── España ───
-https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml
+https://github.com/davidmuma/EPG_dobleM/raw/refs/heads/master/guiatv_sincolor.xml.gz
 
 # ─── Latinoamérica ───
 https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz
