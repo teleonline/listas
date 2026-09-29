@@ -19,7 +19,7 @@
                             "name": "La 1",
                             "web": "https://www.rtve.es/play/videos/directo/la-1/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201.png",
-                            "epg_id": "La 1.TV",
+                            "epg_id": "La.1.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -46,7 +46,7 @@
                             "name": "La 2",
                             "web": "https://www.rtve.es/play/videos/directo/la-2/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202.png",
-                            "epg_id": "La 2.TV",
+                            "epg_id": "La.2.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -73,7 +73,7 @@
                             "name": "Antena 3",
                             "web": "https://www.atresplayer.com/directos/antena3/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Antena%203.png",
-                            "epg_id": "Antena 3.TV",
+                            "epg_id": "Antena.3.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atresmedia",
@@ -87,7 +87,7 @@
                             "name": "Cuatro",
                             "web": "https://www.mitele.es/directo/cuatro",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Cuatro.png",
-                            "epg_id": "Cuatro.TV",
+                            "epg_id": "Cuatro.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -101,7 +101,7 @@
                             "name": "Telecinco",
                             "web": "https://www.mitele.es/directo/telecinco",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telecinco.png",
-                            "epg_id": "Telecinco.TV",
+                            "epg_id": "Telecinco.es",
                             "catchup": {
                                 "provider": "mediaset",
                                 "channelId": "telecinco",
@@ -115,7 +115,7 @@
                             "name": "La Sexta",
                             "web": "https://www.atresplayer.com/directos/lasexta/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%20Sexta.png",
-                            "epg_id": "La Sexta.TV",
+                            "epg_id": "laSexta.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atresmedia",
@@ -129,7 +129,7 @@
                             "name": "Neox",
                             "web": "https://www.atresplayer.com/directos/neox/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Neox.png",
-                            "epg_id": "Neox.TV",
+                            "epg_id": "Neox.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atresmedia",
@@ -143,7 +143,7 @@
                             "name": "Nova",
                             "web": "https://www.atresplayer.com/directos/nova/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Nova.png",
-                            "epg_id": "Nova.TV",
+                            "epg_id": "Nova.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atresmedia",
@@ -157,7 +157,7 @@
                             "name": "Mega",
                             "web": "https://www.atresplayer.com/directos/mega/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Mega.png",
-                            "epg_id": "Mega.TV",
+                            "epg_id": "Mega.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atresmedia",
@@ -171,7 +171,7 @@
                             "name": "Atreseries",
                             "web": "https://www.atresplayer.com/directos/atreseries/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Atreseries.png",
-                            "epg_id": "Atreseries.TV",
+                            "epg_id": "Atreseries.es",
                             "options": [],
                             "catchup": {
                                 "provider": "atreseries",
@@ -185,7 +185,7 @@
                             "name": "FDF",
                             "web": "https://www.mitele.es/directo/fdf",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Factor%C3%ADa%20de%20Ficci%C3%B3n.png",
-                            "epg_id": "Factoría de Ficción.TV",
+                            "epg_id": "FDF.Telecinco.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -199,7 +199,7 @@
                             "name": "Energy",
                             "web": "https://www.mitele.es/directo/energy",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Energy.png",
-                            "epg_id": "Energy.TV",
+                            "epg_id": "Energy.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -213,7 +213,7 @@
                             "name": "Divinity",
                             "web": "https://www.mitele.es/directo/divinity",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Divinity.png",
-                            "epg_id": "Divinity.TV",
+                            "epg_id": "Divinity.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -227,7 +227,7 @@
                             "name": "Be Mad",
                             "web": "https://www.mitele.es/directo/bemad",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Be%20Mad.png",
-                            "epg_id": "Be Mad.TV",
+                            "epg_id": "Be.Mad.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -241,7 +241,7 @@
                             "name": "DMAX",
                             "web": "https://dmax.marca.com/en-directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DMAX.png",
-                            "epg_id": "DMax.TV",
+                            "epg_id": "DMAX.es",
                             "options": [
                                 {
                                     "format": "stream",
@@ -255,7 +255,7 @@
                             "name": "TRECE",
                             "web": "https://www.cope.es/directos/trece",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png",
-                            "epg_id": "TRECE.TV",
+                            "epg_id": "TRECE.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -273,7 +273,7 @@
                             "name": "El Toro TV",
                             "web": "https://eltorotv.com/tv-en-directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/El%20Toro%20TV.png",
-                            "epg_id": "El Toro TV.TV",
+                            "epg_id": "El.Toro.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -318,7 +318,7 @@
                             "name": "Ten",
                             "web": "https://tentv.es",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Ten.png",
-                            "epg_id": "TEN.TV",
+                            "epg_id": "TEN.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -335,7 +335,7 @@
                             "name": "DKISS",
                             "web": "https://www.dkiss.es",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DKISS.png",
-                            "epg_id": "DKISS.TV",
+                            "epg_id": "DKISS.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -352,7 +352,7 @@
                             "name": "Paramount Network",
                             "web": "",
                             "logo": "https://graph.facebook.com/ParamountNetworkES/picture?width=200&height=200",
-                            "epg_id": "Paramount.TV",
+                            "epg_id": "Paramount.Network.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -369,7 +369,7 @@
                             "name": "BOM Cine",
                             "web": "https://www.bomcine.com",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/BOM%20Cine.png",
-                            "epg_id": "BOM Cine.TV",
+                            "epg_id": "BOM.Cine.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -392,7 +392,7 @@
                                     "url": "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8"
                                 }
                             ],
-                            "epg_id": "CMM.TV",
+                            "epg_id": "Castilla-La.Mancha.Media.es",
                             "country": "🇪🇸 España",
                             "nivel": "1"
                         },
@@ -419,7 +419,7 @@
                             "name": "24h",
                             "web": "https://www.rtve.es/play/videos/directo/24h/",
                             "logo": "https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png",
-                            "epg_id": "24Horas.TV",
+                            "epg_id": "Canal.24.horas.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -441,7 +441,7 @@
                             "name": "Euronews",
                             "web": "https://es.euronews.com/live",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/EuroNews.png",
-                            "epg_id": "Euronews.TV",
+                            "epg_id": "Euronews.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -527,7 +527,7 @@
                             "name": "Negocios TV",
                             "web": "https://www.negocios.com/directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Negocios%20TV.png",
-                            "epg_id": "Negocios.TV",
+                            "epg_id": "Negocios.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -559,7 +559,7 @@
                             "name": "Sky News",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/dGnkztdrLtXRlzkdqReeL-NES2761xxmNVcJhGKqFpR0vQBoP9XaxnXF95FDpwrjyFr2iJvV8Es=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "SkyNews.TV",
+                            "epg_id": "Sky.News.HD.uk",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -576,7 +576,7 @@
                             "name": "GB News",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/8hySIA7Ed6amMiAHJVNsG9oph0zoSlCAffYTmINH3gXJ8vvcToB_xh7uIlKSHA9fBEae3e_yl6I=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "GBNews.TV",
+                            "epg_id": "GB.News.HD.uk",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -729,7 +729,7 @@
                             "name": "FRANCE 24 Español",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_kzqAgL2TukPL1ijpuPdoOgU75Av9cdQVf0mahAZSySyA=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "FRANCEEspañol.TV",
+                            "epg_id": "France.24.Espanol.fr",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -746,7 +746,7 @@
                             "name": "FRANCE 24",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/ytc/AIdro_k9aU_SRhYAWJjQ6AO7uzQDZE5mb7gmv4synLrC7hEWGjE=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "FRANCE24.TV",
+                            "epg_id": "France.24.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -763,7 +763,7 @@
                             "name": "DW Español",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/TOHGshxAMW2Meq-N9EWB3T71en-ziaWoiFYWcjrhxQpOW4Wog3HwrAjDZIeCvj1q9VLPt_YsCA=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "DWEspañol.TV",
+                            "epg_id": "Deutsche.Welle.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -780,7 +780,7 @@
                             "name": "Al Jazeera",
                             "web": "",
                             "logo": "https://yt3.googleusercontent.com/64ft09GPSveU-gHP_Tj1AQqERJmkA3SiS0ae8tlBuOSLA-QxOa7dtjFEpM3T6yr6pTRYxzrT=s160-c-k-c0x00ffffff-no-rj",
-                            "epg_id": "AlJazeera.TV",
+                            "epg_id": "Al.Jazeera.English.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -819,7 +819,7 @@
                             "name": "Teledeporte",
                             "web": "https://www.rtve.es/play/videos/directo/tdp/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Teledeporte.png",
-                            "epg_id": "Teledeporte.TV",
+                            "epg_id": "Teledeporte.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -846,7 +846,7 @@
                             "name": "GOL Play",
                             "web": "https://www.goltelevision.com/en-directo/gol_live",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/GOL.png",
-                            "epg_id": "GOL.TV",
+                            "epg_id": "GOL.PLAY.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -863,7 +863,7 @@
                             "name": "Esport 3",
                             "web": "https://www.3cat.cat/3cat/directes/esport3/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Esport%203.png",
-                            "epg_id": "E3.TV",
+                            "epg_id": "Esport.3.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -942,7 +942,7 @@
                             "name": "Real Madrid TV",
                             "web": "https://www.realmadrid.com/real-madrid-tv",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Real%20Madrid%20TV.png",
-                            "epg_id": "RMTV.TV",
+                            "epg_id": "Real.Madrid.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -980,7 +980,7 @@
                             "name": "Betis TV",
                             "web": "https://www.realbetisbalompie.es/rtvbetis/directo-tv/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Betis%20TV.png",
-                            "epg_id": "BetisTV.TV",
+                            "epg_id": "BetisTV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -1258,7 +1258,7 @@
                             "name": "Real Betis TV",
                             "web": "https://www.realbetisbalompie.es/rtvbetis/directo-tv/",
                             "logo": "https://graph.facebook.com/realbetisbalompie/picture?width=200&height=200",
-                            "epg_id": "Betis.TV",
+                            "epg_id": "BetisTV.es",
                             "options": [
                                 {
                                     "format": "stream",
@@ -1276,7 +1276,7 @@
                             "name": "Boing",
                             "web": "https://www.mitele.es/directo/boing",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Boing.png",
-                            "epg_id": "Boing.TV",
+                            "epg_id": "Boing.es",
                             "options": [],
                             "catchup": {
                                 "provider": "mediaset",
@@ -1289,7 +1289,7 @@
                             "name": "Clan",
                             "web": "https://www.rtve.es/play/videos/directo/clan/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Clan.png",
-                            "epg_id": "Clan.TV",
+                            "epg_id": "Clan.TVE.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -2051,7 +2051,7 @@
                             "name": "Canal Sur Andalucía",
                             "web": "https://www.canalsurmas.es/videos/131772-canal-sur-andalucia",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Canal%20Sur%20Andaluc%C3%ADa.png",
-                            "epg_id": "CanalSurA.TV",
+                            "epg_id": "Canal.Sur.Andalucía.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -2129,7 +2129,7 @@
                             "name": "7TV Andalucía",
                             "web": "https://www.7tvandalucia.es/video/andalucia/directo/20250718114601000917.html",
                             "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
-                            "epg_id": "7Andalucia.TV",
+                            "epg_id": "7TV.Andalucía.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -2175,7 +2175,7 @@
                             "name": "Onda Cádiz",
                             "web": "https://ondacadiz.es/television-directo",
                             "logo": "https://graph.facebook.com/ondacadiz/picture?width=200&height=200",
-                            "epg_id": "OndaCadiz.TV",
+                            "epg_id": "OndaCádiz.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -2441,7 +2441,7 @@
                             "name": "Onda Algeciras TV",
                             "web": "https://ondaalgecirastv.com/en-directo/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Onda%20Algeciras%20TV.png",
-                            "epg_id": "OndaAlgeciras.TV",
+                            "epg_id": "Onda.Algeciras.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3258,7 +3258,7 @@
                             "name": "TV Canaria",
                             "web": "https://www.canariasplay.es/videos/314784-rtvc-en-directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TV%20Canaria.png",
-                            "epg_id": "Canarias.TV",
+                            "epg_id": "TelevisiónCanaria.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -3290,7 +3290,7 @@
                             "name": "La 1 Canarias",
                             "web": "https://www.rtve.es/play/videos/directo/tve-canarias/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201%20Canarias.png",
-                            "epg_id": "La1_CAN.TV",
+                            "epg_id": "La.1.Canarias.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3308,7 +3308,7 @@
                             "name": "La 2 Canarias",
                             "web": "https://www.rtve.es/play/videos/directo/tve-canarias/la-2-can/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202%20Canarias.png",
-                            "epg_id": "La2_CAN.TV",
+                            "epg_id": "La.2.Canarias.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3344,7 +3344,7 @@
                             "name": "Mírame TV",
                             "web": "https://mirametv.com",
                             "logo": "https://graph.facebook.com/mirametvcom/picture?width=200&height=200",
-                            "epg_id": "MirameTV.TV",
+                            "epg_id": "Mírame.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3479,7 +3479,7 @@
                             "name": "Televisión Canaria",
                             "web": "https://www.canariasplay.es/videos/314784-rtvc-en-directo",
                             "logo": "https://graph.facebook.com/RadioTelevisionCanaria/picture?width=200&height=200",
-                            "epg_id": "Canarias.TV",
+                            "epg_id": "TelevisiónCanaria.es",
                             "options": [
                                 {
                                     "format": "geturl",
@@ -3568,7 +3568,7 @@
                             "name": "Popular TV Cantabria",
                             "web": "https://populartvcantabria.com/en-directo/",
                             "logo": "https://populartvcantabria.com/wp-content/uploads/2022/10/cropped-logo-popular-horizontal-300x125.png",
-                            "epg_id": "PopularTV_S.TV",
+                            "epg_id": "Popular.TV.Cantabria.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3599,7 +3599,7 @@
                             "name": "Castilla-La Mancha Media",
                             "web": "https://www.cmmedia.es/play/en-directo/tv",
                             "logo": "https://graph.facebook.com/CMMediaes/picture?width=200&height=200",
-                            "epg_id": "CMM.TV",
+                            "epg_id": "Castilla-La.Mancha.Media.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3768,7 +3768,7 @@
                             "name": "La 7",
                             "web": "https://www.cyltvplay.es/player/d3badef6-d229-4a27-9609-03df3d17ca3/la7/la7",
                             "logo": "https://graph.facebook.com/cyltv/picture?width=200&height=200",
-                            "epg_id": "La7.TV",
+                            "epg_id": "La.7.es",
                             "options": [],
                             "nivel": "1"
                         },
@@ -3792,7 +3792,7 @@
                             "name": "La 8 Burgos",
                             "web": "https://www.cyltvplay.es/player/f6b3c206-798e-4ef9-aad7-beb4c0369b0/la8bu/la-8-burgos",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%208%20Burgos.png",
-                            "epg_id": "8Burgos.TV",
+                            "epg_id": "La.8.Burgos.es",
                             "options": [],
                             "nivel": "1"
                         },
@@ -3935,7 +3935,7 @@
                             "name": "TV3",
                             "web": "https://www.3cat.cat/3cat/directes/tv3/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TV3.png",
-                            "epg_id": "TV3.TV",
+                            "epg_id": "TV3.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3948,7 +3948,7 @@
                             "name": "324",
                             "web": "https://www.3cat.cat/3cat/directes/3catinfo-tv/",
                             "logo": "https://files.mastodon.online/accounts/avatars/109/910/059/776/228/101/original/ec757da97e3ccf98.png",
-                            "epg_id": "324.TV",
+                            "epg_id": "324.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3961,7 +3961,7 @@
                             "name": "33",
                             "web": "https://www.3cat.cat/3cat/directes/33/",
                             "logo": "https://graph.facebook.com/Canal33/picture?width=200&height=200",
-                            "epg_id": "C33.TV",
+                            "epg_id": "33.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -3978,7 +3978,7 @@
                             "name": "SX3",
                             "web": "https://www.3cat.cat/3cat/directes/sx3/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/SX3.png",
-                            "epg_id": "SX3.TV",
+                            "epg_id": "SX3.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4072,7 +4072,7 @@
                             "name": "La 1 Catalunya",
                             "web": "https://www.rtve.es/play/videos/directo/tve-catalunya/",
                             "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Rtvecatalunya_color_cuadrado.jpg",
-                            "epg_id": "La1_CAT.TV",
+                            "epg_id": "La.1.Catalunya.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4094,7 +4094,7 @@
                             "name": "La 2 Catalunya",
                             "web": "https://www.rtve.es/play/videos/directo/tve-catalunya/la-2-cat/",
                             "logo": "https://graph.facebook.com/la2detve/picture?width=200&height=200",
-                            "epg_id": "La2_CAT.TV",
+                            "epg_id": "La.2.Catalunya.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4116,7 +4116,7 @@
                             "name": "24h Catalunya",
                             "web": "https://www.rtve.es/play/videos/directo/tve-catalunya/24h-cat/",
                             "logo": "https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png",
-                            "epg_id": "24H_CAT",
+                            "epg_id": "Canal.24.horas.Cataluña.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4134,7 +4134,7 @@
                             "name": "Bon Dia TV",
                             "web": "https://www.3cat.cat/bondiatv/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Bon%20Dia%20TV.png",
-                            "epg_id": "BonDiaTV_CAT.TV",
+                            "epg_id": "Bon.Dia.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4155,7 +4155,7 @@
                             "name": "betevé",
                             "web": "https://beteve.cat/en-directe/",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Betev%C3%A9.png",
-                            "epg_id": "BTV.TV",
+                            "epg_id": "betevé.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4698,7 +4698,7 @@
                             "name": "3CatInfo",
                             "web": "https://www.3cat.cat/3cat/directes/3catinfo-tv/",
                             "logo": "https://www.3cat.cat/_resources/logos/3catinfo_W.svg",
-                            "epg_id": "324.TV",
+                            "epg_id": "324.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4776,7 +4776,7 @@
                             "name": "La 2 Cat",
                             "web": "https://www.rtve.es/play/videos/directo/tve-catalunya/la-2-cat/",
                             "logo": "https://css.rtve.es/css/rtve.directos/logos_cadenas/tv-la2_cat.svg",
-                            "epg_id": "La2_CAT.TV",
+                            "epg_id": "La.2.Catalunya.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4876,7 +4876,7 @@
                             "name": "Telemadrid",
                             "web": "https://www.tlmad.es/pages/live/telemadrid",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telemadrid.png",
-                            "epg_id": "Telemadrid.TV",
+                            "epg_id": "Telemadrid.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4905,7 +4905,7 @@
                             "name": "LaOtra",
                             "web": "https://www.tlmad.es/pages/live/laotra",
                             "logo": "https://pbs.twimg.com/profile_images/1279727978268839938/jSZUiboT_200x200.jpg",
-                            "epg_id": "LaOtra.TV",
+                            "epg_id": "La.Otra.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -4948,7 +4948,7 @@
                             "name": "Distrito TV",
                             "web": "https://distritotv.es",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Distrito%20TV.png",
-                            "epg_id": "Distrito.TV",
+                            "epg_id": "Distrito.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5054,7 +5054,7 @@
                             "name": "Telemadrid INT",
                             "web": "",
                             "logo": "https://graph.facebook.com/telemadrid/picture?width=200&height=200",
-                            "epg_id": "TelemadridINT.TV",
+                            "epg_id": "Telemadrid.Internacional.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5072,7 +5072,7 @@
                             "name": "Navarra TV",
                             "web": "https://www.navarratelevision.es/Directo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Navarra%20TV.png",
-                            "epg_id": "NaTV.TV",
+                            "epg_id": "Navarra.Televisión.es",
                             "options": [
                                 {
                                     "format": "stream",
@@ -5127,7 +5127,7 @@
                             "name": "À Punt",
                             "web": "https://www.apuntmedia.es/directe/directe-tv_136_1392524.html",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/%C3%80%20Punt.png",
-                            "epg_id": "À Punt.TV",
+                            "epg_id": "À.Punt.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5174,7 +5174,7 @@
                             "name": "TeleElx",
                             "web": "https://teleelx.es/directo/",
                             "logo": "https://graph.facebook.com/teleelx/picture?width=200&height=200",
-                            "epg_id": "TeleElx.TV",
+                            "epg_id": "Tele.Elx.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5213,7 +5213,7 @@
                             "name": "La 8 Mediterráneo",
                             "web": "https://laocho.tv/tv-en-directo/",
                             "logo": "https://graph.facebook.com/la8mediterraneo/picture?width=200&height=200",
-                            "epg_id": "8M.TV",
+                            "epg_id": "La.Ocho.mediterráneo.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5324,7 +5324,7 @@
                             "name": "Distrito TV Valencia",
                             "web": "https://distritotv.es",
                             "logo": "https://graph.facebook.com/2004860103163343/picture?width=200&height=200",
-                            "epg_id": "Distrito.TV",
+                            "epg_id": "Distrito.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5633,7 +5633,7 @@
                             "name": "Punt 3",
                             "web": "https://www.punt3.es/Directo/",
                             "logo": "https://graph.facebook.com/Punt3Television/picture?width=200&height=200",
-                            "epg_id": "Punt3.TV",
+                            "epg_id": "Punt.3.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5651,7 +5651,7 @@
                             "name": "Canal Extremadura",
                             "web": "https://www.canalextremadura.app/videos/182630-canal-video-24h",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Canal%20Extremadura.png",
-                            "epg_id": "Extremadura.TV",
+                            "epg_id": "Canal.Extremadura.TV.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5756,7 +5756,7 @@
                             "name": "TVG",
                             "web": "https://www.agalega.gal/videos/76475-tvg",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TVG.png",
-                            "epg_id": "TVGAL.TV",
+                            "epg_id": "TVG.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5769,7 +5769,7 @@
                             "name": "TVG 2",
                             "web": "https://www.agalega.gal/videos/77550-tv-g2",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TVG2.png",
-                            "epg_id": "TVG2.TV",
+                            "epg_id": "tvG2.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -5974,7 +5974,7 @@
                             "name": "IB3 Global",
                             "web": "https://ib3.org/directe",
                             "logo": "https://graph.facebook.com/IB3org/picture?width=200&height=200",
-                            "epg_id": "IB3.TV",
+                            "epg_id": "IB3.Global.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -6043,7 +6043,7 @@
                             "name": "IB3",
                             "web": "https://ib3.org/directe",
                             "logo": "https://graph.facebook.com/IB3org/picture?width=200&height=200",
-                            "epg_id": "IB3.TV",
+                            "epg_id": "IB3.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -6077,7 +6077,7 @@
                             "name": "7 La Rioja",
                             "web": "https://www.7rioja.tv/Directo",
                             "logo": "https://graph.facebook.com/7riojatv/picture?width=200&height=200",
-                            "epg_id": "7Rioja.TV",
+                            "epg_id": "La.7.Rioja.es",
                             "options": [
                                 {
                                     "format": "geturl",
@@ -6125,7 +6125,7 @@
                             "name": "Melilla TV",
                             "web": "https://tvmelilla.es/directo.php",
                             "logo": "https://graph.facebook.com/TelevisionMelilla/picture?width=200&height=200",
-                            "epg_id": "MelillaTV.TV",
+                            "epg_id": "TV.Melilla.es",
                             "options": [
                                 {
                                     "format": "stream",
@@ -6159,7 +6159,7 @@
                             "name": "ETB 1",
                             "web": "https://etbon.eus/ch/etb-1",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/etb1.png",
-                            "epg_id": "ETB1.TV",
+                            "epg_id": "ETB1.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6172,7 +6172,7 @@
                             "name": "ETB 2",
                             "web": "https://etbon.eus/ch/etb-2",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/etb2.png",
-                            "epg_id": "ETB2.TV",
+                            "epg_id": "ETB2.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6341,7 +6341,7 @@
                             "name": "ETB1 ON",
                             "web": "https://etbon.eus/ch/etb-1on",
                             "logo": "https://cdnstorage.primeran.eus/directus/eitb/ed567d1d-d540-44a7-ae94-77e73f22e293.png",
-                            "epg_id": "etb-1on.TV",
+                            "epg_id": "ETB1.ON.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6354,7 +6354,7 @@
                             "name": "ETB2 ON",
                             "web": "https://etbon.eus/ch/etb-2on",
                             "logo": "https://cdnstorage.primeran.eus/directus/eitb/4094ae91-ca1e-474e-b2fc-df4f9ff164ee.png",
-                            "epg_id": "etb-2on.TV",
+                            "epg_id": "ETB2.ON.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6437,7 +6437,7 @@
                             "name": "TPA7",
                             "web": "https://www.rtpa.es/tpa-television",
                             "logo": "https://graph.facebook.com/RTPAoficial/picture?width=200&height=200",
-                            "epg_id": "TPA.TV",
+                            "epg_id": "TPA.es",
                             "options": [],
                             "nivel": "1"
                         }
@@ -6450,7 +6450,7 @@
                             "name": "7 R. de Murcia",
                             "web": "https://www.la7tv.es/video/a-la-carta/7tv-en-directo/20220810150726000939.html",
                             "logo": "https://graph.facebook.com/la7tele/picture?width=200&height=200",
-                            "epg_id": "7RM.TV",
+                            "epg_id": "7.Región.de.Murcia.es",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -6466,7 +6466,7 @@
                             "name": "Popular TV Murcia",
                             "web": "https://populartvrm.com/directo",
                             "logo": "https://pbs.twimg.com/profile_images/61224728/populartvtwitter_200x200.png",
-                            "epg_id": "PopularMU.TV",
+                            "epg_id": "Popular.TV.Región.de.Murcia.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6550,7 +6550,7 @@
                             "name": "TV3.CAT",
                             "web": "https://www.3cat.cat/3cat/directes/tv3/",
                             "logo": "https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png",
-                            "epg_id": "TVC.TV",
+                            "epg_id": "TV3CAT.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6563,7 +6563,7 @@
                             "name": "EITB Basque",
                             "web": "https://www.eitb.eus/es/television/eitb-basque/",
                             "logo": "https://graph.facebook.com/eitb/picture?width=200&height=200",
-                            "epg_id": "ETBSAT.TV",
+                            "epg_id": "EITB.BASQUE.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6589,7 +6589,7 @@
                             "name": "Telemadrid Internacional",
                             "web": "https://www.tlmad.es/pages/live/internacional",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telemadrid%20Internacional.png",
-                            "epg_id": "TeleMadridInt.TV",
+                            "epg_id": "Telemadrid.Internacional.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6651,7 +6651,7 @@
                             "name": "CNN Internacional",
                             "web": "https://cnnespanol.cnn.com",
                             "logo": "https://graph.facebook.com/cnninternational/picture?width=320&height=320",
-                            "epg_id": "CNNInt.TV",
+                            "epg_id": "CNN.Internacional.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6694,7 +6694,7 @@
                             "name": "TVE Europa",
                             "web": "",
                             "logo": "https://graph.facebook.com/tveInternacional/picture?width=200&height=200",
-                            "epg_id": "TVEEuropa.TV",
+                            "epg_id": "TVE.Internacional.fr",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6720,7 +6720,7 @@
                             "name": "TV3 CAT internacional",
                             "web": "",
                             "logo": "https://www.3cat.cat/_resources/logos/tv3_W.svg",
-                            "epg_id": "TV3CAT.TV",
+                            "epg_id": "TV3CAT.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6733,7 +6733,7 @@
                             "name": "TVG Europa",
                             "web": "https://agalega.gal/videos/76475-tvg",
                             "logo": "https://graph.facebook.com/CRTVG/picture?width=200&height=200",
-                            "epg_id": "TVGEuropa.TV",
+                            "epg_id": "TVG.Europa.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6785,7 +6785,7 @@
                             "name": "ATV Andorra",
                             "web": "https://www.rtva.ad/en-directe/atv",
                             "logo": "https://graph.facebook.com/rtva.andorra/picture?width=200&height=200",
-                            "epg_id": "ATVHD.TV",
+                            "epg_id": "Andorra.Televisió.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6920,7 +6920,7 @@
                             "name": "France 24 Francia",
                             "web": "https://www.france24.com/es/en-vivo",
                             "logo": "https://graph.facebook.com/FRANCE24/picture?width=200&height=200",
-                            "epg_id": "France24.TV",
+                            "epg_id": "France.24.fr",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -6949,7 +6949,7 @@
                             "name": "TV5Monde Francia",
                             "web": "https://europe.tv5monde.com/en/live",
                             "logo": "https://graph.facebook.com/tv5mondeofficiel/picture?width=200&height=200",
-                            "epg_id": "TV5Monde.TV",
+                            "epg_id": "TV5.monde.fr",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -6994,7 +6994,7 @@
                             "name": "Rai News 24 Italia",
                             "web": "https://www.rainews.it/notiziari/rainews24",
                             "logo": "https://graph.facebook.com/RaiNews/picture?width=200&height=200",
-                            "epg_id": "RaiN.TV",
+                            "epg_id": "RaiNews24.it",
                             "options": [],
                             "nivel": "1"
                         },
@@ -7049,7 +7049,7 @@
                             "name": "DW Alemania",
                             "web": "https://www.dw.com/es/live-tv/channel-spanish",
                             "logo": "https://graph.facebook.com/dw.espanol/picture?width=200&height=200",
-                            "epg_id": "DW.TV",
+                            "epg_id": "DW-TV.fr",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -7195,7 +7195,7 @@
                             "name": "RTP 3 Portugal",
                             "web": "https://www.rtp.pt/play/direto/rtp3",
                             "logo": "https://graph.facebook.com/rtp/picture?width=200&height=200",
-                            "epg_id": "RTP3.TV",
+                            "epg_id": "RTP.Notícias.HD.pt",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -7880,7 +7880,7 @@
                             "name": "RTP 1 Portugal",
                             "web": "https://www.rtp.pt/play/direto/rtp1",
                             "logo": "https://graph.facebook.com/rtp1.pt/picture?width=200&height=200",
-                            "epg_id": "RTP1.TV",
+                            "epg_id": "RTP.1.HD.pt",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -7893,7 +7893,7 @@
                             "name": "RTP 2 Portugal",
                             "web": "https://www.rtp.pt/play/direto/rtp2",
                             "logo": "https://graph.facebook.com/rtpdois/picture?width=200&height=200",
-                            "epg_id": "RTP2.TV",
+                            "epg_id": "RTP.2.HD.pt",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -7906,7 +7906,7 @@
                             "name": "RTP 3 Portugal",
                             "web": "https://www.rtp.pt/play/direto/rtp3",
                             "logo": "https://graph.facebook.com/rtp/picture?width=200&height=200",
-                            "epg_id": "RTP3.TV",
+                            "epg_id": "RTP.Notícias.HD.pt",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -8521,7 +8521,7 @@
                             "name": "NTN24 América",
                             "web": "https://www.ntn24.com/en-vivo/",
                             "logo": "https://graph.facebook.com/NTN24/picture?width=200&height=200",
-                            "epg_id": "NTN24.TV",
+                            "epg_id": "Canal.NTN24.(Nuestra.Tele.Noticias.24.Horas).ar",
                             "options": [
                                 {
                                     "format": "youtube",
@@ -9084,7 +9084,7 @@
                             "name": "TeleSUR Venezuela",
                             "web": "https://www.telesurtv.net",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telesur.png",
-                            "epg_id": "TeleSUR.TV",
+                            "epg_id": "teleSUR.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -11732,7 +11732,7 @@
                             "name": "SOL Música",
                             "web": "https://amcchannels.es/sol-musica",
                             "logo": "https://graph.facebook.com/solmusica/picture?width=200&height=200",
-                            "epg_id": "SolMusica.TV",
+                            "epg_id": "SOL.Música.es",
                             "options": [
                                 {
                                     "format": "m3u8",
@@ -11868,7 +11868,7 @@
                             "name": "EWTN España",
                             "web": "https://www.ewtn.com/es/en-vivo",
                             "logo": "https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/EWTN.png",
-                            "epg_id": "EWTN.TV",
+                            "epg_id": "EWTN.es",
                             "options": [
                                 {
                                     "format": "m3u8",
