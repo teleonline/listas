@@ -10,32 +10,22 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
 
-      - name: Download current epg.xml from Release
+      - name: Download epg.xml from Release
         run: |
           curl -L -o epg.xml \
             https://github.com/teleonline/listas/releases/download/epg-latest/epg.xml
 
-      - name: Run migration script
+      - name: Run migration
         run: php scripts/migrate-tv-json.php
 
-      - name: Show summary
-        run: |
-          echo "=== Migration report ==="
-          cat migration-report.txt
-          echo ""
-          echo "=== Diff (first 100 lines) ==="
-          diff tv.json tv.json.new | head -100 || true
-
-      - name: Commit migrated tv.json and report
+      - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: migrate tv.json epg_ids [skip ci]"
-          file_pattern: "tv.json.new migration-report.txt"
+          file_pattern: "tv.json migration-report.txt"
