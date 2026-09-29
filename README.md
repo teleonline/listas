@@ -23,12 +23,15 @@ Este repositorio contiene:
 
 - **tv.json** - Canales de televisión organizados por país y temática
 - **tv.m3u8** - Formato de lista M3U8 para reproductores multimedia
+- **varios/canales.txt** - Lista simplificada de canales agrupados por categorías
 
 Todos los canales listados son:
 - ✓ Canales de transmisión pública
 - ✓ Televisiones locales, nacionales, independientes e internacionales sin requisitos de suscripción
 - ✓ Distribuidos legalmente por sus respectivos radiodifusores
 - ✓ Accesibles dentro de sus regiones de transmisión designadas
+
+[Ver lista de Canales](#lista-txt-de-canales)
 
 ## Estructura de Datos
 
