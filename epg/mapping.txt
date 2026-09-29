@@ -1,0 +1,4 @@
+# Manual mapping: epg_id_in_tv_json = source_channel_id
+# Leave empty if you rely only on automatic matching.
+# Example:
+# La 1.TV = La1.es
