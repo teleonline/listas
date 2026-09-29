@@ -31,7 +31,7 @@ Todos los canales listados son:
 - ✓ Distribuidos legalmente por sus respectivos radiodifusores
 - ✓ Accesibles dentro de sus regiones de transmisión designadas
 
-[Ver lista de Canales](#lista-txt-de-canales)
+[Ver lista de Canales](https://github.com/teleonline/listas/blob/main/varios/canales.txt)
 
 ## Estructura de Datos
 
