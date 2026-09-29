@@ -3,21 +3,27 @@
  * build-epg-guide.php
  *
  * Downloads multiple XMLTV EPG sources, matches them against the epg_id
- * values found in tv.json, and generates epg/guide.xml.
+ * values found in tv.json, and generates:
+ *   - epg.xml  (XMLTV format, at repo root)
+ *   - epg.json (JSON format, at repo root)
  *
  * Usage: php scripts/build-epg-guide.php
  */
 
+ini_set('memory_limit', '2G');
+set_time_limit(600);
+
 // ─────────────────────────────────────────────
 // Config paths
 // ─────────────────────────────────────────────
-$rootDir      = __DIR__ . '/..';
-$tvJsonPath   = $rootDir . '/tv.json';
-$sourcesPath  = $rootDir . '/epg/sources.txt';
-$settingsPath = $rootDir . '/epg/settings.txt';
-$mappingPath  = $rootDir . '/epg/mapping.txt';
-$outputPath   = $rootDir . '/epg/guide.xml';
-$unmatchedPath= $rootDir . '/epg/unmatched.txt';
+$rootDir       = __DIR__ . '/..';
+$tvJsonPath    = $rootDir . '/tv.json';
+$sourcesPath   = $rootDir . '/epg/sources.txt';
+$settingsPath  = $rootDir . '/epg/settings.txt';
+$mappingPath   = $rootDir . '/epg/mapping.txt';
+$unmatchedPath = $rootDir . '/epg/unmatched.txt';
+$xmlOutputPath = $rootDir . '/epg.xml';
+$jsonOutputPath= $rootDir . '/epg.json';
 
 // ─────────────────────────────────────────────
 // Helpers
@@ -30,7 +36,7 @@ function downloadContent(string $url): ?string {
     logMsg("Downloading: $url");
     $ctx = stream_context_create([
         'http' => [
-            'timeout'    => 120,
+            'timeout'    => 180,
             'user_agent' => 'Mozilla/5.0 (compatible; EPG-Builder/1.0)',
         ],
         'ssl' => ['verify_peer' => false, 'verify_peer_name' => false],
@@ -102,9 +108,6 @@ function readSettings(string $path): array {
     return $out;
 }
 
-/**
- * Reads mapping.txt: "tv_json_epg_id = source_channel_id" (one per line).
- */
 function readMapping(string $path): array {
     $out = [];
     if (!is_file($path)) return $out;
@@ -118,21 +121,14 @@ function readMapping(string $path): array {
     return $out;
 }
 
-/**
- * Normalizes a name for fuzzy comparison:
- * lowercase, remove accents, remove non-alphanumeric, trim.
- */
 function normalizeName(string $s): string {
     $s = trim($s);
-    // Remove common suffixes
     $s = preg_replace('/\b(HD|SD|FHD|UHD|4K|TV|ES|SPAIN)\b/i', '', $s);
-    // Lowercase
     if (function_exists('mb_strtolower')) {
         $s = mb_strtolower($s, 'UTF-8');
     } else {
         $s = strtolower($s);
     }
-    // Remove accents
     $s = strtr($s, [
         'á'=>'a','é'=>'e','í'=>'i','ó'=>'o','ú'=>'u','ü'=>'u','ñ'=>'n',
         'à'=>'a','è'=>'e','ì'=>'i','ò'=>'o','ù'=>'u',
@@ -140,25 +136,48 @@ function normalizeName(string $s): string {
         'â'=>'a','ê'=>'e','î'=>'i','ô'=>'o','û'=>'u',
         'ç'=>'c',
     ]);
-    // Remove anything not a-z0-9
     $s = preg_replace('/[^a-z0-9]+/', '', $s);
     return $s;
 }
 
 /**
- * Generates alternative names to try for a given name.
+ * Converts XMLTV time "20260929120000 +0200" to ISO 8601 "2026-09-29T12:00:00+02:00".
  */
-function nameVariants(string $name): array {
-    $variants = [$name];
-    // Without trailing " TV"
-    $variants[] = preg_replace('/\s+TV$/i', '', $name);
-    // Without " HD", " SD"
-    $variants[] = preg_replace('/\s+(HD|SD|FHD|UHD|4K)$/i', '', $name);
-    // Without dots and spaces
-    $variants[] = str_replace(['.', ' '], '', $name);
-    // Just lowercase
-    $variants[] = strtolower($name);
-    return array_unique(array_filter($variants));
+function xmltvTimeToIso(string $xmltvTime): string {
+    $xmltvTime = trim($xmltvTime);
+    if (strlen($xmltvTime) < 14) return $xmltvTime;
+
+    $date = substr($xmltvTime, 0, 14);
+    $tz   = trim(substr($xmltvTime, 14));
+
+    $y = substr($date, 0, 4);
+    $mo = substr($date, 4, 2);
+    $d = substr($date, 6, 2);
+    $h = substr($date, 8, 2);
+    $mi = substr($date, 10, 2);
+    $s = substr($date, 12, 2);
+
+    $iso = "$y-$mo-$d" . 'T' . "$h:$mi:$s";
+
+    if ($tz !== '' && preg_match('/^([+-])(\d{2})(\d{2})$/', $tz, $m)) {
+        $iso .= $m[1] . $m[2] . ':' . $m[3];
+    } elseif ($tz !== '') {
+        $iso .= $tz;
+    } else {
+        $iso .= 'Z';
+    }
+    return $iso;
+}
+
+/**
+ * Sanitizes a string to valid UTF-8 (drops invalid bytes).
+ */
+function sanitizeUtf8(string $s): string {
+    if (function_exists('mb_convert_encoding')) {
+        return mb_convert_encoding($s, 'UTF-8', 'UTF-8');
+    }
+    // Fallback: strip invalid UTF-8
+    return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $s) ?? $s;
 }
 
 // ─────────────────────────────────────────────
@@ -222,17 +241,16 @@ foreach ($sources as $srcUrl) {
 logMsg('Total unique channels across sources: ' . count($allChannels));
 logMsg('Total programmes across sources: ' . count($allProgrammes));
 
-// 5. Build search indexes for fast lookup
-$sourceIdIndex = [];         // exact id => source_id
-$sourceIdCiIndex = [];       // lowercase id => source_id
-$sourceNormIdIndex = [];
-$sourceNameIndex = [];       // lowercase display-name => source_id
-$sourceNormNameIndex = [];   // normalized display-name => source_id
+// 5. Build search indexes
+$sourceIdIndex       = [];
+$sourceIdCiIndex     = [];
+$sourceNormIdIndex   = [];
+$sourceNameIndex     = [];
+$sourceNormNameIndex = [];
 
 foreach ($allChannels as $srcId => $ch) {
     $sourceIdIndex[$srcId] = $srcId;
     $sourceIdCiIndex[strtolower($srcId)] = $srcId;
-    // NEW: index by normalized source ID
     $sourceNormIdIndex[normalizeName($srcId)] = $srcId;
     foreach ($ch['display_names'] as $dn) {
         $sourceNameIndex[strtolower(trim($dn))] = $srcId;
@@ -241,12 +259,12 @@ foreach ($allChannels as $srcId => $ch) {
 }
 
 // 6. Match
-$matched = [];
-$unmatched = [];
+$matched    = [];
+$unmatched  = [];
 $methodCount = ['manual' => 0, 'id' => 0, 'id-ci' => 0, 'name' => 0, 'name-norm' => 0, 'variant' => 0];
 
 foreach ($epgIdToName as $epgId => $canonicalName) {
-    // a) Manual mapping (highest priority)
+    // a) Manual mapping
     if (isset($manualMap[$epgId]) && isset($allChannels[$manualMap[$epgId]])) {
         $matched[$epgId] = ['source_id' => $manualMap[$epgId], 'method' => 'manual'];
         $methodCount['manual']++;
@@ -279,30 +297,13 @@ foreach ($epgIdToName as $epgId => $canonicalName) {
         $methodCount['name-norm']++;
         continue;
     }
-    // f) Variants — check both normalized display-name and normalized source ID
-    $found = false;
-    foreach (nameVariants($canonicalName) as $variant) {
-        $vn = normalizeName($variant);
-        if ($vn === '') continue;
-    
-        // Try normalized display-name first
-        if (isset($sourceNormNameIndex[$vn])) {
-            $matched[$epgId] = ['source_id' => $sourceNormNameIndex[$vn], 'method' => 'variant'];
-            $methodCount['variant']++;
-            $found = true;
-            break;
-        }
-        // Try normalized source ID (this catches "La1.es" <-> "La 1")
-        if (isset($sourceNormIdIndex[$vn])) {
-            $matched[$epgId] = ['source_id' => $sourceNormIdIndex[$vn], 'method' => 'variant'];
-            $methodCount['variant']++;
-            $found = true;
-            break;
-        }
+    // f) Normalized source ID (catch "La1.es" <-> "La 1")
+    if ($norm !== '' && isset($sourceNormIdIndex[$norm])) {
+        $matched[$epgId] = ['source_id' => $sourceNormIdIndex[$norm], 'method' => 'variant'];
+        $methodCount['variant']++;
+        continue;
     }
-    if ($found) continue;
 
-    // No match
     $unmatched[] = $epgId;
 }
 
@@ -323,9 +324,7 @@ if (!empty($unmatched)) {
         '#   La 1.TV = La1.es',
         '',
     ];
-    foreach ($unmatched as $uid) {
-        $unmatchedLines[] = $uid . ' = ';
-    }
+    foreach ($unmatched as $uid) $unmatchedLines[] = $uid . ' = ';
     file_put_contents($unmatchedPath, implode("\n", $unmatchedLines));
     logMsg('Written unmatched list to: ' . $unmatchedPath);
 }
@@ -351,40 +350,97 @@ foreach ($allProgrammes as $pr) {
 }
 logMsg('Programmes after filter: ' . count($filteredProgrammes));
 
-// 9. Build XML
-$out = [];
-$out[] = '<?xml version="1.0" encoding="UTF-8"?>';
-$out[] = '<!DOCTYPE tv SYSTEM "xmltv.dtd">';
-$out[] = '<tv generator-info-name="build-epg-guide.php" generator-info-url="https://github.com/teleonline/listas">';
+// ─────────────────────────────────────────────
+// 9. Build XML output
+// ─────────────────────────────────────────────
+$xml = [];
+$xml[] = '<?xml version="1.0" encoding="UTF-8"?>';
+$xml[] = '<!DOCTYPE tv SYSTEM "xmltv.dtd">';
+$xml[] = '<tv generator-info-name="build-epg-guide.php" generator-info-url="https://github.com/teleonline/listas">';
 
 foreach ($matched as $epgId => $m) {
     $canonicalName = $epgIdToName[$epgId];
     $srcCh = $allChannels[$m['source_id']];
     $logo = $epgIdToLogo[$epgId] ?: ($srcCh['icon'] ?? '');
     $displayName = $canonicalName . ($nameSuffix !== '' ? ' ' . $nameSuffix : '');
-    $out[] = '  <channel id="' . htmlspecialchars($epgId, ENT_XML1) . '">';
-    $out[] = '    <display-name>' . htmlspecialchars($displayName, ENT_XML1) . '</display-name>';
-    if ($logo !== '') $out[] = '    <icon src="' . htmlspecialchars($logo, ENT_XML1) . '"/>';
-    $out[] = '  </channel>';
+    $xml[] = '  <channel id="' . htmlspecialchars($epgId, ENT_XML1) . '">';
+    $xml[] = '    <display-name>' . htmlspecialchars($displayName, ENT_XML1) . '</display-name>';
+    if ($logo !== '') $xml[] = '    <icon src="' . htmlspecialchars($logo, ENT_XML1) . '"/>';
+    $xml[] = '  </channel>';
 }
 
 foreach ($filteredProgrammes as $pr) {
-    $out[] = '  <programme start="' . htmlspecialchars($pr['start'], ENT_XML1) . '"'
+    $xml[] = '  <programme start="' . htmlspecialchars($pr['start'], ENT_XML1) . '"'
            . ' stop="'  . htmlspecialchars($pr['stop'],  ENT_XML1) . '"'
            . ' channel="' . htmlspecialchars($pr['channel'], ENT_XML1) . '">';
-    if ($pr['title'] !== '')    $out[] = '    <title lang="es">' . htmlspecialchars($pr['title'], ENT_XML1) . '</title>';
-    if ($pr['desc'] !== '')     $out[] = '    <desc lang="es">' . htmlspecialchars($pr['desc'], ENT_XML1) . '</desc>';
-    if ($pr['category'] !== '') $out[] = '    <category lang="es">' . htmlspecialchars($pr['category'], ENT_XML1) . '</category>';
-    $out[] = '  </programme>';
+    if ($pr['title'] !== '')    $xml[] = '    <title lang="es">' . htmlspecialchars($pr['title'], ENT_XML1) . '</title>';
+    if ($pr['desc'] !== '')     $xml[] = '    <desc lang="es">' . htmlspecialchars($pr['desc'], ENT_XML1) . '</desc>';
+    if ($pr['category'] !== '') $xml[] = '    <category lang="es">' . htmlspecialchars($pr['category'], ENT_XML1) . '</category>';
+    $xml[] = '  </programme>';
 }
-$out[] = '</tv>';
+$xml[] = '</tv>';
+$xmlOutput = implode("\n", $xml);
 
-$xmlOutput = implode("\n", $out);
-if (!is_dir(dirname($outputPath))) mkdir(dirname($outputPath), 0755, true);
-file_put_contents($outputPath, $xmlOutput);
+file_put_contents($xmlOutputPath, $xmlOutput);
 
-logMsg('✅ Generated: ' . $outputPath);
+logMsg('✅ XML generated: ' . $xmlOutputPath);
 logMsg('   Size: ' . number_format(strlen($xmlOutput)) . ' bytes');
+
+// ─────────────────────────────────────────────
+// 10. Build JSON output
+// ─────────────────────────────────────────────
+// Group programmes by channel (canonical epg_id)
+$programmesByChannel = [];
+foreach ($filteredProgrammes as $pr) {
+    $programmesByChannel[$pr['channel']][] = [
+        'start'    => xmltvTimeToIso($pr['start']),
+        'stop'     => xmltvTimeToIso($pr['stop']),
+        'title'    => sanitizeUtf8($pr['title']),
+        'desc'     => sanitizeUtf8($pr['desc']),
+        'category' => sanitizeUtf8($pr['category']),
+    ];
+}
+
+$jsonChannels = [];
+foreach ($matched as $epgId => $m) {
+    $canonicalName = $epgIdToName[$epgId];
+    $srcCh = $allChannels[$m['source_id']];
+    $logo = $epgIdToLogo[$epgId] ?: ($srcCh['icon'] ?? '');
+    $displayName = $canonicalName . ($nameSuffix !== '' ? ' ' . $nameSuffix : '');
+
+    $jsonChannels[] = [
+        'id'         => sanitizeUtf8($epgId),
+        'name'       => sanitizeUtf8($displayName),
+        'logo'       => sanitizeUtf8($logo),
+        'programmes' => $programmesByChannel[$epgId] ?? [],
+    ];
+}
+
+$jsonPayload = [
+    'generator'        => 'build-epg-guide.php',
+    'generator_url'    => 'https://github.com/teleonline/listas',
+    'generated_at'     => gmdate('c'),
+    'days_past'        => $daysPast,
+    'days_future'      => $daysFuture,
+    'channels_count'   => count($jsonChannels),
+    'programmes_count' => count($filteredProgrammes),
+    'channels'         => $jsonChannels,
+];
+
+$jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE;
+$jsonOutput = json_encode($jsonPayload, $jsonFlags);
+
+if ($jsonOutput === false) {
+    logMsg('⚠️  JSON encoding failed: ' . json_last_error_msg());
+} else {
+    file_put_contents($jsonOutputPath, $jsonOutput);
+    logMsg('✅ JSON generated: ' . $jsonOutputPath);
+    logMsg('   Size: ' . number_format(strlen($jsonOutput)) . ' bytes');
+}
+
+// ─────────────────────────────────────────────
+// Summary
+// ─────────────────────────────────────────────
+logMsg('=== EPG Builder finished ===');
 logMsg('   Channels: ' . count($matched));
 logMsg('   Programmes: ' . count($filteredProgrammes));
-logMsg('=== EPG Builder finished ===');
