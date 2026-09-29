@@ -5,8 +5,10 @@
 # Ejemplo:  Telefe.TV = Telefe.ar
 # ============================================================
 
-# (vacío por ahora)
-
+# ─── Argentina (AR1) ───
+America.TV = Canal.America.TV.(Argentina).ar
+Telefe.TV = Canal.Telefé.(Argentina).ar
+TVPArgentina.TV = Canal.Televisión.Pública.(Argentina).ar
 
 # ============================================================
 # AUTO MAPPING (generado por el script — no editar)
