@@ -2,7 +2,7 @@
 
 # Teleonline - Listas Curadas de TV
 
-Teleonline mantiene listas curadas de canales de televisión públicamente disponibles de todo el mundo (únicamente de fuentes oficiales). Estas listas reúnen canales de televisión digital terrestre (TDT) que están legalmente disponibles para el público general.
+Teleonline mantiene listas curadas de canales de televisión públicamente disponibles de todo el mundo (únicamente de fuentes oficiales y autorizadas). Estas listas reúnen canales de televisión locales, nacionales, independientes e internacionales  que están legalmente disponibles para el público general, además de vídeos/directos de plataformas de vídeo con autorización de inserción de su reproductor (embed) en sitios de terceros.
 
 ## Índice de Contenidos
 
@@ -21,12 +21,12 @@ Teleonline mantiene listas curadas de canales de televisión públicamente dispo
 
 Este repositorio contiene:
 
-- **tv.json** - Canales de televisión organizados por país y ámbito
+- **tv.json** - Canales de televisión organizados por país y temática
 - **tv.m3u8** - Formato de lista M3U8 para reproductores multimedia
 
 Todos los canales listados son:
 - ✓ Canales de transmisión pública
-- ✓ Televisión Digital Terrestre (TDT) sin requisitos de suscripción
+- ✓ Televisiones locales, nacionales, independientes e internacionales sin requisitos de suscripción
 - ✓ Distribuidos legalmente por sus respectivos radiodifusores
 - ✓ Accesibles dentro de sus regiones de transmisión designadas
 
