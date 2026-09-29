@@ -11,6 +11,11 @@
  * Includes ALL channels from all sources (no filtering by tv.json).
  * Adds automatic display-name variants (HD, SD, .TV, base name).
  * Channels can be excluded via epg/exclusions.txt.
+ * Every channel gets a country (attribute country="es" in epg.xml, "country" in epg.json):
+ *   1) epg/countries.txt exceptions ("channel id = cc")
+ *   2) explicit suffix (.es .fr .uk .de .it .pt .ar) or prefix ("DE | ...", "FR · ...") in the id
+ *   3) default country of the source, taken from its header comment in epg/sources.txt
+ *      ("# --- Espana ---") or from an explicit "es | https://..." line.
  * Programmes keep their image (<icon src="...">) in both epg.xml and epg.json.
  *
  * Usage: php scripts/build-epg-guide.php
@@ -26,6 +31,7 @@ $rootDir         = __DIR__ . '/..';
 $sourcesPath     = $rootDir . '/epg/sources.txt';
 $settingsPath    = $rootDir . '/epg/settings.txt';
 $exclusionsPath  = $rootDir . '/epg/exclusions.txt';
+$countriesPath   = $rootDir . '/epg/countries.txt';
 $xmlPath         = $rootDir . '/epg.xml';
 $jsonPath        = $rootDir . '/epg.json';
 $xmlGzPath       = $rootDir . '/epg.xml.gz';
@@ -91,6 +97,87 @@ function isExcluded(string $id, array $patterns): bool {
         if (strpos($idLower, $p) !== false) return true;
     }
     return false;
+}
+
+// ─────────────────────────────────────────────
+// Countries
+// ─────────────────────────────────────────────
+const KNOWN_COUNTRIES = ['es', 'fr', 'uk', 'de', 'it', 'pt', 'ar'];
+
+/** "España", "Reino Unido", "Latinoamérica"... -> country code ('' if unknown) */
+function countryFromLabel(string $label): string {
+    $l = strtolower(trim($label));
+    $l = strtr($l, ['á' => 'a', 'é' => 'e', 'í' => 'i', 'ó' => 'o', 'ú' => 'u', 'ü' => 'u', 'ñ' => 'n']);
+    $map = [
+        'espana' => 'es', 'spain' => 'es', 'es' => 'es',
+        'francia' => 'fr', 'france' => 'fr', 'fr' => 'fr',
+        'reino unido' => 'uk', 'united kingdom' => 'uk', 'uk' => 'uk', 'gb' => 'uk',
+        'alemania' => 'de', 'germany' => 'de', 'de' => 'de',
+        'italia' => 'it', 'italy' => 'it', 'it' => 'it',
+        'portugal' => 'pt', 'pt' => 'pt',
+        'latinoamerica' => 'ar', 'argentina' => 'ar', 'ar' => 'ar',
+        'otros' => 'otros', 'other' => 'otros', 'otros paises' => 'otros',
+    ];
+    return $map[$l] ?? '';
+}
+
+/**
+ * sources.txt: one URL per line. The country of a source is (in this order):
+ *   - an explicit prefix:  es | https://...
+ *   - the last header comment that names a country:  # ─── España ───
+ * @return array<int, array{url:string, country:string}>
+ */
+function readSources(string $path): array {
+    $out = [];
+    $current = '';
+    foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        $line = trim($line);
+        if ($line === '') continue;
+        if ($line[0] === '#') {
+            $label = trim(preg_replace('/[^\p{L}\s]+/u', ' ', $line));
+            $label = preg_replace('/\s+/', ' ', $label);
+            $c = countryFromLabel($label);
+            if ($c !== '') $current = $c;
+            continue;
+        }
+        $country = $current;
+        if (preg_match('/^([A-Za-z]{2,12})\s*\|\s*(\S.*)$/', $line, $m) && countryFromLabel($m[1]) !== '') {
+            $country = countryFromLabel($m[1]);
+            $line = trim($m[2]);
+        }
+        $out[] = ['url' => $line, 'country' => $country];
+    }
+    return $out;
+}
+
+/** epg/countries.txt:  "channel id = cc"  (exact id, case-insensitive; # comments) */
+function readCountryOverrides(string $path): array {
+    $out = [];
+    if (!is_file($path)) return $out;
+    foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        $line = trim($line);
+        if ($line === '' || $line[0] === '#') continue;
+        $p = strrpos($line, '=');
+        if ($p === false) continue;
+        $id = strtolower(trim(substr($line, 0, $p)));
+        $c  = countryFromLabel(substr($line, $p + 1));
+        if ($id !== '' && $c !== '') $out[$id] = $c;
+    }
+    return $out;
+}
+
+/** Country of a channel id: explicit suffix / prefix first, otherwise the source default. */
+function detectCountry(string $id, string $default): string {
+    $p = strrpos($id, '.');
+    if ($p !== false) {
+        $suf = strtolower(substr($id, $p + 1));
+        if (in_array($suf, KNOWN_COUNTRIES, true)) return $suf;
+    }
+    if (preg_match('/^(ES|FR|PT|UK|GB|DE|IT|AR)\s*[|·]\s*/u', $id, $m)) {
+        $c = strtolower($m[1]);
+        return $c === 'gb' ? 'uk' : $c;
+    }
+    return $default;
 }
 
 function xmltvTimeToIso(string $xmltvTime): string {
@@ -190,7 +277,7 @@ function buildDisplayNames(array $originalNames): array {
 /**
  * Parses XMLTV content using XMLReader (streaming, low memory).
  */
-function parseXmltvStreaming(string $xmlContent, array &$channels, array &$programmes, int $minTime, int $maxTime): void {
+function parseXmltvStreaming(string $xmlContent, array &$channels, array &$programmes, int $minTime, int $maxTime, string $defaultCountry = ''): void {
     $reader = new XMLReader();
     if (!$reader->XML($xmlContent)) {
         logMsg("  XMLReader failed to load XML.");
@@ -207,7 +294,7 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
             if ($reader->name === 'channel') {
                 $id = $reader->getAttribute('id');
                 if ($id !== null) {
-                    $currentChannel = ['id' => $id, 'names' => [], 'icon' => ''];
+                    $currentChannel = ['id' => $id, 'names' => [], 'icon' => '', 'country' => detectCountry($id, $defaultCountry)];
                 }
             } elseif ($reader->name === 'display-name' && $currentChannel !== null) {
                 $reader->read();
@@ -295,12 +382,7 @@ $exclusions = readPatterns($exclusionsPath);
 logMsg('Exclusion patterns: ' . count($exclusions));
 
 if (!is_file($sourcesPath)) die("Error: sources.txt not found at $sourcesPath\n");
-$sources = [];
-foreach (file($sourcesPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-    $line = trim($line);
-    if ($line === '' || $line[0] === '#') continue;
-    $sources[] = $line;
-}
+$sources = readSources($sourcesPath);
 logMsg('Sources: ' . count($sources));
 
 $now     = time();
@@ -310,10 +392,11 @@ $maxTime = $now + ($daysFuture * 86400);
 $allChannels   = [];
 $allProgrammes = [];
 
-foreach ($sources as $srcUrl) {
-    $content = downloadContent($srcUrl);
+foreach ($sources as $src) {
+    $content = downloadContent($src['url']);
     if ($content === null) continue;
-    parseXmltvStreaming($content, $allChannels, $allProgrammes, $minTime, $maxTime);
+    logMsg('  Source country: ' . ($src['country'] !== '' ? $src['country'] : '(none)'));
+    parseXmltvStreaming($content, $allChannels, $allProgrammes, $minTime, $maxTime, $src['country']);
     unset($content);
 }
 
@@ -330,6 +413,20 @@ foreach ($allChannels as $id => $ch) {
 }
 logMsg("Channels excluded: $excludedCount");
 logMsg('Channels after exclusion: ' . count($allChannels));
+
+// Country exceptions (epg/countries.txt) and summary
+$countryOverrides = readCountryOverrides($countriesPath);
+$byCountry = [];
+foreach ($allChannels as $id => &$ch) {
+    $ov = $countryOverrides[strtolower($id)] ?? null;
+    if ($ov !== null) $ch['country'] = $ov;
+    $k = $ch['country'] !== '' ? $ch['country'] : '(none)';
+    $byCountry[$k] = ($byCountry[$k] ?? 0) + 1;
+}
+unset($ch);
+arsort($byCountry);
+logMsg('Country exceptions loaded: ' . count($countryOverrides));
+logMsg('Channels by country: ' . implode(', ', array_map(fn($k, $v) => "$k=$v", array_keys($byCountry), $byCountry)));
 
 // Filter programmes
 $finalProgrammes = [];
@@ -362,7 +459,7 @@ foreach ($allChannels as $id => $ch) {
     $displayNames = buildDisplayNames($ch['names']);
     $totalDisplayNames += count($displayNames);
 
-    $xml[] = '  <channel id="' . xe($id) . '">';
+    $xml[] = '  <channel id="' . xe($id) . '"' . ($ch['country'] !== '' ? ' country="' . xe($ch['country']) . '"' : '') . '>';
     foreach ($displayNames as $n) {
         $xml[] = '    <display-name>' . xe($n) . '</display-name>';
     }
@@ -422,6 +519,7 @@ foreach ($allChannels as $id => $ch) {
         'name'          => sanitizeUtf8($displayNames[0] ?? $id),
         'display_names' => array_map('sanitizeUtf8', $displayNames),
         'logo'          => sanitizeUtf8($ch['icon']),
+        'country'       => $ch['country'],
         'programmes'    => $programmesByChannel[$id] ?? [],
     ];
 }
