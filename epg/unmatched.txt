@@ -1,6 +1,7 @@
 # Unmatched epg_id values from tv.json
-# Add lines to epg/mapping.txt like:
-#   La 1.TV = La1.es
+# These channels could not be matched to any EPG source.
+# Add lines to epg/mapping.txt (MANUAL section) like:
+#   Telefe.TV = Telefe.ar
 
 Libertad.TV = 
 CGTNEurope.TV = 

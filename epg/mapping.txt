@@ -1,4 +1,103 @@
-# Manual mapping: epg_id_in_tv_json = source_channel_id
-# Leave empty if you rely only on automatic matching.
-# Example:
-# La 1.TV = La1.es
+# ============================================================
+# MANUAL MAPPING
+# Añade aquí los mapeos que quieras forzar manualmente.
+# Formato:  epg_id_de_tv.json = id_de_la_fuente
+# Ejemplo:  Telefe.TV = Telefe.ar
+# ============================================================
+
+# (vacío por ahora)
+
+
+# ============================================================
+# AUTO MAPPING (generado por el script — no editar)
+# ============================================================
+7Andalucia.TV = 7TV.Andalucía.es
+24Horas.TV = 24h.fr
+324.TV = 3CatInfo.es
+AlJazeera.TV = Al.Jazeera.pt
+Badalona.TV = Televisió de Badalona
+BetisTV.TV = Betis TV
+Bloom.TV = Bloomberg.Europe.fr
+BOM Cine.TV = BOM.Cine.es
+BonDiaTV_CAT.TV = Bon.Dia.TV.es
+BTV.TV = betevé.es
+C33.TV = 33.es
+CanalSurA.TV = Canal.Sur.Andalucía.es
+Canarias.TV = TelevisiónCanaria.es
+CGTN.TV = CGTN.pt
+CGTNDoc.TV = CGTN Documentary
+Clan.TV = Clan
+CMM.TV = Castilla-La.Mancha.Media.es
+CNNInt.TV = CNN.Internacional.es
+DKISS.TV = DKISS.es
+DMax.TV = DMAX.it
+E3.TV = Esport.3.es
+El Toro TV.TV = El.Toro.TV.es
+etb-1on.TV = ETB1.ON.es
+etb-2on.TV = ETB2.ON.es
+ETB1.TV = ETB.1.fr
+ETB2.TV = ETB.2.fr
+ETBSAT.TV = EITB.Basque.es
+Euronews.TV = Euronews.pt
+Extremadura.TV = Canal Extremadura
+FRANCE24.TV = France.24.fr
+FRANCEEspañol.TV = France.24.Espanol.fr
+GBNews.TV = GB.News.HD.uk
+GOL.TV = GOL
+IB3.TV = IB3.es
+Infinity Top Series.TV = Infinity Top Series
+InterAlmeria.TV = interalmería TV
+La 1.TV = La.1.fr
+La1_CAN.TV = La.1.Canarias.es
+La1_CAT.TV = La.1.Catalunya.es
+La 2.TV = La.2.fr
+La2_CAN.TV = La.2.Canarias.es
+LaOtra.TV = La.Otra.es
+MelillaTV.TV = TV.Melilla.es
+MirameTV.TV = Mírame.TV.es
+Mitele_Calle.TV = Infinity En la calle
+Mitele_Comedia.TV = Infinity Comedia
+Mitele_Viajes.TV = Infinity Viajes
+NaTV.TV = Navarra TV
+Negocios.TV = Negocios.TV.es
+OndaAlgeciras.TV = Onda.Algeciras.TV.es
+OndaCadiz.TV = OndaCádiz.es
+Paramount.TV = Paramount.Network.fr
+PopularTV_S.TV = Popular.TV.Cantabria.es
+PTV Linares.TV = PTV Linares
+Punt3.TV = Punt.3.es
+RecordNews.TV = Record.News.pt
+RMTV.TV = Real.Madrid.TV.pt
+SkyNews.TV = Sky.News.pt
+SolMusica.TV = Sol.Música.es
+SX3.TV = SX3.es
+Teledeporte.TV = Teledeporte.es
+TeleElx.TV = Tele.Elx.es
+Telemadrid.TV = Telemadrid.es
+TeleMadridInt.TV = Telemadrid.Internacional.es
+TEN.TV = TEN.es
+TRECE.TV = TRECE.es
+TV3.TV = TV3.es
+TVC.TV = TV3CAT.es
+TVG2.TV = tvG2.es
+TVGAL.TV = TVG.es
+TVGEuropa.TV = TVG.EUROPA.fr
+TVGirona.TV = TV Girona
+Xarxa_Canal_10_Emporda.TV = Canal 10 Empordà
+Xarxa_Canal_Reus_TV.TV = Canal Reus TV
+Xarxa_Canal_Taronja_Anoia.TV = Canal Taronja Anoia
+Xarxa_Canal_Taronja_Central.TV = Canal Taronja Central
+Xarxa_Canal_Terrassa.TV = Canal Terrassa
+Xarxa_Canal_Terres_Ebre.TV = Canal Terres de l'Ebre
+Xarxa_Cugat_Media.TV = Cugat Media
+Xarxa_El_9_TV.TV = El 9 TV
+Xarxa_ETV.TV = ETV
+Xarxa_LleidaTV.TV = Lleida TV
+Xarxa_Olot_TV.TV = Olot TV
+Xarxa_Penedes_TV.TV = Penedès TV
+Xarxa_TAC12.TV = TAC12
+Xarxa_TV_Costa_Brava.TV = TV Costa Brava
+Xarxa_TV_Sabadell_Valles.TV = TV Sabadell - Vallès
+Xarxa_Valles_Visio.TV = Vallès Visió
+Xarxa_VOTV.TV = VOTV
+À Punt.TV = À.Punt.es

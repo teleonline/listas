@@ -17485,10 +17485,6 @@
     <desc lang="es">+12
 · Sus protagonistas han salvado más de 300 vidas y han emocionado a los telespectadores resolviendo complejos casos clínicos mientras hacían frente a los vaivenes de sus vidas personales.</desc>
   </programme>
-  <programme start="20260928100900 +0200" stop="20260928102900 +0200" channel="C33.TV">
-    <title lang="es">Marcians</title>
-    <desc lang="es">La Mabel Olea és una ballarina, performer i coreògrafa lleidatana que imagina personatges amb punxes, ales, tentacles, braços llarguíssims.</desc>
-  </programme>
   <programme start="20260928102900 +0200" stop="20260928110600 +0200" channel="C33.TV">
     <title lang="es">Tot el temps del món</title>
     <desc lang="es">Cada setmana Anna Guitart entrevista un gran nom de les lletres. Autors nacionals i internacionals conversaran sense rellotge en aquest programa que vol ser un homenatge a la paraula, a la reflexió, a la conversa pausada i, sobretot, al valor de la literatura.</desc>
@@ -18572,10 +18568,6 @@
   <programme start="20261001223000 +0200" stop="20261001230000 +0200" channel="7Andalucia.TV">
     <title lang="es">Siete Economía</title>
     <desc lang="es">Raúl Estévez nos trae las más interesantes entrevistas y tertulias del sector empresarial y financiero.</desc>
-  </programme>
-  <programme start="20260928100900 +0200" stop="20260928115700 +0200" channel="BOM Cine.TV">
-    <title lang="es">Almost Friends</title>
-    <desc lang="es">Un joven y desmotivado veinteañero que aún vive en casa con su madre y su padrastro se enamora de la chica que trabaja en la cafetería local, centrando toda su atención en ella. El problema es que ella tiene un novio con el cual mantiene una relación seria.</desc>
   </programme>
   <programme start="20260928115700 +0200" stop="20260928133700 +0200" channel="BOM Cine.TV">
     <title lang="es">Lecciones peligrosas</title>
@@ -20726,10 +20718,6 @@
   <programme start="20261001222000 +0200" stop="20261001231000 +0200" channel="etb-2on.TV">
     <title lang="es">Atrápame si puedes</title>
     <desc lang="es">Es un programa diario presentado por Patxi Alonso donde los concursantes pasarán un rato divertido respondiendo preguntas y poniendo a prueba sus reflejos.</desc>
-  </programme>
-  <programme start="20260928101100 +0200" stop="20260928103200 +0200" channel="El Toro TV.TV">
-    <title lang="es">Deportes en libertad</title>
-    <desc lang="es">Repaso de la actualidad deportiva con análisis y datos de las principales competiciones. El fútbol es el protagonista, pero también tienen espacio el baloncesto, tenis, ciclismo, balonmano, waterpolo y muchas más disciplinas.</desc>
   </programme>
   <programme start="20260928103200 +0200" stop="20260928113300 +0200" channel="El Toro TV.TV">
     <title lang="es">Historias de nuestros médicos</title>
@@ -24599,10 +24587,6 @@
   <programme start="20261001193000 +0200" stop="20261001230000 +0200" channel="SolMusica.TV">
     <title lang="es">Videoclips</title>
     <desc lang="es">Espacio que incluye la emisión de varios videoclips musicales.</desc>
-  </programme>
-  <programme start="20260928100900 +0200" stop="20260928111700 +0200" channel="TEN.TV">
-    <title lang="es">Caso cerrado</title>
-    <desc lang="es">Programa centrado en la resolución de conflictos presentado por la doctora cubana Ana María Polo. En cada edición se presentan varios casos entre participantes en litigio, y Ana María intenta resolver la situación como juez árbitro.</desc>
   </programme>
   <programme start="20260928111700 +0200" stop="20260928122400 +0200" channel="TEN.TV">
     <title lang="es">Caso cerrado</title>
@@ -29602,14 +29586,6 @@
     <title lang="es">Noticias 24H</title>
     <category lang="es">Journal</category>
   </programme>
-  <programme start="20260928101000 +0000" stop="20260928101600 +0000" channel="FRANCEEspañol.TV">
-    <title lang="es">Medio ambiente</title>
-    <category lang="es">Magazine de la nature</category>
-  </programme>
-  <programme start="20260928101600 +0000" stop="20260928103000 +0000" channel="FRANCEEspañol.TV">
-    <title lang="es">En primera plana</title>
-    <category lang="es">Magazine d'information</category>
-  </programme>
   <programme start="20260928103000 +0000" stop="20260928104000 +0000" channel="FRANCEEspañol.TV">
     <title lang="es">Noticias</title>
     <category lang="es">Journal</category>
@@ -31505,10 +31481,6 @@
   <programme start="20261001233500 +0000" stop="20261002003500 +0000" channel="TVGEuropa.TV">
     <title lang="es">A vida do mercado</title>
     <category lang="es">Documentaire de société</category>
-  </programme>
-  <programme start="20260928101000 +0000" stop="20260928103000 +0000" channel="FRANCE24.TV">
-    <title lang="es">A l'affiche</title>
-    <category lang="es">Magazine culturel</category>
   </programme>
   <programme start="20260928103000 +0000" stop="20260928104500 +0000" channel="FRANCE24.TV">
     <title lang="es">Paris direct : le journal</title>
@@ -38867,11 +38839,6 @@
     <title lang="es">Inside Story</title>
     <desc lang="es">Beyond the headlines to the heart of the news of the day. Al Jazeera gets the Inside Story from some of the best minds from around the globe.</desc>
     <category lang="es">Debate</category>
-  </programme>
-  <programme start="20260928101500 +0000" stop="20260928110000 +0000" channel="CGTN.TV">
-    <title lang="es">Africa Live</title>
-    <desc lang="es">Africa Live is a news program that focuses on African issues and issues related to this diverse continent. CGTN's Nairobi-based broadcast center produces Africa Live.</desc>
-    <category lang="es">Informação internacional</category>
   </programme>
   <programme start="20260928110000 +0000" stop="20260928113000 +0000" channel="CGTN.TV">
     <title lang="es">Asia Today</title>
