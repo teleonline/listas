@@ -97,12 +97,12 @@ Accede a los archivos en bruto directamente para integración:
 
 **TV JSON:**
 ```
-https://raw.githubusercontent.com/teleonline/listas/main/tv.json
+https://teleonline.github.io/listas/tv.json
 ```
 
 **TV M3U8:**
 ```
-https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8
+https://teleonline.github.io/listas/tv.m3u8
 ```
 
 ### Casos de Uso
@@ -139,7 +139,7 @@ Mantén copias locales de canales y metadatos para acceso sin conexión
 
 Solo canales que cumplen estos criterios:
 
-1. **Distribuidos Legalmente** - Transmitidos oficialmente y públicamente disponibles
+1. **Distribuidos Legalmente** - Transmitidos oficialmente y públicamente disponibles con autorización
 2. **Sin Elusión de DRM** - No se eluden mecanismos de protección de derechos de autor
 3. **Respeto Regional** - Se aplican restricciones geográficas cuando corresponde
 4. **Atribución Adecuada** - Se da crédito a los radiodifusores originales
@@ -175,7 +175,7 @@ Para contribuir actualizaciones o correcciones:
 1. Verifica que el canal esté legalmente disponible en su región
 2. Incluye URLs de transmisión funcionales y metadatos precisos
 3. Prueba que las transmisiones funcionan correctamente
-4. Envía actualizaciones con documentación clara a: info@teleonline.org
+4. Envía actualizaciones con documentación clara a: soporte@teleonline.org
 
 ## Aviso Legal
 
