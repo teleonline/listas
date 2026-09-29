@@ -1,32 +1,32 @@
-[Leer en Español](README.es.md)
+[Read in English](README.md)
 
 # Teleonline - Curated TV Lists
 
-Teleonline maintains curated lists of publicly available television channels from around the world (official sources only). These lists group together free-to-air (FTA) channels that are legally available to the general public.
+Teleonline maintains curated lists of publicly available television channels from around the world (only from official and authorized sources). These lists bring together local, national, independent, and international television channels that are legally available to the general public, as well as videos/live streams from video platforms with authorization to embed their player on third-party sites.
 
 ## Table of Contents
 
-- [Contents](#contents)
+- [Content](#content)
 - [Data Structure](#data-structure)
 - [Field Definitions](#field-definitions)
-- [M3U8 Playlist](#m3u8-playlist)
+- [M3U8 List](#m3u8-list)
 - [How to Use](#how-to-use)
 - [Legal Compliance](#legal-compliance)
-- [Updates & Maintenance](#updates--maintenance)
+- [Updates and Maintenance](#updates-and-maintenance)
 - [Contributing](#contributing)
-- [Disclaimer](#disclaimer)
+- [Legal Notice](#legal-notice)
 - [License](#license)
 
-## Contents
+## Content
 
 This repository contains:
 
-- **tv.json** - Television channels organized by country and scope
+- **tv.json** - TV channels organized by country and theme
 - **tv.m3u8** - M3U8 playlist format for media players
 
-All channels listed are:
-- ✓ Publicly broadcast channels
-- ✓ Free-to-air (FTA) without subscription requirements
+All listed channels are:
+- ✓ Public broadcast channels
+- ✓ Local, national, independent, and international television services without subscription requirements
 - ✓ Legally distributed by their respective broadcasters
 - ✓ Accessible within their designated broadcast regions
 
@@ -68,26 +68,26 @@ All channels listed are:
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | string | Channel name |
-| `logo` | string | Logo/image URL |
+| `logo` | string | Logo or image URL |
 | `web` | string | Official website |
 | `epg_id` | string | Electronic Program Guide identifier |
 | `options` | array | Available streaming options |
-| `format` | string | Stream format (hls, dash, youtube, web) |
-| `url` | string | Stream URL |
+| `format` | string | Streaming format (hls, dash, youtube, web) |
+| `url` | string | Streaming URL |
 
-## M3U8 Playlist
+## M3U8 List
 
 The `tv.m3u8` file is automatically generated from `tv.json` and contains:
 - Channel metadata (name, logo, EPG ID)
-- Stream URLs
-- Group categorization by country and scope
+- Streaming URLs
+- Categorization by country and scope
 
 Compatible with:
 - VLC Media Player
 - Kodi
 - OBS Studio
-- IPTV Player apps
-- Other IPTV-compatible clients
+- IPTV apps
+- Other IPTV-compatible players
 
 ## How to Use
 
@@ -97,28 +97,28 @@ Access the raw files directly for integration:
 
 **TV JSON:**
 ```
-https://raw.githubusercontent.com/teleonline/listas/main/tv.json
+https://teleonline.github.io/listas/tv.json
 ```
 
 **TV M3U8:**
 ```
-https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8
+https://teleonline.github.io/listas/tv.m3u8
 ```
 
 ### Use Cases
 
 #### 1. Media Players
-Add the M3U8 URL to your media player:
+Add the M3U8 URL to your player:
 - **VLC:** Media → Open Network Stream → Paste M3U8 URL
-- **Kodi:** Add-ons → Install from Repository → Enter M3U8 URL
-- **OBS:** Scene → Add Source → Media Source → Enter M3U8 URL
+- **Kodi:** Add-ons → Install from repository → Enter M3U8 URL
+- **OBS:** Scene → Add source → Media Source → Enter M3U8 URL
 
 #### 2. Custom Applications
 Use `tv.json` to build custom apps:
 - Create IPTV applications
-- Build channel recommendation systems
-- Develop EPG integrations
-- Create smart TV apps
+- Develop channel recommendation systems
+- Integrate with electronic program guides
+- Create Smart TV apps
 
 #### 3. Playlist Management
 Import M3U8 into playlist managers:
@@ -128,9 +128,9 @@ Import M3U8 into playlist managers:
 - Televizo
 
 #### 4. Web Integration
-Embed streams in web applications using JSON data with HLS.js or similar libraries
+Integrate streams into web applications using JSON data with libraries such as HLS.js
 
-#### 5. Backup & Archive
+#### 5. Backup and Archive
 Keep local copies of channels and metadata for offline access
 
 ## Legal Compliance
@@ -139,62 +139,62 @@ Keep local copies of channels and metadata for offline access
 
 Only channels that meet these criteria:
 
-1. **Legally Distributed** - Officially broadcast and publicly available
-2. **No DRM Bypass** - No circumvention of copyright protection mechanisms
-3. **Regional Respect** - Geographic restrictions are properly applied
-4. **Proper Attribution** - Credit given to original broadcasters
+1. **Legally Distributed** - Officially broadcast and publicly available with authorization
+2. **No DRM Circumvention** - No copyright protection mechanisms are circumvented
+3. **Regional Respect** - Geographic restrictions apply where applicable
+4. **Proper Attribution** - Credit is given to the original broadcasters
 
-### What We Don't Include
+### What We Do NOT Include
 
 - Unauthorized or pirated streams
-- Subscription-protected channels
-- DRM-circumvented content
-- Illegally redistributed broadcasts
+- Channels protected by pay services
+- Content with circumvented DRM
+- Illegally distributed streams
 
 ### External Use
 
 If you use these lists externally, you agree to:
 
 1. Respect all geographic and licensing restrictions
-2. Comply with local broadcast regulations
+2. Comply with local broadcasting regulations
 3. Use streams only in permitted regions
-4. Follow broadcaster terms of service
+4. Follow the broadcaster's terms of service
 
-## Updates & Maintenance
+## Updates and Maintenance
 
 Lists are maintained through:
 - Community contributions
-- Broadcaster API monitoring
-- Regular stream availability validation
-- Removal of broken or obsolete streams
+- Monitoring broadcaster APIs
+- Regular validation of stream availability
+- Removal of obsolete or broken streams
 
 ## Contributing
 
 To contribute updates or corrections:
 
-1. Verify the channel is legally available FTA in its broadcast region
+1. Verify that the channel is legally available in its region
 2. Include working stream URLs and accurate metadata
-3. Test streams function correctly
-4. Submit updates with clear documentation
+3. Test that the streams work correctly
+4. Submit updates with clear documentation to: soporte@teleonline.org
 
-## Disclaimer
+## Legal Notice
 
-Teleonline provides lists "as-is" for informational and legal use only. Users are responsible for:
+Teleonline provides these lists "as is" for informational and legal use only. Users are responsible for:
 
-- Complying with local broadcast laws
-- Respecting broadcaster terms of service
+- Complying with local broadcasting laws
+- Respecting the broadcaster's terms of service
 - Understanding regional content restrictions
 - Using streams only in permitted geographic regions
 
 Teleonline does NOT:
-- Host or distribute any streams directly
+- Provide, host, or distribute any streams directly
 - Circumvent DRM or copyright protections
 - Facilitate unauthorized access to paid content
-- Guarantee availability or reliability of streams
+- Guarantee stream availability or reliability
 
 ## License
 
-These lists are provided solely for legal informational purposes. By using these lists, you acknowledge you will use them in compliance with all applicable laws and broadcaster terms of service.
+These lists are provided for informational and legal use only. By using these lists, you acknowledge that you will use them in compliance with all applicable laws and the broadcasters' terms of service.
 
 ---
 
