@@ -29,5 +29,6 @@ jobs:
         with:
           commit_message: "chore: update EPG guide [skip ci]"
           file_pattern: |
-            epg/guide.xml
+            epg.xml
+            epg.json
             epg/unmatched.txt
