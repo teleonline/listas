@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv generator-info-name="build-epg-guide.php" generator-info-url="https://github.com/teleonline/listas">
+  <channel id="La 1.TV">
+    <display-name>La 1</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%201.png"/>
+  </channel>
+  <channel id="La 2.TV">
+    <display-name>La 2</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/La%202.png"/>
+  </channel>
+  <channel id="DMax.TV">
+    <display-name>DMAX</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DMAX.png"/>
+  </channel>
+  <channel id="TRECE.TV">
+    <display-name>TRECE</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png"/>
+  </channel>
+  <channel id="El Toro TV.TV">
+    <display-name>El Toro TV</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/El%20Toro%20TV.png"/>
+  </channel>
+  <channel id="TEN.TV">
+    <display-name>Ten</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Ten.png"/>
+  </channel>
+  <channel id="DKISS.TV">
+    <display-name>DKISS</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DKISS.png"/>
+  </channel>
+  <channel id="BOM Cine.TV">
+    <display-name>BOM Cine</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/BOM%20Cine.png"/>
+  </channel>
+  <channel id="Euronews.TV">
+    <display-name>Euronews</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/EuroNews.png"/>
+  </channel>
+  <channel id="Teledeporte.TV">
+    <display-name>Teledeporte</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Teledeporte.png"/>
+  </channel>
+  <channel id="GOL.TV">
+    <display-name>GOL TV</display-name>
+    <icon src="https://graph.facebook.com/goltv.es/picture?width=200&amp;height=200"/>
+  </channel>
+  <channel id="Clan.TV">
+    <display-name>Clan</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Clan.png"/>
+  </channel>
+  <channel id="Infinity Top Series.TV">
+    <display-name>Infinity Top Series</display-name>
+    <icon src="https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/esp/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMmE2YTBiNDYzYjI4YTRlL29yaWdpbmFsL0NoYW5uZWwtbG9nb19JbmZpbml0eS1Ub3AtU2VyaWVzLnBuZw/single/200/200?r="/>
+  </channel>
+  <channel id="PTV Linares.TV">
+    <display-name>PTV Linares</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/PTV%20Linares.png"/>
+  </channel>
+  <channel id="TV3.TV">
+    <display-name>TV3</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TV3.png"/>
+  </channel>
+  <channel id="SX3.TV">
+    <display-name>SX3</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/SX3.png"/>
+  </channel>
+  <channel id="Telemadrid.TV">
+    <display-name>Telemadrid</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telemadrid.png"/>
+  </channel>
+  <channel id="À Punt.TV">
+    <display-name>À Punt</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/%C3%80%20Punt.png"/>
+  </channel>
+  <channel id="TVG2.TV">
+    <display-name>TVG 2</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TVG2.png"/>
+  </channel>
+  <channel id="ETB1.TV">
+    <display-name>ETB 1</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/etb1.png"/>
+  </channel>
+  <channel id="ETB2.TV">
+    <display-name>ETB 2</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/etb2.png"/>
+  </channel>
+  <channel id="TeleSUR.TV">
+    <display-name>TeleSUR Venezuela</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Telesur.png"/>
+  </channel>
+  <channel id="EWTN.TV">
+    <display-name>EWTN España</display-name>
+    <icon src="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/EWTN.png"/>
+  </channel>
+</tv>
