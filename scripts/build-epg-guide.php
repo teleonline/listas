@@ -11,6 +11,7 @@
  * Includes ALL channels from all sources (no filtering by tv.json).
  * Adds automatic display-name variants (HD, SD, .TV, base name).
  * Channels can be excluded via epg/exclusions.txt.
+ * Programmes keep their image (<icon src="...">) in both epg.xml and epg.json.
  *
  * Usage: php scripts/build-epg-guide.php
  */
@@ -115,6 +116,20 @@ function sanitizeUtf8(string $s): string {
         return mb_convert_encoding($s, 'UTF-8', 'UTF-8');
     }
     return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $s) ?? $s;
+}
+
+/**
+ * Escapes a string for XML, both for text nodes and for attribute values.
+ *
+ * IMPORTANT: htmlspecialchars($s, ENT_XML1) does NOT escape double quotes (ENT_XML1 only
+ * selects the doctype; the quote style needs ENT_QUOTES). A URL containing a " inside
+ * <icon src="..."> then produced invalid XML, and any strict XML parser stopped at that
+ * line. ENT_QUOTES fixes it. Characters not allowed in XML 1.0 are also removed.
+ */
+function xe(string $s): string {
+    $clean = preg_replace('/[^\x{9}\x{A}\x{D}\x{20}-\x{D7FF}\x{E000}-\x{FFFD}\x{10000}-\x{10FFFF}]/u', '', $s);
+    if ($clean !== null) $s = $clean;
+    return htmlspecialchars($s, ENT_QUOTES | ENT_XML1 | ENT_SUBSTITUTE, 'UTF-8');
 }
 
 function writeGzip(string $path, string $content): int {
@@ -223,6 +238,7 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
                     'title'    => '',
                     'desc'     => '',
                     'category' => '',
+                    'icon'     => '',
                 ];
             } elseif ($reader->name === 'title' && $currentProgramme !== null) {
                 $reader->read();
@@ -238,6 +254,12 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
                 $reader->read();
                 if ($reader->nodeType === XMLReader::TEXT || $reader->nodeType === XMLReader::CDATA) {
                     if ($currentProgramme['category'] === '') $currentProgramme['category'] = trim($reader->value);
+                }
+            } elseif ($reader->name === 'icon' && $currentProgramme !== null) {
+                // Imagen del programa: <icon src="https://..."/>
+                $src = $reader->getAttribute('src');
+                if ($src !== null && $currentProgramme['icon'] === '') {
+                    $currentProgramme['icon'] = trim($src);
                 }
             }
         } elseif ($reader->nodeType === XMLReader::END_ELEMENT) {
@@ -312,15 +334,17 @@ logMsg('Channels after exclusion: ' . count($allChannels));
 // Filter programmes
 $finalProgrammes = [];
 $orphanProgrammes = 0;
+$withIcon = 0;
 foreach ($allProgrammes as $pr) {
     if (!isset($allChannels[$pr['channel']])) {
         $orphanProgrammes++;
         continue;
     }
+    if ($pr['icon'] !== '') $withIcon++;
     $finalProgrammes[] = $pr;
 }
 logMsg('Programmes dropped (excluded channels): ' . $orphanProgrammes);
-logMsg('Final programmes: ' . count($finalProgrammes));
+logMsg('Final programmes: ' . count($finalProgrammes) . " ($withIcon with image)");
 unset($allProgrammes);
 
 ksort($allChannels, SORT_NATURAL | SORT_FLAG_CASE);
@@ -338,24 +362,25 @@ foreach ($allChannels as $id => $ch) {
     $displayNames = buildDisplayNames($ch['names']);
     $totalDisplayNames += count($displayNames);
 
-    $xml[] = '  <channel id="' . htmlspecialchars($id, ENT_XML1) . '">';
+    $xml[] = '  <channel id="' . xe($id) . '">';
     foreach ($displayNames as $n) {
-        $xml[] = '    <display-name>' . htmlspecialchars($n, ENT_XML1) . '</display-name>';
+        $xml[] = '    <display-name>' . xe($n) . '</display-name>';
     }
     if ($ch['icon'] !== '') {
-        $xml[] = '    <icon src="' . htmlspecialchars($ch['icon'], ENT_XML1) . '"/>';
+        $xml[] = '    <icon src="' . xe($ch['icon']) . '"/>';
     }
     $xml[] = '  </channel>';
 }
 logMsg("Total display-names generated: $totalDisplayNames");
 
 foreach ($finalProgrammes as $pr) {
-    $xml[] = '  <programme start="' . htmlspecialchars($pr['start'], ENT_XML1) . '"'
-           . ' stop="'  . htmlspecialchars($pr['stop'],  ENT_XML1) . '"'
-           . ' channel="' . htmlspecialchars($pr['channel'], ENT_XML1) . '">';
-    if ($pr['title'] !== '')    $xml[] = '    <title>' . htmlspecialchars($pr['title'], ENT_XML1) . '</title>';
-    if ($pr['desc'] !== '')     $xml[] = '    <desc>' . htmlspecialchars($pr['desc'], ENT_XML1) . '</desc>';
-    if ($pr['category'] !== '') $xml[] = '    <category>' . htmlspecialchars($pr['category'], ENT_XML1) . '</category>';
+    $xml[] = '  <programme start="' . xe($pr['start']) . '"'
+           . ' stop="'  . xe($pr['stop']) . '"'
+           . ' channel="' . xe($pr['channel']) . '">';
+    if ($pr['title'] !== '')    $xml[] = '    <title>' . xe($pr['title']) . '</title>';
+    if ($pr['desc'] !== '')     $xml[] = '    <desc>' . xe($pr['desc']) . '</desc>';
+    if ($pr['category'] !== '') $xml[] = '    <category>' . xe($pr['category']) . '</category>';
+    if ($pr['icon'] !== '')     $xml[] = '    <icon src="' . xe($pr['icon']) . '"/>';
     $xml[] = '  </programme>';
 }
 $xml[] = '</tv>';
@@ -376,13 +401,16 @@ logMsg('XML gz written: ' . $xmlGzPath . ' (' . number_format($xmlGzSize) . ' by
 // ─────────────────────────────────────────────
 $programmesByChannel = [];
 foreach ($finalProgrammes as $pr) {
-    $programmesByChannel[$pr['channel']][] = [
+    $item = [
         'start'    => xmltvTimeToIso($pr['start']),
         'stop'     => xmltvTimeToIso($pr['stop']),
         'title'    => sanitizeUtf8($pr['title']),
         'desc'     => sanitizeUtf8($pr['desc']),
         'category' => sanitizeUtf8($pr['category']),
     ];
+    // Imagen del programa (solo si existe, para no engordar el JSON)
+    if ($pr['icon'] !== '') $item['icon'] = sanitizeUtf8($pr['icon']);
+    $programmesByChannel[$pr['channel']][] = $item;
 }
 unset($finalProgrammes);
 
