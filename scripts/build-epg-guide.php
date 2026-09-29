@@ -7,6 +7,10 @@
  *   - epg.xml  (XMLTV format, at repo root)
  *   - epg.json (JSON format, at repo root)
  *
+ * Uses a persistent mapping file (epg/mapping.txt) with two sections:
+ *   - MANUAL: user-defined mappings, never overwritten
+ *   - AUTO:   script-generated mappings, rewritten on each run
+ *
  * Usage: php scripts/build-epg-guide.php
  */
 
@@ -35,11 +39,8 @@ function logMsg(string $msg): void {
 function downloadContent(string $url): ?string {
     logMsg("Downloading: $url");
     $ctx = stream_context_create([
-        'http' => [
-            'timeout'    => 180,
-            'user_agent' => 'Mozilla/5.0 (compatible; EPG-Builder/1.0)',
-        ],
-        'ssl' => ['verify_peer' => false, 'verify_peer_name' => false],
+        'http' => ['timeout' => 180, 'user_agent' => 'Mozilla/5.0 (compatible; EPG-Builder/1.0)'],
+        'ssl'  => ['verify_peer' => false, 'verify_peer_name' => false],
     ]);
     $data = @file_get_contents($url, false, $ctx);
     if ($data === false) {
@@ -108,17 +109,71 @@ function readSettings(string $path): array {
     return $out;
 }
 
-function readMapping(string $path): array {
-    $out = [];
-    if (!is_file($path)) return $out;
-    foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-        $line = trim($line);
-        if ($line === '' || $line[0] === '#') continue;
-        if (strpos($line, '=') === false) continue;
-        [$k, $v] = explode('=', $line, 2);
-        $out[trim($k)] = trim($v);
+/**
+ * Reads mapping.txt and splits it into two sections:
+ *   - manual: lines before the "AUTO MAPPING" marker
+ *   - auto:   lines after the "AUTO MAPPING" marker
+ */
+function readMappingFile(string $path): array {
+    $result = ['manual' => [], 'auto' => []];
+    if (!is_file($path)) return $result;
+
+    $currentSection = 'manual';
+    foreach (file($path, FILE_IGNORE_NEW_LINES) as $line) {
+        $trimmed = trim($line);
+        // Detect section marker
+        if (stripos($trimmed, 'AUTO MAPPING') !== false) {
+            $currentSection = 'auto';
+            continue;
+        }
+        if ($trimmed === '' || $trimmed[0] === '#') continue;
+        if (strpos($trimmed, '=') === false) continue;
+        [$k, $v] = explode('=', $trimmed, 2);
+        $k = trim($k); $v = trim($v);
+        if ($k === '' || $v === '') continue;
+        $result[$currentSection][$k] = $v;
     }
-    return $out;
+    return $result;
+}
+
+/**
+ * Writes mapping.txt preserving the manual section and regenerating
+ * the auto section.
+ */
+function writeMappingFile(string $path, array $manual, array $auto): void {
+    $lines = [];
+    $lines[] = '# ============================================================';
+    $lines[] = '# MANUAL MAPPING';
+    $lines[] = '# Añade aquí los mapeos que quieras forzar manualmente.';
+    $lines[] = '# Formato:  epg_id_de_tv.json = id_de_la_fuente';
+    $lines[] = '# Ejemplo:  Telefe.TV = Telefe.ar';
+    $lines[] = '# ============================================================';
+    $lines[] = '';
+
+    if (empty($manual)) {
+        $lines[] = '# (vacío por ahora)';
+    } else {
+        ksort($manual, SORT_NATURAL | SORT_FLAG_CASE);
+        foreach ($manual as $k => $v) {
+            $lines[] = "$k = $v";
+        }
+    }
+    $lines[] = '';
+    $lines[] = '';
+    $lines[] = '# ============================================================';
+    $lines[] = '# AUTO MAPPING (generado por el script — no editar)';
+    $lines[] = '# ============================================================';
+    if (empty($auto)) {
+        $lines[] = '# (vacío por ahora)';
+    } else {
+        ksort($auto, SORT_NATURAL | SORT_FLAG_CASE);
+        foreach ($auto as $k => $v) {
+            $lines[] = "$k = $v";
+        }
+    }
+    $lines[] = '';
+
+    file_put_contents($path, implode("\n", $lines));
 }
 
 function normalizeName(string $s): string {
@@ -140,25 +195,14 @@ function normalizeName(string $s): string {
     return $s;
 }
 
-/**
- * Converts XMLTV time "20260929120000 +0200" to ISO 8601 "2026-09-29T12:00:00+02:00".
- */
 function xmltvTimeToIso(string $xmltvTime): string {
     $xmltvTime = trim($xmltvTime);
     if (strlen($xmltvTime) < 14) return $xmltvTime;
-
     $date = substr($xmltvTime, 0, 14);
     $tz   = trim(substr($xmltvTime, 14));
-
-    $y = substr($date, 0, 4);
-    $mo = substr($date, 4, 2);
-    $d = substr($date, 6, 2);
-    $h = substr($date, 8, 2);
-    $mi = substr($date, 10, 2);
-    $s = substr($date, 12, 2);
-
+    $y = substr($date, 0, 4); $mo = substr($date, 4, 2); $d = substr($date, 6, 2);
+    $h = substr($date, 8, 2); $mi = substr($date, 10, 2); $s = substr($date, 12, 2);
     $iso = "$y-$mo-$d" . 'T' . "$h:$mi:$s";
-
     if ($tz !== '' && preg_match('/^([+-])(\d{2})(\d{2})$/', $tz, $m)) {
         $iso .= $m[1] . $m[2] . ':' . $m[3];
     } elseif ($tz !== '') {
@@ -169,14 +213,10 @@ function xmltvTimeToIso(string $xmltvTime): string {
     return $iso;
 }
 
-/**
- * Sanitizes a string to valid UTF-8 (drops invalid bytes).
- */
 function sanitizeUtf8(string $s): string {
     if (function_exists('mb_convert_encoding')) {
         return mb_convert_encoding($s, 'UTF-8', 'UTF-8');
     }
-    // Fallback: strip invalid UTF-8
     return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $s) ?? $s;
 }
 
@@ -191,8 +231,12 @@ $daysFuture = (int)($settings['dias-futuros'] ?? 7);
 $nameSuffix = $settings['display-name-suffix'] ?? '';
 logMsg("Settings: days-past=$daysPast, days-future=$daysFuture, suffix='$nameSuffix'");
 
-$manualMap = readMapping($mappingPath);
-logMsg('Manual mapping entries: ' . count($manualMap));
+// 1. Read existing mapping (manual + auto)
+$mapping     = readMappingFile($mappingPath);
+$manualMap   = $mapping['manual'];
+$autoMap     = $mapping['auto'];
+logMsg('Manual mappings: ' . count($manualMap));
+logMsg('Auto mappings (from previous run): ' . count($autoMap));
 
 // 2. Read tv.json
 if (!is_file($tvJsonPath)) die("Error: tv.json not found at $tvJsonPath\n");
@@ -258,82 +302,108 @@ foreach ($allChannels as $srcId => $ch) {
     }
 }
 
-// 6. Match
-$matched    = [];
-$unmatched  = [];
-$methodCount = ['manual' => 0, 'id' => 0, 'id-ci' => 0, 'name' => 0, 'name-norm' => 0, 'variant' => 0];
+// 6. Matching
+$matched         = [];  // epg_id => ['source_id' => ..., 'method' => ...]
+$newAutoMappings = [];  // epg_id => source_id (to be written to auto section)
+$unmatched       = [];  // list of epg_id with no mapping
+
+$methodCount = ['manual' => 0, 'auto' => 0, 'id' => 0, 'name' => 0, 'name-norm' => 0, 'norm-id' => 0];
 
 foreach ($epgIdToName as $epgId => $canonicalName) {
-    // a) Manual mapping
+    // ─── Priority 1: manual mapping ───
     if (isset($manualMap[$epgId]) && isset($allChannels[$manualMap[$epgId]])) {
         $matched[$epgId] = ['source_id' => $manualMap[$epgId], 'method' => 'manual'];
         $methodCount['manual']++;
         continue;
     }
-    // b) Exact id
-    if (isset($sourceIdIndex[$epgId])) {
-        $matched[$epgId] = ['source_id' => $sourceIdIndex[$epgId], 'method' => 'id'];
-        $methodCount['id']++;
-        continue;
-    }
-    // c) Case-insensitive id
-    $lower = strtolower($epgId);
-    if (isset($sourceIdCiIndex[$lower])) {
-        $matched[$epgId] = ['source_id' => $sourceIdCiIndex[$lower], 'method' => 'id-ci'];
-        $methodCount['id-ci']++;
-        continue;
-    }
-    // d) Display-name exact (ci)
-    $cleanName = strtolower(trim($canonicalName));
-    if (isset($sourceNameIndex[$cleanName])) {
-        $matched[$epgId] = ['source_id' => $sourceNameIndex[$cleanName], 'method' => 'name'];
-        $methodCount['name']++;
-        continue;
-    }
-    // e) Normalized display-name
-    $norm = normalizeName($canonicalName);
-    if ($norm !== '' && isset($sourceNormNameIndex[$norm])) {
-        $matched[$epgId] = ['source_id' => $sourceNormNameIndex[$norm], 'method' => 'name-norm'];
-        $methodCount['name-norm']++;
-        continue;
-    }
-    // f) Normalized source ID (catch "La1.es" <-> "La 1")
-    if ($norm !== '' && isset($sourceNormIdIndex[$norm])) {
-        $matched[$epgId] = ['source_id' => $sourceNormIdIndex[$norm], 'method' => 'variant'];
-        $methodCount['variant']++;
+
+    // ─── Priority 2: existing auto mapping (only if still valid) ───
+    if (isset($autoMap[$epgId]) && isset($allChannels[$autoMap[$epgId]])) {
+        $matched[$epgId] = ['source_id' => $autoMap[$epgId], 'method' => 'auto'];
+        $newAutoMappings[$epgId] = $autoMap[$epgId];
+        $methodCount['auto']++;
         continue;
     }
 
+    // ─── Priority 3: automatic matching ───
+    $sourceId = null;
+    $method   = null;
+
+    // a) Exact id
+    if (isset($sourceIdIndex[$epgId])) {
+        $sourceId = $sourceIdIndex[$epgId];
+        $method = 'id';
+    }
+    // b) Case-insensitive id
+    elseif (isset($sourceIdCiIndex[strtolower($epgId)])) {
+        $sourceId = $sourceIdCiIndex[strtolower($epgId)];
+        $method = 'id';
+    }
+    // c) Display-name exact (ci)
+    elseif (isset($sourceNameIndex[strtolower(trim($canonicalName))])) {
+        $sourceId = $sourceNameIndex[strtolower(trim($canonicalName))];
+        $method = 'name';
+    }
+    // d) Normalized display-name
+    else {
+        $norm = normalizeName($canonicalName);
+        if ($norm !== '' && isset($sourceNormNameIndex[$norm])) {
+            $sourceId = $sourceNormNameIndex[$norm];
+            $method = 'name-norm';
+        }
+        // e) Normalized source ID
+        elseif ($norm !== '' && isset($sourceNormIdIndex[$norm])) {
+            $sourceId = $sourceNormIdIndex[$norm];
+            $method = 'norm-id';
+        }
+    }
+
+    if ($sourceId !== null) {
+        $matched[$epgId] = ['source_id' => $sourceId, 'method' => $method];
+        $newAutoMappings[$epgId] = $sourceId;
+        if ($method === 'id')              $methodCount['id']++;
+        elseif ($method === 'name')        $methodCount['name']++;
+        elseif ($method === 'name-norm')   $methodCount['name-norm']++;
+        elseif ($method === 'norm-id')     $methodCount['norm-id']++;
+        continue;
+    }
+
+    // No match
     $unmatched[] = $epgId;
 }
 
 logMsg('Matched channels: ' . count($matched) . ' / ' . count($epgIdToName));
-logMsg("  by manual mapping:  {$methodCount['manual']}");
-logMsg("  by exact id:        {$methodCount['id']}");
-logMsg("  by id (ci):         {$methodCount['id-ci']}");
-logMsg("  by display-name:    {$methodCount['name']}");
-logMsg("  by normalized name: {$methodCount['name-norm']}");
-logMsg("  by variant:         {$methodCount['variant']}");
+logMsg("  from manual mapping: {$methodCount['manual']}");
+logMsg("  from auto mapping:   {$methodCount['auto']}");
+logMsg("  by exact id:         {$methodCount['id']}");
+logMsg("  by display-name:     {$methodCount['name']}");
+logMsg("  by normalized name:  {$methodCount['name-norm']}");
+logMsg("  by normalized id:    {$methodCount['norm-id']}");
 logMsg('Unmatched channels: ' . count($unmatched));
 
-// Write unmatched list
-if (!empty($unmatched)) {
-    $unmatchedLines = [
-        '# Unmatched epg_id values from tv.json',
-        '# Add lines to epg/mapping.txt like:',
-        '#   La 1.TV = La1.es',
-        '',
-    ];
-    foreach ($unmatched as $uid) $unmatchedLines[] = $uid . ' = ';
-    file_put_contents($unmatchedPath, implode("\n", $unmatchedLines));
-    logMsg('Written unmatched list to: ' . $unmatchedPath);
-}
+// 7. Write updated mapping.txt (manual preserved, auto regenerated)
+writeMappingFile($mappingPath, $manualMap, $newAutoMappings);
+logMsg('Mapping file updated: ' . $mappingPath . ' (' . count($newAutoMappings) . ' auto entries)');
 
-// 7. Reverse map: source_id => canonical epg_id
+// 8. Write unmatched.txt (only channels with no mapping at all)
+$unmatchedLines = [
+    '# Unmatched epg_id values from tv.json',
+    '# These channels could not be matched to any EPG source.',
+    '# Add lines to epg/mapping.txt (MANUAL section) like:',
+    '#   Telefe.TV = Telefe.ar',
+    '',
+];
+foreach ($unmatched as $uid) {
+    $unmatchedLines[] = $uid . ' = ';
+}
+file_put_contents($unmatchedPath, implode("\n", $unmatchedLines));
+logMsg('Unmatched list written: ' . $unmatchedPath . ' (' . count($unmatched) . ' entries)');
+
+// 9. Reverse map: source_id => canonical epg_id
 $sourceIdToEpgId = [];
 foreach ($matched as $epgId => $m) $sourceIdToEpgId[$m['source_id']] = $epgId;
 
-// 8. Filter programmes
+// 10. Filter programmes
 $now     = time();
 $minTime = $now - ($daysPast * 86400);
 $maxTime = $now + ($daysFuture * 86400);
@@ -350,9 +420,7 @@ foreach ($allProgrammes as $pr) {
 }
 logMsg('Programmes after filter: ' . count($filteredProgrammes));
 
-// ─────────────────────────────────────────────
-// 9. Build XML output
-// ─────────────────────────────────────────────
+// 11. Build XML output
 $xml = [];
 $xml[] = '<?xml version="1.0" encoding="UTF-8"?>';
 $xml[] = '<!DOCTYPE tv SYSTEM "xmltv.dtd">';
@@ -380,16 +448,10 @@ foreach ($filteredProgrammes as $pr) {
 }
 $xml[] = '</tv>';
 $xmlOutput = implode("\n", $xml);
-
 file_put_contents($xmlOutputPath, $xmlOutput);
+logMsg('✅ XML generated: ' . $xmlOutputPath . ' (' . number_format(strlen($xmlOutput)) . ' bytes)');
 
-logMsg('✅ XML generated: ' . $xmlOutputPath);
-logMsg('   Size: ' . number_format(strlen($xmlOutput)) . ' bytes');
-
-// ─────────────────────────────────────────────
-// 10. Build JSON output
-// ─────────────────────────────────────────────
-// Group programmes by channel (canonical epg_id)
+// 12. Build JSON output
 $programmesByChannel = [];
 foreach ($filteredProgrammes as $pr) {
     $programmesByChannel[$pr['channel']][] = [
@@ -434,13 +496,9 @@ if ($jsonOutput === false) {
     logMsg('⚠️  JSON encoding failed: ' . json_last_error_msg());
 } else {
     file_put_contents($jsonOutputPath, $jsonOutput);
-    logMsg('✅ JSON generated: ' . $jsonOutputPath);
-    logMsg('   Size: ' . number_format(strlen($jsonOutput)) . ' bytes');
+    logMsg('✅ JSON generated: ' . $jsonOutputPath . ' (' . number_format(strlen($jsonOutput)) . ' bytes)');
 }
 
-// ─────────────────────────────────────────────
-// Summary
-// ─────────────────────────────────────────────
 logMsg('=== EPG Builder finished ===');
 logMsg('   Channels: ' . count($matched));
 logMsg('   Programmes: ' . count($filteredProgrammes));
