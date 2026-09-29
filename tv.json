@@ -8656,6 +8656,23 @@
                             ],
                             "epg_id": "",
                             "nivel": "1"
+                        },
+                        {
+                            "name": "UresTV",
+                            "web": "",
+                            "logo": "https://teleonline.org/wp-content/uploads/2026/09/UresTV.jpg",
+                            "nivel": "3",
+                            "options": [
+                                {
+                                    "format": "m3u8",
+                                    "url": "https://movil.ejeserver.com/live/urestv.m3u8"
+                                }
+                            ],
+                            "fecha_autorizacion": "2026-09-28",
+                            "alcance_autorizacion": "",
+                            "medio_autorizacion": "email",
+                            "epg_id": "",
+                            "country": "🇨🇴 Colombia"
                         }
                     ]
                 }
