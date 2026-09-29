@@ -1,0 +1,56 @@
+# Excepciones de país: "id del canal = país"  (id exacto, sin distinguir mayúsculas)
+# Países: es fr uk de it pt ar   |   otros = sin botón de país (solo aparece en "Todos")
+# Solo hace falta para canales que vienen de una fuente de otro país (p.ej. internacionales
+# dentro del EPG de España). El resto hereda el país de su fuente en sources.txt.
+
+# --- Otros / internacionales ---
+1+1 International = otros
+PRO TV RUMANIA = otros
+Pro TV = otros
+Nova = otros
+ETV = otros
+Mega = otros
+VE PLUS TV = otros
+Telesur HD = otros
+Caracol TV = otros
+Canal de las Estrellas = otros
+Cubavisión Internacional HD = otros
+TV Chile = otros
+TUDN (Estados Unidos) = otros
+TUDN (México) = otros
+NHK WORLD = otros
+Arirang TV HD = otros
+CGTN Documentary = otros
+Al Jazeera English HD = otros
+Squirrel TV = otros
+Squirrel 2 = otros
+Toon Goggles = otros
+
+# --- Argentina ---
+ESPN Argentina = ar
+ESPN 2 Argentina = ar
+ESPN 3 Argentina = ar
+TyC Sports = ar
+Solidaria TV Argentina = ar
+
+# --- Francia ---
+France 2 = fr
+France 5 = fr
+France 24 (en Francais) = fr
+Gulli = fr
+M6 = fr
+TV5 Monde Europe HD = fr
+Mezzo = fr
+Mezzo Live HD = fr
+
+# --- Reino Unido ---
+Sky News International = uk
+Sky Sports 16 = uk
+BBC World News Europe HD = uk
+Bloomberg TV Europe = uk
+CNBC Europe HD = uk
+CNN International Europe = uk
+
+# --- Portugal ---
+RTP Internacional = pt
+Record = pt
