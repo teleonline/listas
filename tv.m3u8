@@ -842,6 +842,8 @@ https://liveingesta118.cdnmedia.tv/telecaribetvlive/smil:rtmp01.smil/playlist.m3
 https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Bendición Channel" tvg-logo="https://teleonline.org/wp-content/uploads/2025/12/bendicion-channel-tv-scaled.png" group-title="🇨🇴 Colombia",Bendición Channel
 https://live20.bozztv.com/akamaissh101/ssh101/bendiciontv7/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="UresTV" tvg-logo="https://teleonline.org/wp-content/uploads/2026/09/UresTV.jpg" group-title="🇨🇴 Colombia",UresTV
+https://movil.ejeserver.com/live/urestv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Garage TV Argentina" tvg-logo="https://pbs.twimg.com/profile_images/1169992187314167808/TeabGtEB_200x200.jpg" group-title="🇦🇷 Argentina",Garage TV Argentina
 https://stream1.sersat.com/hls/garagetv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="5TV" tvg-logo="https://teleonline.org/wp-content/uploads/2025/05/5TV.png" group-title="🇦🇷 Argentina",5TV
