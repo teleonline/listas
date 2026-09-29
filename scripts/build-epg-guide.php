@@ -3,8 +3,8 @@
  * build-epg-guide.php
  *
  * Downloads multiple XMLTV EPG sources and generates a complete merged guide:
- *   - epg.xml  (XMLTV format)
- *   - epg.json (JSON format)
+ *   - epg.xml.gz  (XMLTV format, gzip compressed)
+ *   - epg.json.gz (JSON format, gzip compressed)
  *
  * Includes ALL channels from all sources (no filtering by tv.json).
  * Channels can be excluded via epg/exclusions.txt.
@@ -22,8 +22,8 @@ $rootDir         = __DIR__ . '/..';
 $sourcesPath     = $rootDir . '/epg/sources.txt';
 $settingsPath    = $rootDir . '/epg/settings.txt';
 $exclusionsPath  = $rootDir . '/epg/exclusions.txt';
-$xmlOutputPath   = $rootDir . '/epg.xml';
-$jsonOutputPath  = $rootDir . '/epg.json';
+$xmlOutputPath   = $rootDir . '/epg.xml.gz';
+$jsonOutputPath  = $rootDir . '/epg.json.gz';
 
 // ─────────────────────────────────────────────
 // Helpers
@@ -113,8 +113,18 @@ function sanitizeUtf8(string $s): string {
 }
 
 /**
- * Parses an XMLTV string and streams channels/programmes into output arrays.
- * Uses XMLReader to keep memory usage low.
+ * Writes a string to a gzip file (maximum compression).
+ */
+function writeGzip(string $path, string $content): int {
+    $fp = gzopen($path, 'wb9');
+    if ($fp === false) return 0;
+    gzwrite($fp, $content);
+    gzclose($fp);
+    return filesize($path) ?: 0;
+}
+
+/**
+ * Parses XMLTV content using XMLReader (streaming, low memory).
  */
 function parseXmltvStreaming(string $xmlContent, array &$channels, array &$programmes, int $minTime, int $maxTime): void {
     $reader = new XMLReader();
@@ -151,10 +161,8 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
                 $ch    = $reader->getAttribute('channel') ?? '';
                 if ($ch === '' || $start === '') continue;
 
-                // Time window filter (early skip)
                 $startTs = strtotime(substr($start, 0, 14));
                 if ($startTs === false || $startTs < $minTime || $startTs > $maxTime) {
-                    // Skip this programme
                     $reader->next();
                     continue;
                 }
@@ -205,7 +213,7 @@ function parseXmltvStreaming(string $xmlContent, array &$channels, array &$progr
 // ─────────────────────────────────────────────
 // Main
 // ─────────────────────────────────────────────
-logMsg('=== EPG Builder started (FULL mode) ===');
+logMsg('=== EPG Builder started (FULL mode, gzip output) ===');
 
 $settings   = readSettings($settingsPath);
 $daysPast   = (int)($settings['dias-pasados']  ?? 1);
@@ -215,7 +223,6 @@ logMsg("Settings: days-past=$daysPast, days-future=$daysFuture");
 $exclusions = readPatterns($exclusionsPath);
 logMsg('Exclusion patterns: ' . count($exclusions));
 
-// 1. Read sources
 if (!is_file($sourcesPath)) die("Error: sources.txt not found at $sourcesPath\n");
 $sources = [];
 foreach (file($sourcesPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
@@ -225,27 +232,24 @@ foreach (file($sourcesPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $l
 }
 logMsg('Sources: ' . count($sources));
 
-// 2. Time window
 $now     = time();
 $minTime = $now - ($daysPast * 86400);
 $maxTime = $now + ($daysFuture * 86400);
 
-// 3. Download, parse and merge all sources
-$allChannels   = [];   // id => ['id' =>, 'names' =>, 'icon' =>]
-$allProgrammes = [];   // flat list
+$allChannels   = [];
+$allProgrammes = [];
 
 foreach ($sources as $srcUrl) {
     $content = downloadContent($srcUrl);
     if ($content === null) continue;
-
     parseXmltvStreaming($content, $allChannels, $allProgrammes, $minTime, $maxTime);
-    unset($content); // free memory
+    unset($content);
 }
 
 logMsg('Total unique channels: ' . count($allChannels));
 logMsg('Total programmes: ' . count($allProgrammes));
 
-// 4. Apply exclusions
+// Apply exclusions
 $excludedCount = 0;
 foreach ($allChannels as $id => $ch) {
     if (isExcluded($id, $exclusions)) {
@@ -256,7 +260,7 @@ foreach ($allChannels as $id => $ch) {
 logMsg("Channels excluded: $excludedCount");
 logMsg('Channels after exclusion: ' . count($allChannels));
 
-// 5. Filter programmes: only those whose channel still exists
+// Filter programmes
 $finalProgrammes = [];
 $orphanProgrammes = 0;
 foreach ($allProgrammes as $pr) {
@@ -268,14 +272,13 @@ foreach ($allProgrammes as $pr) {
 }
 logMsg('Programmes dropped (excluded channels): ' . $orphanProgrammes);
 logMsg('Final programmes: ' . count($finalProgrammes));
-
-// Free memory
 unset($allProgrammes);
 
-// 6. Sort channels by ID for stable output
 ksort($allChannels, SORT_NATURAL | SORT_FLAG_CASE);
 
-// 7. Build XML output
+// ─────────────────────────────────────────────
+// XML output
+// ─────────────────────────────────────────────
 $xml = [];
 $xml[] = '<?xml version="1.0" encoding="UTF-8"?>';
 $xml[] = '<!DOCTYPE tv SYSTEM "xmltv.dtd">';
@@ -291,7 +294,6 @@ foreach ($allChannels as $id => $ch) {
     }
     $xml[] = '  </channel>';
 }
-logMsg('Channels written to XML: ' . count($allChannels));
 
 foreach ($finalProgrammes as $pr) {
     $xml[] = '  <programme start="' . htmlspecialchars($pr['start'], ENT_XML1) . '"'
@@ -305,12 +307,18 @@ foreach ($finalProgrammes as $pr) {
 $xml[] = '</tv>';
 
 $xmlOutput = implode("\n", $xml);
+$xmlSize = strlen($xmlOutput);
 unset($xml);
-file_put_contents($xmlOutputPath, $xmlOutput);
-logMsg('✅ XML generated: ' . $xmlOutputPath . ' (' . number_format(strlen($xmlOutput)) . ' bytes)');
 
-// 8. Build JSON output
-// Group programmes by channel
+$xmlGzSize = writeGzip($xmlOutputPath, $xmlOutput);
+unset($xmlOutput);
+logMsg('✅ XML generated: ' . $xmlOutputPath);
+logMsg('   Uncompressed: ' . number_format($xmlSize) . ' bytes');
+logMsg('   Compressed:   ' . number_format($xmlGzSize) . ' bytes');
+
+// ─────────────────────────────────────────────
+// JSON output
+// ─────────────────────────────────────────────
 $programmesByChannel = [];
 foreach ($finalProgrammes as $pr) {
     $programmesByChannel[$pr['channel']][] = [
@@ -350,8 +358,12 @@ $jsonOutput = json_encode($jsonPayload, $jsonFlags);
 if ($jsonOutput === false) {
     logMsg('⚠️  JSON encoding failed: ' . json_last_error_msg());
 } else {
-    file_put_contents($jsonOutputPath, $jsonOutput);
-    logMsg('✅ JSON generated: ' . $jsonOutputPath . ' (' . number_format(strlen($jsonOutput)) . ' bytes)');
+    $jsonSize = strlen($jsonOutput);
+    $jsonGzSize = writeGzip($jsonOutputPath, $jsonOutput);
+    unset($jsonOutput);
+    logMsg('✅ JSON generated: ' . $jsonOutputPath);
+    logMsg('   Uncompressed: ' . number_format($jsonSize) . ' bytes');
+    logMsg('   Compressed:   ' . number_format($jsonGzSize) . ' bytes');
 }
 
 logMsg('=== EPG Builder finished ===');
