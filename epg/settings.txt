@@ -1,0 +1,8 @@
+# Días de programación pasada a incluir (catch-up)
+dias-pasados=1
+
+# Días de programación futura a incluir
+dias-futuros=7
+
+# Sufijo a añadir al nombre del canal (opcional, dejar vacío si no se quiere)
+display-name-suffix=
