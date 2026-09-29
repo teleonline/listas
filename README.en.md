@@ -23,12 +23,15 @@ This repository contains:
 
 - **tv.json** - TV channels organized by country and theme
 - **tv.m3u8** - M3U8 playlist format for media players
+- **varios/canales.txt** - Simplified channel list
 
 All listed channels are:
 - ✓ Public broadcast channels
 - ✓ Local, national, independent, and international television services without subscription requirements
 - ✓ Legally distributed by their respective broadcasters
 - ✓ Accessible within their designated broadcast regions
+
+[View channel list](https://github.com/teleonline/listas/blob/main/varios/canales.txt)
 
 ## Data Structure
 
