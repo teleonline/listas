@@ -1,17 +1,14 @@
 === TV.JSON MIGRATION REPORT ===
-Generated: 2026-09-29 14:56:55 UTC
+Generated: 2026-09-29 15:01:02 UTC
 
 SUMMARY:
-  Migrated:   5
+  Migrated:   2
   Unchanged:  0
   Ambiguous:  0
-  Not found:  286
+  Not found:  289
 
 --- MIGRATED ---
-  24h                                            24Horas.TV                     -> 24h.fr
-  7TV Andalucía                                 7Andalucia.TV                  -> 7TV.Andalucía.es
   324                                            324.TV                         -> 324.es
-  33                                             C33.TV                         -> 33.es
   3CatInfo                                       324.TV                         -> 324.es
 
 --- NOT FOUND (not changed) ---
@@ -37,6 +34,7 @@ SUMMARY:
   Paramount Network                              Paramount.TV
   BOM Cine                                       BOM Cine.TV
   Castilla-La Mancha Media                       CMM.TV
+  24h                                            24Horas.TV
   Euronews                                       Euronews.TV
   Libertad Digital TV                            Libertad.TV
   Negocios TV                                    Negocios.TV
@@ -106,6 +104,7 @@ SUMMARY:
   Infinity Viajes                                Mitele_Viajes.TV
   Infinity En la Calle                           Mitele_Calle.TV
   Canal Sur Andalucía                           CanalSurA.TV
+  7TV Andalucía                                 7Andalucia.TV
   101TV Málaga                                  101Malaga.TV
   Onda Cádiz                                    OndaCadiz.TV
   Costa Noroeste TV                              CostaNO.TV
@@ -162,6 +161,7 @@ SUMMARY:
   La 8 Valladolid                                8Valladolid.TV
   La 8 Zamora                                    8Zamora.TV
   TV3                                            TV3.TV
+  33                                             C33.TV
   SX3                                            SX3.TV
   La 1 Catalunya                                 La1_CAT.TV
   La 2 Catalunya                                 La2_CAT.TV
