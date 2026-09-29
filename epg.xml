@@ -61,6 +61,14 @@
     <display-name>GB News</display-name>
     <icon src="https://yt3.googleusercontent.com/8hySIA7Ed6amMiAHJVNsG9oph0zoSlCAffYTmINH3gXJ8vvcToB_xh7uIlKSHA9fBEae3e_yl6I=s160-c-k-c0x00ffffff-no-rj"/>
   </channel>
+  <channel id="America.TV">
+    <display-name>América TV</display-name>
+    <icon src="https://yt3.googleusercontent.com/vIYh4fJ4FiOeD0U8sGUEUZQf3DaK-PME00Ckh7cFf4CRmC3EHopvUsjbgYKhNVkFXURSzltWYQ=s160-c-k-c0x00ffffff-no-rj"/>
+  </channel>
+  <channel id="Telefe.TV">
+    <display-name>Telefe Noticias</display-name>
+    <icon src="https://yt3.googleusercontent.com/S4T593yU0BuL0AKg55PlJM8oJyq2TgDah1K9d7_pi-JQ2VgP_-_GABXUf1cTvn0Kk-sEIBQARSI=s160-c-k-c0x00ffffff-no-rj"/>
+  </channel>
   <channel id="FRANCEEspañol.TV">
     <display-name>FRANCE 24 Español</display-name>
     <icon src="https://yt3.googleusercontent.com/ytc/AIdro_kzqAgL2TukPL1ijpuPdoOgU75Av9cdQVf0mahAZSySyA=s160-c-k-c0x00ffffff-no-rj"/>
@@ -348,6 +356,10 @@
   <channel id="Bloom.TV">
     <display-name>Bloomberg Europe</display-name>
     <icon src="https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg"/>
+  </channel>
+  <channel id="TVPArgentina.TV">
+    <display-name>TVP Argentina</display-name>
+    <icon src="https://graph.facebook.com/TVPublica/picture?width=200&amp;height=200"/>
   </channel>
   <channel id="CGTN.TV">
     <display-name>CGTN</display-name>
@@ -27336,10 +27348,6 @@
     <title lang="es">El tiempo</title>
     <desc lang="es">De lunes a viernes, al término del Telenoticias 2, se recogen las principales previsiones meteorológicas y se comentan las temperaturas registradas en diferentes puntos de la Comunidad Autónoma de Madrid.</desc>
   </programme>
-  <programme start="20260928102100 +0200" stop="20260928111000 +0200" channel="Canarias.TV">
-    <title lang="es">1 hora menos</title>
-    <desc lang="es">Victorio Pérez Moreno, y todo el equipo de 1 Hora Menos, regresa a las noches de Televisión Canaria con nuevas propuestas de entretenimiento, entre otras, ''Casas extraordinarias'' o 'Las Canarias del pasado'. Entre las novedades de esta temporada también sobresale el nuevo escenario: un nuevo plató virtual, el más grande de España, más cálido y versátil y con mayores posibilidades creativas. Los/as espectadores/as de Televisión Canaria podrán ser partícipes del programa a través de WhatsApp y las Redes Sociales de 1 Hora Menos, y podrán, también, sugerir temas que les gustaría ver en el programa.</desc>
-  </programme>
   <programme start="20260928111000 +0200" stop="20260928112200 +0200" channel="Canarias.TV">
     <title lang="es">CulturArte</title>
     <desc lang="es">'CulturArte' es una ventana al arte y la cultura hecha en Canarias a través de la mirada de la periodista e historiadora del arte Raquel Toste. Un espacio para descubrir anécdotas y curiosidades de la historia del arte del archipiélago.</desc>
@@ -28151,9 +28159,6 @@
     <title lang="es">Jubilació impossible</title>
     <desc lang="es">La Marilou i en Philippe són un matrimoni francès que té ganes de jubilar-se i d'anar-se'n a viure a Portugal, per passar els seus últims anys al sol. Quan finalment decideixen fer el gran pas i vendre's la casa, la seva filla, la Cécile, sesepara i els demana que l'ajudin a cuidar els seus fills.Comèdia francesa sobre les desventures d'una parella madura que va acumular un milió d'espectadors al seu país d'origen. La cinta està dirigida i escrita per Fabrice Bracq ('Un clown passe'), en què és tan sols el seu segon llargmetratge com a realitzador. Michèle Laroque ('Una dona brillant'), Thierry Lhermitte ('El sopar dels idiotes') i Nicole Ferroni ('Peplum') formen el trio protagonista.Molts néts, somnis frustrats i divertits embolics són els eixos sobre els quals gira aquest relat inspirat en la novel·la 'Joyeuse retraite!' de Guillaume Clicquot de Mentque.</desc>
   </programme>
-  <programme start="20260928102000 +0200" stop="20260928110200 +0200" channel="TVG2.TV">
-    <title lang="es">O Faro</title>
-  </programme>
   <programme start="20260928110200 +0200" stop="20260928114000 +0200" channel="TVG2.TV">
     <title lang="es">O Faro</title>
   </programme>
@@ -28934,6 +28939,683 @@
   <programme start="20261001220000 +0200" stop="20261001230500 +0200" channel="À Punt.TV">
     <title lang="es">A la saca</title>
     <desc lang="es">Concurs televisiu en el qual es posa a prova la rapidesa mental dels concursants per a respondre preguntes a canvi de diners. Es tracta d’un format internacional estrenat al Regne Unit per la BBC.</desc>
+  </programme>
+  <programme start="20260928110000 -0500" stop="20260928130000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20260928130000 -0500" stop="20260928143000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20260928143000 -0500" stop="20260928154500 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20260928154500 -0500" stop="20260928170000 -0500" channel="America.TV">
+    <title lang="es">América Noticias</title>
+  </programme>
+  <programme start="20260928170000 -0500" stop="20260928180000 -0500" channel="America.TV">
+    <title lang="es">Sálvese Quien Pueda</title>
+  </programme>
+  <programme start="20260928180000 -0500" stop="20260928200000 -0500" channel="America.TV">
+    <title lang="es">LAM</title>
+  </programme>
+  <programme start="20260928200000 -0500" stop="20260928210000 -0500" channel="America.TV">
+    <title lang="es">BTV, Buena Televisión</title>
+  </programme>
+  <programme start="20260928210000 -0500" stop="20260928220000 -0500" channel="America.TV">
+    <title lang="es">Paso en América</title>
+  </programme>
+  <programme start="20260928220000 -0500" stop="20260928230000 -0500" channel="America.TV">
+    <title lang="es">Polémica en El Bar</title>
+  </programme>
+  <programme start="20260928230000 -0500" stop="20260929010000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20260929010000 -0500" stop="20260929023000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20260929023000 -0500" stop="20260929040000 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20260929040000 -0500" stop="20260929060000 -0500" channel="America.TV">
+    <title lang="es">Arriba América</title>
+  </programme>
+  <programme start="20260929060000 -0500" stop="20260929080000 -0500" channel="America.TV">
+    <title lang="es">Desayuno Americano</title>
+  </programme>
+  <programme start="20260929080000 -0500" stop="20260929100000 -0500" channel="America.TV">
+    <title lang="es">La mañana de Lape</title>
+  </programme>
+  <programme start="20260929100000 -0500" stop="20260929110000 -0500" channel="America.TV">
+    <title lang="es">Lape Club social informativo</title>
+  </programme>
+  <programme start="20260929110000 -0500" stop="20260929130000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20260929130000 -0500" stop="20260929143000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20260929143000 -0500" stop="20260929154500 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20260929154500 -0500" stop="20260929170000 -0500" channel="America.TV">
+    <title lang="es">América Noticias</title>
+  </programme>
+  <programme start="20260929170000 -0500" stop="20260929180000 -0500" channel="America.TV">
+    <title lang="es">Sálvese Quien Pueda</title>
+  </programme>
+  <programme start="20260929180000 -0500" stop="20260929200000 -0500" channel="America.TV">
+    <title lang="es">LAM</title>
+  </programme>
+  <programme start="20260929200000 -0500" stop="20260929210000 -0500" channel="America.TV">
+    <title lang="es">BTV, Buena Televisión</title>
+  </programme>
+  <programme start="20260929210000 -0500" stop="20260929220000 -0500" channel="America.TV">
+    <title lang="es">Paso en América</title>
+  </programme>
+  <programme start="20260929220000 -0500" stop="20260929230000 -0500" channel="America.TV">
+    <title lang="es">Polémica en El Bar</title>
+  </programme>
+  <programme start="20260929230000 -0500" stop="20260930010000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20260930010000 -0500" stop="20260930023000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20260930023000 -0500" stop="20260930040000 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20260930040000 -0500" stop="20260930060000 -0500" channel="America.TV">
+    <title lang="es">Arriba América</title>
+  </programme>
+  <programme start="20260930060000 -0500" stop="20260930080000 -0500" channel="America.TV">
+    <title lang="es">Desayuno Americano</title>
+  </programme>
+  <programme start="20260930080000 -0500" stop="20260930100000 -0500" channel="America.TV">
+    <title lang="es">La mañana de Lape</title>
+  </programme>
+  <programme start="20260930100000 -0500" stop="20260930110000 -0500" channel="America.TV">
+    <title lang="es">Lape Club social informativo</title>
+  </programme>
+  <programme start="20260930110000 -0500" stop="20260930130000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20260930130000 -0500" stop="20260930143000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20260930143000 -0500" stop="20260930154500 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20260930154500 -0500" stop="20260930170000 -0500" channel="America.TV">
+    <title lang="es">América Noticias</title>
+  </programme>
+  <programme start="20260930170000 -0500" stop="20260930180000 -0500" channel="America.TV">
+    <title lang="es">Sálvese Quien Pueda</title>
+  </programme>
+  <programme start="20260930180000 -0500" stop="20260930200000 -0500" channel="America.TV">
+    <title lang="es">LAM</title>
+  </programme>
+  <programme start="20260930200000 -0500" stop="20260930210000 -0500" channel="America.TV">
+    <title lang="es">BTV, Buena Televisión</title>
+  </programme>
+  <programme start="20260930210000 -0500" stop="20260930220000 -0500" channel="America.TV">
+    <title lang="es">Paso en América</title>
+  </programme>
+  <programme start="20260930220000 -0500" stop="20260930230000 -0500" channel="America.TV">
+    <title lang="es">Polémica en El Bar</title>
+  </programme>
+  <programme start="20260930230000 -0500" stop="20261001010000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20261001010000 -0500" stop="20261001023000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20261001023000 -0500" stop="20261001040000 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20261001040000 -0500" stop="20261001060000 -0500" channel="America.TV">
+    <title lang="es">Arriba América</title>
+  </programme>
+  <programme start="20261001060000 -0500" stop="20261001080000 -0500" channel="America.TV">
+    <title lang="es">Desayuno Americano</title>
+  </programme>
+  <programme start="20261001080000 -0500" stop="20261001100000 -0500" channel="America.TV">
+    <title lang="es">La mañana de Lape</title>
+  </programme>
+  <programme start="20261001100000 -0500" stop="20261001110000 -0500" channel="America.TV">
+    <title lang="es">Lape Club social informativo</title>
+  </programme>
+  <programme start="20261001110000 -0500" stop="20261001130000 -0500" channel="America.TV">
+    <title lang="es">Intrusos</title>
+  </programme>
+  <programme start="20261001130000 -0500" stop="20261001143000 -0500" channel="America.TV">
+    <title lang="es">El diario de Mariana</title>
+  </programme>
+  <programme start="20261001143000 -0500" stop="20261001154500 -0500" channel="America.TV">
+    <title lang="es">Primicias YA</title>
+  </programme>
+  <programme start="20261001154500 -0500" stop="20261001170000 -0500" channel="America.TV">
+    <title lang="es">América Noticias</title>
+  </programme>
+  <programme start="20261001170000 -0500" stop="20261001180000 -0500" channel="America.TV">
+    <title lang="es">Sálvese Quien Pueda</title>
+  </programme>
+  <programme start="20261001180000 -0500" stop="20261001200000 -0500" channel="America.TV">
+    <title lang="es">LAM</title>
+  </programme>
+  <programme start="20260928103000 -0500" stop="20260928110000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20260928110000 -0500" stop="20260928123000 -0500" channel="Telefe.TV">
+    <title lang="es">El noticiero de la gente</title>
+  </programme>
+  <programme start="20260928123000 -0500" stop="20260928144500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260928144500 -0500" stop="20260928151500 -0500" channel="Telefe.TV">
+    <title lang="es">Bahar, ¿estás lista para despertar?</title>
+  </programme>
+  <programme start="20260928151500 -0500" stop="20260928154500 -0500" channel="Telefe.TV">
+    <title lang="es">Doctor Milagro</title>
+  </programme>
+  <programme start="20260928154500 -0500" stop="20260928180000 -0500" channel="Telefe.TV">
+    <title lang="es">Historias de corazón</title>
+  </programme>
+  <programme start="20260928180000 -0500" stop="20260928193000 -0500" channel="Telefe.TV">
+    <title lang="es">Telefe Noticias</title>
+  </programme>
+  <programme start="20260928193000 -0500" stop="20260928201500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20260928201500 -0500" stop="20260928214500 -0500" channel="Telefe.TV">
+    <title lang="es">MasterChef Celebrity</title>
+  </programme>
+  <programme start="20260928214500 -0500" stop="20260928220000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260928220000 -0500" stop="20260928223000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260928223000 -0500" stop="20260928230000 -0500" channel="Telefe.TV">
+    <title lang="es">El Valor de Tus Joyas</title>
+  </programme>
+  <programme start="20260928230000 -0500" stop="20260928234500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20260928234500 -0500" stop="20260929020000 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260929020000 -0500" stop="20260929040000 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20260929040000 -0500" stop="20260929044500 -0500" channel="Telefe.TV">
+    <title lang="es">Disney Junior</title>
+  </programme>
+  <programme start="20260929044500 -0500" stop="20260929050000 -0500" channel="Telefe.TV">
+    <title lang="es">#Tt</title>
+  </programme>
+  <programme start="20260929050000 -0500" stop="20260929073000 -0500" channel="Telefe.TV">
+    <title lang="es">Buen Telefe</title>
+  </programme>
+  <programme start="20260929073000 -0500" stop="20260929094500 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20260929094500 -0500" stop="20260929103000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20260929103000 -0500" stop="20260929110000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20260929110000 -0500" stop="20260929123000 -0500" channel="Telefe.TV">
+    <title lang="es">El noticiero de la gente</title>
+  </programme>
+  <programme start="20260929123000 -0500" stop="20260929144500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260929144500 -0500" stop="20260929151500 -0500" channel="Telefe.TV">
+    <title lang="es">Bahar, ¿estás lista para despertar?</title>
+  </programme>
+  <programme start="20260929151500 -0500" stop="20260929154500 -0500" channel="Telefe.TV">
+    <title lang="es">Doctor Milagro</title>
+  </programme>
+  <programme start="20260929154500 -0500" stop="20260929180000 -0500" channel="Telefe.TV">
+    <title lang="es">Historias de corazón</title>
+  </programme>
+  <programme start="20260929180000 -0500" stop="20260929193000 -0500" channel="Telefe.TV">
+    <title lang="es">Telefe Noticias</title>
+  </programme>
+  <programme start="20260929193000 -0500" stop="20260929201500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20260929201500 -0500" stop="20260929214500 -0500" channel="Telefe.TV">
+    <title lang="es">MasterChef Celebrity</title>
+  </programme>
+  <programme start="20260929214500 -0500" stop="20260929220000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260929220000 -0500" stop="20260929222500 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260929222500 -0500" stop="20260929223000 -0500" channel="Telefe.TV">
+    <title lang="es">Intuiciones</title>
+  </programme>
+  <programme start="20260929223000 -0500" stop="20260929230000 -0500" channel="Telefe.TV">
+    <title lang="es">El Valor de Tus Joyas</title>
+  </programme>
+  <programme start="20260929230000 -0500" stop="20260929234500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20260929234500 -0500" stop="20260930020000 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20260930020000 -0500" stop="20260930040000 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260930040000 -0500" stop="20260930044500 -0500" channel="Telefe.TV">
+    <title lang="es">Disney Junior</title>
+  </programme>
+  <programme start="20260930044500 -0500" stop="20260930050000 -0500" channel="Telefe.TV">
+    <title lang="es">#Tt</title>
+  </programme>
+  <programme start="20260930050000 -0500" stop="20260930073000 -0500" channel="Telefe.TV">
+    <title lang="es">Buen Telefe</title>
+  </programme>
+  <programme start="20260930073000 -0500" stop="20260930094500 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20260930094500 -0500" stop="20260930103000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20260930103000 -0500" stop="20260930110000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20260930110000 -0500" stop="20260930123000 -0500" channel="Telefe.TV">
+    <title lang="es">El noticiero de la gente</title>
+  </programme>
+  <programme start="20260930123000 -0500" stop="20260930144500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260930144500 -0500" stop="20260930151500 -0500" channel="Telefe.TV">
+    <title lang="es">Bahar, ¿estás lista para despertar?</title>
+  </programme>
+  <programme start="20260930151500 -0500" stop="20260930154500 -0500" channel="Telefe.TV">
+    <title lang="es">Doctor Milagro</title>
+  </programme>
+  <programme start="20260930154500 -0500" stop="20260930180000 -0500" channel="Telefe.TV">
+    <title lang="es">Historias de corazón</title>
+  </programme>
+  <programme start="20260930180000 -0500" stop="20260930210000 -0500" channel="Telefe.TV">
+    <title lang="es">Argentina vs. Bolivia</title>
+    <desc lang="es">Enfrentamiento deportivo de tipo internacional donde se miden las selecciones de la República Argentina y el Estado Plurinacional de Bolivia.</desc>
+  </programme>
+  <programme start="20260930210000 -0500" stop="20260930214500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20260930214500 -0500" stop="20260930220000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260930220000 -0500" stop="20260930223000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20260930223000 -0500" stop="20260930230000 -0500" channel="Telefe.TV">
+    <title lang="es">El Valor de Tus Joyas</title>
+  </programme>
+  <programme start="20260930230000 -0500" stop="20261001004500 -0500" channel="Telefe.TV">
+    <title lang="es">Argentina vs. Bolivia</title>
+    <desc lang="es">Enfrentamiento deportivo de tipo internacional donde se miden las selecciones de la República Argentina y el Estado Plurinacional de Bolivia.</desc>
+  </programme>
+  <programme start="20261001004500 -0500" stop="20261001020000 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20261001020000 -0500" stop="20261001040000 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20261001040000 -0500" stop="20261001044500 -0500" channel="Telefe.TV">
+    <title lang="es">Disney Junior</title>
+  </programme>
+  <programme start="20261001044500 -0500" stop="20261001050000 -0500" channel="Telefe.TV">
+    <title lang="es">#Tt</title>
+  </programme>
+  <programme start="20261001050000 -0500" stop="20261001073000 -0500" channel="Telefe.TV">
+    <title lang="es">Buen Telefe</title>
+  </programme>
+  <programme start="20261001073000 -0500" stop="20261001094500 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20261001094500 -0500" stop="20261001103000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20261001103000 -0500" stop="20261001110000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20261001110000 -0500" stop="20261001123000 -0500" channel="Telefe.TV">
+    <title lang="es">El noticiero de la gente</title>
+  </programme>
+  <programme start="20261001123000 -0500" stop="20261001144500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20261001144500 -0500" stop="20261001151500 -0500" channel="Telefe.TV">
+    <title lang="es">Bahar, ¿estás lista para despertar?</title>
+  </programme>
+  <programme start="20261001151500 -0500" stop="20261001154500 -0500" channel="Telefe.TV">
+    <title lang="es">Doctor Milagro</title>
+  </programme>
+  <programme start="20261001154500 -0500" stop="20261001180000 -0500" channel="Telefe.TV">
+    <title lang="es">Historias de corazón</title>
+  </programme>
+  <programme start="20261001180000 -0500" stop="20261001193000 -0500" channel="Telefe.TV">
+    <title lang="es">Telefe Noticias</title>
+  </programme>
+  <programme start="20261001193000 -0500" stop="20261001201500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20261001201500 -0500" stop="20261001214500 -0500" channel="Telefe.TV">
+    <title lang="es">MasterChef Celebrity</title>
+  </programme>
+  <programme start="20261001214500 -0500" stop="20261001220000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20261001220000 -0500" stop="20261001223000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20261001223000 -0500" stop="20261001230000 -0500" channel="Telefe.TV">
+    <title lang="es">El Valor de Tus Joyas</title>
+  </programme>
+  <programme start="20261001230000 -0500" stop="20261001234500 -0500" channel="Telefe.TV">
+    <title lang="es">Popstars</title>
+  </programme>
+  <programme start="20261001234500 -0500" stop="20261002020000 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20261002020000 -0500" stop="20261002040000 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20261002040000 -0500" stop="20261002044500 -0500" channel="Telefe.TV">
+    <title lang="es">Disney Junior</title>
+  </programme>
+  <programme start="20261002044500 -0500" stop="20261002050000 -0500" channel="Telefe.TV">
+    <title lang="es">#Tt</title>
+  </programme>
+  <programme start="20261002050000 -0500" stop="20261002073000 -0500" channel="Telefe.TV">
+    <title lang="es">Buen Telefe</title>
+  </programme>
+  <programme start="20261002073000 -0500" stop="20261002094500 -0500" channel="Telefe.TV">
+    <title lang="es">A la Barbarossa</title>
+  </programme>
+  <programme start="20261002094500 -0500" stop="20261002103000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20261002103000 -0500" stop="20261002110000 -0500" channel="Telefe.TV">
+    <title lang="es">Ariel en su salsa</title>
+  </programme>
+  <programme start="20261002110000 -0500" stop="20261002123000 -0500" channel="Telefe.TV">
+    <title lang="es">El noticiero de la gente</title>
+  </programme>
+  <programme start="20261002123000 -0500" stop="20261002144500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20261002144500 -0500" stop="20261002151500 -0500" channel="Telefe.TV">
+    <title lang="es">Bahar, ¿estás lista para despertar?</title>
+  </programme>
+  <programme start="20261002151500 -0500" stop="20261002154500 -0500" channel="Telefe.TV">
+    <title lang="es">Doctor Milagro</title>
+  </programme>
+  <programme start="20261002154500 -0500" stop="20261002180000 -0500" channel="Telefe.TV">
+    <title lang="es">Historias de corazón</title>
+  </programme>
+  <programme start="20261002180000 -0500" stop="20261002193000 -0500" channel="Telefe.TV">
+    <title lang="es">Telefe Noticias</title>
+  </programme>
+  <programme start="20261002193000 -0500" stop="20261002201500 -0500" channel="Telefe.TV">
+    <title lang="es">Pasapalabra</title>
+  </programme>
+  <programme start="20261002201500 -0500" stop="20261002214500 -0500" channel="Telefe.TV">
+    <title lang="es">MasterChef Celebrity</title>
+  </programme>
+  <programme start="20261002214500 -0500" stop="20261002220000 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20261002220000 -0500" stop="20261002221500 -0500" channel="Telefe.TV">
+    <title lang="es">Staff</title>
+  </programme>
+  <programme start="20261002221500 -0500" stop="20261002224500 -0500" channel="Telefe.TV">
+    <title lang="es">El album</title>
+  </programme>
+  <programme start="20261002224500 -0500" stop="20261002231500 -0500" channel="Telefe.TV">
+    <title lang="es">El Valor de Tus Joyas</title>
+  </programme>
+  <programme start="20261002231500 -0500" stop="20261003011500 -0500" channel="Telefe.TV">
+    <title lang="es">Cortá Por Lozano</title>
+  </programme>
+  <programme start="20260928113000 -0500" stop="20260928130000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Mediodía bien arriba</title>
+  </programme>
+  <programme start="20260928130000 -0500" stop="20260928150000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Estamos en una</title>
+  </programme>
+  <programme start="20260928150000 -0500" stop="20260928170000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Iluminadas</title>
+  </programme>
+  <programme start="20260928170000 -0500" stop="20260928183000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260928183000 -0500" stop="20260928200000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La noche es nuestra</title>
+  </programme>
+  <programme start="20260928200000 -0500" stop="20260928210000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Lo mejor de: Se siente Argentina</title>
+  </programme>
+  <programme start="20260928210000 -0500" stop="20260928220000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La casa de Chicho y Tomi</title>
+  </programme>
+  <programme start="20260928220000 -0500" stop="20260928223000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260928223000 -0500" stop="20260928230000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Feliz vida</title>
+  </programme>
+  <programme start="20260928230000 -0500" stop="20260929044500 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Fuera del aire</title>
+  </programme>
+  <programme start="20260929044500 -0500" stop="20260929050000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aires de campo</title>
+  </programme>
+  <programme start="20260929050000 -0500" stop="20260929060000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260929060000 -0500" stop="20260929070000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aire nacional</title>
+  </programme>
+  <programme start="20260929070000 -0500" stop="20260929080000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">ADN, buena salud</title>
+  </programme>
+  <programme start="20260929080000 -0500" stop="20260929100000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Las mañanas con Andino</title>
+  </programme>
+  <programme start="20260929100000 -0500" stop="20260929113000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260929113000 -0500" stop="20260929130000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Mediodía bien arriba</title>
+  </programme>
+  <programme start="20260929130000 -0500" stop="20260929150000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Estamos en una</title>
+  </programme>
+  <programme start="20260929150000 -0500" stop="20260929170000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Iluminadas</title>
+  </programme>
+  <programme start="20260929170000 -0500" stop="20260929183000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260929183000 -0500" stop="20260929200000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La noche es nuestra</title>
+  </programme>
+  <programme start="20260929200000 -0500" stop="20260929210000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Lo mejor de: Se siente Argentina</title>
+  </programme>
+  <programme start="20260929210000 -0500" stop="20260929220000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Hay grip</title>
+  </programme>
+  <programme start="20260929220000 -0500" stop="20260929223000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260929223000 -0500" stop="20260929230000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Feliz vida</title>
+  </programme>
+  <programme start="20260929230000 -0500" stop="20260930044500 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Fuera del aire</title>
+  </programme>
+  <programme start="20260930044500 -0500" stop="20260930050000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aires de campo</title>
+  </programme>
+  <programme start="20260930050000 -0500" stop="20260930060000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260930060000 -0500" stop="20260930070000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aire nacional</title>
+  </programme>
+  <programme start="20260930070000 -0500" stop="20260930080000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">ADN, buena salud</title>
+  </programme>
+  <programme start="20260930080000 -0500" stop="20260930100000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Las mañanas con Andino</title>
+  </programme>
+  <programme start="20260930100000 -0500" stop="20260930113000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260930113000 -0500" stop="20260930130000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Mediodía bien arriba</title>
+  </programme>
+  <programme start="20260930130000 -0500" stop="20260930150000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Estamos en una</title>
+  </programme>
+  <programme start="20260930150000 -0500" stop="20260930170000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Iluminadas</title>
+  </programme>
+  <programme start="20260930170000 -0500" stop="20260930183000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260930183000 -0500" stop="20260930191500 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La noche es nuestra</title>
+  </programme>
+  <programme start="20260930191500 -0500" stop="20260930193000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Sorteo Quini 6</title>
+  </programme>
+  <programme start="20260930193000 -0500" stop="20260930200000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La noche es nuestra</title>
+  </programme>
+  <programme start="20260930200000 -0500" stop="20260930201000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Loto 5</title>
+  </programme>
+  <programme start="20260930201000 -0500" stop="20260930210000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Lo mejor de: Se siente Argentina</title>
+  </programme>
+  <programme start="20260930210000 -0500" stop="20260930220000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Hay música siempre</title>
+  </programme>
+  <programme start="20260930220000 -0500" stop="20260930223000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20260930223000 -0500" stop="20260930230000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Feliz vida</title>
+  </programme>
+  <programme start="20260930230000 -0500" stop="20261001044500 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Fuera del aire</title>
+  </programme>
+  <programme start="20261001044500 -0500" stop="20261001050000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aires de campo</title>
+  </programme>
+  <programme start="20261001050000 -0500" stop="20261001060000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261001060000 -0500" stop="20261001070000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aire nacional</title>
+  </programme>
+  <programme start="20261001070000 -0500" stop="20261001080000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">ADN, buena salud</title>
+  </programme>
+  <programme start="20261001080000 -0500" stop="20261001100000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Las mañanas con Andino</title>
+  </programme>
+  <programme start="20261001100000 -0500" stop="20261001113000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261001113000 -0500" stop="20261001130000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Mediodía bien arriba</title>
+  </programme>
+  <programme start="20261001130000 -0500" stop="20261001150000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Estamos en una</title>
+  </programme>
+  <programme start="20261001150000 -0500" stop="20261001170000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Iluminadas</title>
+  </programme>
+  <programme start="20261001170000 -0500" stop="20261001183000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261001183000 -0500" stop="20261001200000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">La noche es nuestra</title>
+  </programme>
+  <programme start="20261001200000 -0500" stop="20261001210000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Lo mejor de: Se siente Argentina</title>
+  </programme>
+  <programme start="20261001210000 -0500" stop="20261001220000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Economistas</title>
+  </programme>
+  <programme start="20261001220000 -0500" stop="20261001223000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261001223000 -0500" stop="20261001230000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Feliz vida</title>
+  </programme>
+  <programme start="20261001230000 -0500" stop="20261002044500 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Fuera del aire</title>
+  </programme>
+  <programme start="20261002044500 -0500" stop="20261002050000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aires de campo</title>
+  </programme>
+  <programme start="20261002050000 -0500" stop="20261002060000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261002060000 -0500" stop="20261002070000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Aire nacional</title>
+  </programme>
+  <programme start="20261002070000 -0500" stop="20261002080000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">ADN, buena salud</title>
+  </programme>
+  <programme start="20261002080000 -0500" stop="20261002100000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Las mañanas con Andino</title>
+  </programme>
+  <programme start="20261002100000 -0500" stop="20261002113000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261002113000 -0500" stop="20261002130000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Mediodía bien arriba</title>
+  </programme>
+  <programme start="20261002130000 -0500" stop="20261002150000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Estamos en una</title>
+  </programme>
+  <programme start="20261002150000 -0500" stop="20261002170000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Iluminadas</title>
+  </programme>
+  <programme start="20261002170000 -0500" stop="20261002183000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261002183000 -0500" stop="20261002193000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias Internacional</title>
+  </programme>
+  <programme start="20261002193000 -0500" stop="20261002210000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Lo mejor de: Se siente Argentina</title>
+  </programme>
+  <programme start="20261002210000 -0500" stop="20261002220000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Sin pistas</title>
+  </programme>
+  <programme start="20261002220000 -0500" stop="20261002223000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Televisión Pública Noticias</title>
+  </programme>
+  <programme start="20261002223000 -0500" stop="20261002230000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Feliz vida</title>
+  </programme>
+  <programme start="20261002230000 -0500" stop="20261003043000 -0500" channel="TVPArgentina.TV">
+    <title lang="es">Fuera del aire</title>
   </programme>
   <programme start="20260928110000 +0000" stop="20260928140000 +0000" channel="GBNews.TV">
     <title lang="es">Good Afternoon Britain</title>
@@ -36691,10 +37373,6 @@
     <title lang="es">Historia de nuestro cine</title>
     <desc lang="es">"Historia de nuestro cine" busca revisar gran parte del cine español, desde los años 30 hasta finales del siglo XX, recuperando muchas películas que no se han emitido en muchos años en otros espacios cinematográficos de TVE.</desc>
     <category lang="es">Magazine</category>
-  </programme>
-  <programme start="20260928102000 +0200" stop="20260928112500 +0200" channel="DMax.TV">
-    <title lang="es">L'Eldorado della droga: viaggio in USA</title>
-    <desc lang="es">St.2 Ep.5 - Gli agenti devono fermare i contrabbandieri e i trafficanti di droga.</desc>
   </programme>
   <programme start="20260928112500 +0200" stop="20260928133000 +0200" channel="DMax.TV">
     <title lang="es">Operazione N.A.S.</title>
